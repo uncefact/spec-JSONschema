@@ -16,7 +16,7 @@ To register please visit https://uncefact.unece.org/display/uncefactpublic/UNCEF
 
 The official UN/CEFACT project page can be found at https://uncefact.unece.org/pages/viewpage.action?pageId=83591895
 
-Chair of the project is Marek Laskowski. Projet Lead is Jörg Walther. Editors are Andreas Pelekies @AndreasPvd and Gerhard Heemskerk. 
+Chair of the project is Marek Laskowski. Projet Lead is Jörg Walther. Editors are Andreas Pelekies @AndreasPvd and Gerhard Heemskerk @GerhardHNL. 
 
 ## Meetings
 Sessions will be held weekly on Tuesdays from 10:00-11:00 Central European Time (i.e. 2022-07-12, 2022-07-19, 2022-07-26 ...).
