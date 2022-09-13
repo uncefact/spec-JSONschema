@@ -14,7 +14,7 @@ In this repository there are two main publications of UN/CEFACT JSON schema arte
 
 * The second variant in the [Compatibility](https://github.com/uncefact/spec-JSONschema/tree/main/compatability) folder supports OpenAPI 3.0.x and therefore uses some older JSON schema concepts.
 
-Use cases for extensions, restrictions and contextualisations of the publications can be found in the  [examples] (https://github.com/uncefact/spec-JSONschema/tree/main/examples) folder.  
+Use cases for extensions, restrictions and contextualisations of the publications can be found in the [examples](https://github.com/uncefact/spec-JSONschema/tree/main/examples) folder.  
 
 
 ## Contribution
