@@ -19,7 +19,7 @@
 	"type": "string",
 	"enum": ["AggregateBIE", "AssociationBIE", "BasicBIE"]
 	},
-	"uncefact:UNId": { "type": "string"	},
+	"uncefact:unId": { "type": "string"	},
 	"uncefact:TDED": { "type": "string" },
 	"uncefact:BusinessProcess": { "type": "string"	}
   }
