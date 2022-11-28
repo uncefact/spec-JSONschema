@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/uncefact/spec-JSONschema/tree/main/compatability/library/BuyShipPay/D22A/MMTContextCCLContainer",
+  "$id": "https://github.com/uncefact/spec-JSONschema/tree/main/JSONschema2020-12/library/BuyShipPay/D22A/MMTContextCCLContainer",
   "title": "MMT Context CCL Container",
   "description": "Copyright (C) UN/CEFACT (2022). All Rights Reserved.\n\nThis document and translations of it may be copied and furnished to others, and derivative works that comment on or otherwise explain it or assist in its implementation may be prepared, copied, published and distributed, in whole or in part, without restriction of any kind, provided that the above copyright notice and this paragraph are included on all such copies and derivative works. However, this document itself may not be modified in any way, such as by removing the copyright notice or references to UN/CEFACT, except as needed for the purpose of developing UN/CEFACT specifications, in which case the procedures for copyrights defined in the UN/CEFACT Intellectual Property Rights document must be followed, or as required to translate it into languages other than English.\n\nThe limited permissions granted above are perpetual and will not be revoked by UN/CEFACT or its successors or assigns.\n\nThis document and the information contained herein is provided on an \"AS IS\" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.",
   "$defs": {
@@ -1559,7 +1559,22 @@
         "type": "object",
         "properties": {
           "content": {
-            "$ref": "codelists/UNECE_UNTDID4405.json#/$defs/codeList/UNTDID4405Type"
+            "allOf": [
+              {
+                "$ref": "codelists/UNECE_UNTDID4405.json#/$defs/codeList/UNTDID4405Type"
+              },
+              {
+                "const": [
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33",
+                  "34",
+                  "66"
+                ]
+              }
+            ]
           },
           "listId": {
             "$ref": "UNECE-BasicComponents.json#/$defs/pdt/stringType"
@@ -1584,7 +1599,39 @@
         "type": "object",
         "properties": {
           "content": {
-            "$ref": "codelists/UNECE_UNTDID1001.json#/$defs/codeList/UNTDID1001Type"
+            "allOf": [
+              {
+                "$ref": "codelists/UNECE_UNTDID1001.json#/$defs/codeList/UNTDID1001Type"
+              },
+              {
+                "const": [
+                  "105",
+                  "220",
+                  "223",
+                  "224",
+                  "245",
+                  "315",
+                  "320",
+                  "325",
+                  "326",
+                  "380",
+                  "389",
+                  "393",
+                  "394",
+                  "395",
+                  "398",
+                  "399",
+                  "455",
+                  "481",
+                  "533",
+                  "534",
+                  "640",
+                  "719",
+                  "731",
+                  "747"
+                ]
+              }
+            ]
           },
           "listId": {
             "$ref": "UNECE-BasicComponents.json#/$defs/pdt/stringType"
@@ -1609,7 +1656,23 @@
         "type": "object",
         "properties": {
           "content": {
-            "$ref": "codelists/UNECE_UNTDID1225.json#/$defs/codeList/UNTDID1225Type"
+            "allOf": [
+              {
+                "$ref": "codelists/UNECE_UNTDID1225.json#/$defs/codeList/UNTDID1225Type"
+              },
+              {
+                "const": [
+                  "5",
+                  "6",
+                  "7",
+                  "9",
+                  "18",
+                  "31",
+                  "35",
+                  "43"
+                ]
+              }
+            ]
           },
           "listId": {
             "$ref": "UNECE-BasicComponents.json#/$defs/pdt/stringType"
@@ -1731,7 +1794,25 @@
         "type": "object",
         "properties": {
           "content": {
-            "$ref": "codelists/UNECE_UNTDID7233.json#/$defs/codeList/UNTDID7233Type"
+            "allOf": [
+              {
+                "$ref": "codelists/UNECE_UNTDID7233.json#/$defs/codeList/UNTDID7233Type"
+              },
+              {
+                "const": [
+                  "50",
+                  "51",
+                  "52",
+                  "64",
+                  "65",
+                  "67",
+                  "78",
+                  "79",
+                  "81",
+                  "82"
+                ]
+              }
+            ]
           },
           "listId": {
             "$ref": "UNECE-BasicComponents.json#/$defs/pdt/stringType"
@@ -1756,7 +1837,27 @@
         "type": "object",
         "properties": {
           "content": {
-            "$ref": "codelists/UNECE_UNTDID1001.json#/$defs/codeList/UNTDID1001Type"
+            "allOf": [
+              {
+                "$ref": "codelists/UNECE_UNTDID1001.json#/$defs/codeList/UNTDID1001Type"
+              },
+              {
+                "const": [
+                  "261",
+                  "262",
+                  "265",
+                  "296",
+                  "324",
+                  "326",
+                  "380",
+                  "381",
+                  "383",
+                  "385",
+                  "386",
+                  "389"
+                ]
+              }
+            ]
           },
           "listId": {
             "$ref": "UNECE-BasicComponents.json#/$defs/pdt/stringType"
@@ -1853,7 +1954,36 @@
         "type": "object",
         "properties": {
           "content": {
-            "$ref": "codelists/UNECE_UNTDID3035.json#/$defs/codeList/UNTDID3035Type"
+            "allOf": [
+              {
+                "$ref": "codelists/UNECE_UNTDID3035.json#/$defs/codeList/UNTDID3035Type"
+              },
+              {
+                "const": [
+                  "AB",
+                  "AE",
+                  "AF",
+                  "AH",
+                  "AQ",
+                  "AR",
+                  "AT",
+                  "AU",
+                  "CA",
+                  "CG",
+                  "CN",
+                  "CPD",
+                  "CX",
+                  "CZ",
+                  "DGB",
+                  "EX",
+                  "FW",
+                  "GS",
+                  "IM",
+                  "IV",
+                  "PE"
+                ]
+              }
+            ]
           },
           "listId": {
             "$ref": "UNECE-BasicComponents.json#/$defs/pdt/stringType"
@@ -2197,7 +2327,96 @@
         "type": "object",
         "properties": {
           "content": {
-            "$ref": "codelists/UNECE_UNTDID4465.json#/$defs/codeList/UNTDID4465Type"
+            "allOf": [
+              {
+                "$ref": "codelists/UNECE_UNTDID4465.json#/$defs/codeList/UNTDID4465Type"
+              },
+              {
+                "const": [
+                  "1",
+                  "5",
+                  "7",
+                  "8",
+                  "9",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "30",
+                  "34",
+                  "36",
+                  "37",
+                  "38",
+                  "39",
+                  "40",
+                  "41",
+                  "42",
+                  "43",
+                  "44",
+                  "45",
+                  "46",
+                  "47",
+                  "48",
+                  "50",
+                  "52",
+                  "53",
+                  "54",
+                  "55",
+                  "56",
+                  "57",
+                  "58",
+                  "59",
+                  "60",
+                  "61",
+                  "62",
+                  "63",
+                  "64",
+                  "65",
+                  "66",
+                  "67",
+                  "68",
+                  "69",
+                  "70",
+                  "73",
+                  "74",
+                  "75",
+                  "77",
+                  "78",
+                  "79",
+                  "80",
+                  "81",
+                  "82",
+                  "83",
+                  "84",
+                  "85",
+                  "86",
+                  "87",
+                  "88",
+                  "89",
+                  "90",
+                  "91",
+                  "92",
+                  "93",
+                  "94",
+                  "95",
+                  "96",
+                  "97",
+                  "98",
+                  "99",
+                  "100",
+                  "ZZZ"
+                ]
+              }
+            ]
           },
           "listId": {
             "$ref": "UNECE-BasicComponents.json#/$defs/pdt/stringType"
@@ -2441,7 +2660,67 @@
         "type": "object",
         "properties": {
           "content": {
-            "$ref": "codelists/UNECE_UNTDID7233.json#/$defs/codeList/UNTDID7233Type"
+            "allOf": [
+              {
+                "$ref": "codelists/UNECE_UNTDID7233.json#/$defs/codeList/UNTDID7233Type"
+              },
+              {
+                "const": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9",
+                  "10",
+                  "31",
+                  "32",
+                  "33",
+                  "34",
+                  "35",
+                  "36",
+                  "37",
+                  "38",
+                  "39",
+                  "40",
+                  "41",
+                  "42",
+                  "43",
+                  "44",
+                  "45",
+                  "46",
+                  "47",
+                  "48",
+                  "49",
+                  "53",
+                  "54",
+                  "55",
+                  "56",
+                  "57",
+                  "58",
+                  "59",
+                  "60",
+                  "61",
+                  "62",
+                  "63",
+                  "66",
+                  "68",
+                  "69",
+                  "70",
+                  "71",
+                  "72",
+                  "73",
+                  "74",
+                  "75",
+                  "76",
+                  "77",
+                  "80"
+                ]
+              }
+            ]
           },
           "listId": {
             "$ref": "UNECE-BasicComponents.json#/$defs/pdt/stringType"
@@ -2723,7 +3002,33 @@
         "type": "object",
         "properties": {
           "content": {
-            "$ref": "codelists/UNECE_UNTDID1001.json#/$defs/codeList/UNTDID1001Type"
+            "allOf": [
+              {
+                "$ref": "codelists/UNECE_UNTDID1001.json#/$defs/codeList/UNTDID1001Type"
+              },
+              {
+                "const": [
+                  "310",
+                  "311",
+                  "312",
+                  "360",
+                  "361",
+                  "362",
+                  "363",
+                  "364",
+                  "365",
+                  "366",
+                  "367",
+                  "368",
+                  "369",
+                  "442",
+                  "443",
+                  "444",
+                  "445",
+                  "446"
+                ]
+              }
+            ]
           },
           "listId": {
             "$ref": "UNECE-BasicComponents.json#/$defs/pdt/stringType"
@@ -2773,7 +3078,16 @@
         "type": "object",
         "properties": {
           "content": {
-            "$ref": "codelists/UNECE_UNTDID1001.json#/$defs/codeList/UNTDID1001Type"
+            "allOf": [
+              {
+                "$ref": "codelists/UNECE_UNTDID1001.json#/$defs/codeList/UNTDID1001Type"
+              },
+              {
+                "const": [
+                  "481"
+                ]
+              }
+            ]
           },
           "listId": {
             "$ref": "UNECE-BasicComponents.json#/$defs/pdt/stringType"
@@ -2873,7 +3187,21 @@
         "type": "object",
         "properties": {
           "content": {
-            "$ref": "codelists/UNECE_UNTDID1001.json#/$defs/codeList/UNTDID1001Type"
+            "allOf": [
+              {
+                "$ref": "codelists/UNECE_UNTDID1001.json#/$defs/codeList/UNTDID1001Type"
+              },
+              {
+                "const": [
+                  "240",
+                  "241",
+                  "242",
+                  "245",
+                  "288",
+                  "291"
+                ]
+              }
+            ]
           },
           "listId": {
             "$ref": "UNECE-BasicComponents.json#/$defs/pdt/stringType"
@@ -3201,7 +3529,17 @@
         "type": "object",
         "properties": {
           "content": {
-            "$ref": "codelists/UNECE_UNTDID8249.json#/$defs/codeList/UNTDID8249Type"
+            "allOf": [
+              {
+                "$ref": "codelists/UNECE_UNTDID8249.json#/$defs/codeList/UNTDID8249Type"
+              },
+              {
+                "const": [
+                  "7",
+                  "8"
+                ]
+              }
+            ]
           },
           "listId": {
             "$ref": "UNECE-BasicComponents.json#/$defs/pdt/stringType"
@@ -3226,7 +3564,19 @@
         "type": "object",
         "properties": {
           "content": {
-            "$ref": "codelists/UNECE_UNTDID8249.json#/$defs/codeList/UNTDID8249Type"
+            "allOf": [
+              {
+                "$ref": "codelists/UNECE_UNTDID8249.json#/$defs/codeList/UNTDID8249Type"
+              },
+              {
+                "const": [
+                  "2",
+                  "3",
+                  "6",
+                  "8"
+                ]
+              }
+            ]
           },
           "listId": {
             "$ref": "UNECE-BasicComponents.json#/$defs/pdt/stringType"
@@ -3251,7 +3601,38 @@
         "type": "object",
         "properties": {
           "content": {
-            "$ref": "codelists/UNECE_UNTDID8249.json#/$defs/codeList/UNTDID8249Type"
+            "allOf": [
+              {
+                "$ref": "codelists/UNECE_UNTDID8249.json#/$defs/codeList/UNTDID8249Type"
+              },
+              {
+                "const": [
+                  "4",
+                  "5",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29",
+                  "30"
+                ]
+              }
+            ]
           },
           "listId": {
             "$ref": "UNECE-BasicComponents.json#/$defs/pdt/stringType"
@@ -3351,7 +3732,149 @@
         "type": "object",
         "properties": {
           "content": {
-            "$ref": "codelists/UNECE_UNTDID8179.json#/$defs/codeList/UNTDID8179Type"
+            "allOf": [
+              {
+                "$ref": "codelists/UNECE_UNTDID8179.json#/$defs/codeList/UNTDID8179Type"
+              },
+              {
+                "const": [
+                  "1501",
+                  "1502",
+                  "1503",
+                  "1504",
+                  "1505",
+                  "1506",
+                  "1511",
+                  "1512",
+                  "1513",
+                  "1514",
+                  "1515",
+                  "1516",
+                  "1517",
+                  "1518",
+                  "1519",
+                  "1521",
+                  "1522",
+                  "1523",
+                  "1524",
+                  "1525",
+                  "1531",
+                  "1532",
+                  "1533",
+                  "1534",
+                  "1541",
+                  "1542",
+                  "1543",
+                  "1551",
+                  "1552",
+                  "1553",
+                  "1591",
+                  "1592",
+                  "1593",
+                  "1594",
+                  "1601",
+                  "1602",
+                  "1603",
+                  "1604",
+                  "1605",
+                  "1606",
+                  "1607",
+                  "1711",
+                  "1712",
+                  "1721",
+                  "1723",
+                  "1724",
+                  "1725",
+                  "1726",
+                  "1727",
+                  "1728",
+                  "1729",
+                  "1751",
+                  "1752",
+                  "1753",
+                  "1761",
+                  "1762",
+                  "1763",
+                  "1764",
+                  "1765",
+                  "1766",
+                  "1781",
+                  "1782",
+                  "2201",
+                  "2202",
+                  "2203",
+                  "2301",
+                  "2302",
+                  "2303",
+                  "2304",
+                  "2305",
+                  "3100",
+                  "3101",
+                  "3102",
+                  "3103",
+                  "3104",
+                  "3105",
+                  "3106",
+                  "3107",
+                  "3108",
+                  "3109",
+                  "3110",
+                  "3111",
+                  "3112",
+                  "3113",
+                  "3114",
+                  "3115",
+                  "3116",
+                  "3117",
+                  "3118",
+                  "3119",
+                  "3120",
+                  "3121",
+                  "3122",
+                  "3123",
+                  "3124",
+                  "3125",
+                  "3126",
+                  "3127",
+                  "3128",
+                  "3129",
+                  "3130",
+                  "3131",
+                  "3132",
+                  "3133",
+                  "3134",
+                  "3135",
+                  "3136",
+                  "3137",
+                  "3138",
+                  "3201",
+                  "3301",
+                  "3302",
+                  "3303",
+                  "3304",
+                  "4000",
+                  "5000",
+                  "8021",
+                  "8022",
+                  "8023",
+                  "8161",
+                  "8162",
+                  "8163",
+                  "8441",
+                  "8442",
+                  "8443",
+                  "8444",
+                  "8445",
+                  "8446",
+                  "8447",
+                  "8448",
+                  "8451",
+                  "8452",
+                  "8453",
+                  "8454"
+                ]
+              }
+            ]
           },
           "listId": {
             "$ref": "UNECE-BasicComponents.json#/$defs/pdt/stringType"
@@ -3576,7 +4099,39 @@
         "type": "object",
         "properties": {
           "content": {
-            "$ref": "codelists/UNECE_UNTDID4405.json#/$defs/codeList/UNTDID4405Type"
+            "allOf": [
+              {
+                "$ref": "codelists/UNECE_UNTDID4405.json#/$defs/codeList/UNTDID4405Type"
+              },
+              {
+                "const": [
+                  "1",
+                  "2",
+                  "3",
+                  "17",
+                  "28",
+                  "35",
+                  "36",
+                  "38",
+                  "39",
+                  "40",
+                  "41",
+                  "42",
+                  "43",
+                  "44",
+                  "70",
+                  "73",
+                  "85",
+                  "95",
+                  "97",
+                  "108",
+                  "109",
+                  "111",
+                  "112",
+                  "121"
+                ]
+              }
+            ]
           },
           "listId": {
             "$ref": "UNECE-BasicComponents.json#/$defs/pdt/stringType"
@@ -4061,11 +4616,7 @@
           "$ref": "UNECE-BasicComponents.json#/$defs/udt/percentType"
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "communicationEventType": {
@@ -4154,11 +4705,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "communicationPairingType": {
@@ -4198,11 +4745,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "controlSettingParameterType": {
@@ -4272,11 +4815,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "correctiveActionType": {
@@ -4300,11 +4839,7 @@
           "$ref": "UNECE-BasicComponents.json#/$defs/udt/textType"
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "correctiveEventType": {
@@ -4318,11 +4853,7 @@
           "$ref": "UNECE-BasicComponents.json#/$defs/udt/idType"
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "csEngineeringCoordinateReferenceSystemType": {
@@ -4366,11 +4897,7 @@
         "id",
         "level"
       ],
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "documentHandlingInstructionsType": {
@@ -4389,11 +4916,7 @@
           "$ref": "UNECE-BasicComponents.json#/$defs/udt/indicatorType"
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "exchangedDocumentType": {
@@ -4475,11 +4998,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "foundStowawayType": {
@@ -4617,11 +5136,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "geographicalCoordinateType": {
@@ -4714,11 +5229,7 @@
           ]
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "handlingInstructionsType": {
@@ -4781,11 +5292,7 @@
           "$ref": "UNECE-BasicComponents.json#/$defs/udt/codeType"
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "inspectionNoteType": {
@@ -4804,11 +5311,7 @@
           "$ref": "UNECE-BasicComponents.json#/$defs/udt/dateTimeType"
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "inspectionReferenceType": {
@@ -4857,11 +5360,7 @@
           "$ref": "UNECE-BasicComponents.json#/$defs/udt/codeType"
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "logisticsLocationType": {
@@ -4992,11 +5491,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "logisticsPackageType": {
@@ -5054,11 +5549,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "logisticsPackagingType": {
@@ -5194,11 +5685,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "logisticsStatusType": {
@@ -5259,11 +5746,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "logisticsTransportEquipmentType": {
@@ -5570,11 +6053,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "logisticsTransportMeansType": {
@@ -5703,11 +6182,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "logisticsTransportMovementType": {
@@ -5910,11 +6385,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "mdhHealthIndicationType": {
@@ -5967,11 +6438,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "mdhIllnessType": {
@@ -6031,11 +6498,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "mdhSanitaryMeasureType": {
@@ -6064,11 +6527,7 @@
           "$ref": "#/$defs/qdt/formattedDateTimeType"
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "mdhTransportationHealthType": {
@@ -6221,11 +6680,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "monitoringIOTDeviceType": {
@@ -6440,11 +6895,7 @@
           ]
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "monitoringSensorType": {
@@ -6585,11 +7036,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "oemEquipmentType": {
@@ -6630,11 +7077,7 @@
           ]
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "operationalParameterType": {
@@ -6704,11 +7147,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "personalLanguageProficiencyType": {
@@ -6747,11 +7186,7 @@
           "$ref": "#/$defs/qdt/languageCodeType"
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "preventiveActionType": {
@@ -6775,11 +7210,7 @@
           "$ref": "UNECE-BasicComponents.json#/$defs/udt/textType"
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "radioactiveRadionuclideType": {
@@ -6808,11 +7239,7 @@
           "$ref": "UNECE-BasicComponents.json#/$defs/udt/indicatorType"
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "referencedDocumentType": {
@@ -6876,11 +7303,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "referencedConsignmentType": {
@@ -6903,11 +7326,7 @@
           }
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "spatialDimensionType": {
@@ -6940,11 +7359,7 @@
           }
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "actionType": {
@@ -6968,11 +7383,7 @@
           "$ref": "UNECE-BasicComponents.json#/$defs/udt/textType"
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "certificateType": {
@@ -7193,11 +7604,7 @@
           ]
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "chemicalTreatmentType": {
@@ -7237,11 +7644,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "circleType": {
@@ -7291,11 +7694,7 @@
       "required": [
         "associatedGeographicalObjectCharacteristic"
       ],
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "conditionType": {
@@ -7340,11 +7739,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "faultType": {
@@ -7402,11 +7797,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "geographicalFeatureType": {
@@ -7488,11 +7879,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "geographicalLineType": {
@@ -7538,11 +7925,7 @@
         "associatedDirectPositionList",
         "associatedGeographicalObjectCharacteristic"
       ],
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "geographicalObjectCharacteristicType": {
@@ -7591,11 +7974,7 @@
           "$ref": "UNECE-BasicComponents.json#/$defs/udt/textType"
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "geographicalPointType": {
@@ -7641,11 +8020,7 @@
         "associatedDirectPositionList",
         "associatedGeographicalObjectCharacteristic"
       ],
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "geographicalSurfaceType": {
@@ -7671,11 +8046,7 @@
           "$ref": "#/$defs/polygonType"
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "inspectionResultType": {
@@ -7840,11 +8211,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "inspectionType": {
@@ -7934,11 +8301,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "linearRingType": {
@@ -7969,11 +8332,7 @@
           ]
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "materialType": {
@@ -8098,11 +8457,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "methodType": {
@@ -8182,11 +8537,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "objectType": {
@@ -8225,11 +8576,7 @@
           "$ref": "UNECE-BasicComponents.json#/$defs/udt/textType"
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "parameterType": {
@@ -8297,11 +8644,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "periodType": {
@@ -8328,11 +8671,7 @@
           "$ref": "UNECE-BasicComponents.json#/$defs/udt/dateTimeType"
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "polygonType": {
@@ -8377,11 +8716,7 @@
       "required": [
         "exteriorLinearRing"
       ],
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "radioactiveIsotopeType": {
@@ -8421,11 +8756,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "rangeType": {
@@ -8469,11 +8800,7 @@
           "$ref": "UNECE-BasicComponents.json#/$defs/udt/codeType"
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "toleranceType": {
@@ -8517,11 +8844,7 @@
           "$ref": "UNECE-BasicComponents.json#/$defs/udt/percentType"
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "subordinateLocationType": {
@@ -8573,11 +8896,7 @@
           ]
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "subordinateLocationType": {
@@ -8641,11 +8960,7 @@
           ]
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "supplyChainConsignmentItemType": {
@@ -8737,11 +9052,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "supplyChainConsignmentType": {
@@ -9360,11 +9671,7 @@
           ]
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "tradeLineItemType": {
@@ -9378,11 +9685,7 @@
           "$ref": "UNECE-BasicComponents.json#/$defs/udt/textType"
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "tradeContactType": {
@@ -9445,11 +9748,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "tradeCountryType": {
@@ -9475,11 +9774,7 @@
           }
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "tradeDeliveryTermsType": {
@@ -9509,11 +9804,7 @@
           ]
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "tradeLocationType": {
@@ -9543,11 +9834,7 @@
           }
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "tradePartyType": {
@@ -9609,11 +9896,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "transportationWasteRecoveryDisposalProcessType": {
@@ -9632,11 +9915,7 @@
           "$ref": "UNECE-BasicComponents.json#/$defs/udt/textType"
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "transportDangerousGoodsType": {
@@ -9716,11 +9995,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "transportEventType": {
@@ -9792,7 +10067,19 @@
           "description": "The logistics location where this transport event occurs.",
           "oneOf": [
             {
-              "$ref": "#/$defs/logisticsLocationType"
+              "$ref": "#/$defs/logisticsLocationType",
+              "properties": {
+                "typeCode": {
+                  "properties": {
+                    "content": {
+                      "const": [
+                        "10",
+                        "98"
+                      ]
+                    }
+                  }
+                }
+              }
             },
             {
               "$ref": "UNECE-BasicComponents.json#/$defs/resourceType"
@@ -9844,11 +10131,7 @@
           ]
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "transportRouteType": {
@@ -9906,11 +10189,7 @@
           ]
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "serviceType": {
@@ -9996,11 +10275,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "universalCommunicationType": {
@@ -10029,11 +10304,7 @@
           }
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "xheContextType": {
@@ -10067,11 +10338,7 @@
           "minItems": 0
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "xheDocumentType": {
@@ -10127,11 +10394,7 @@
         "id",
         "creationDateTime"
       ],
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "xheEnvelopeType": {
@@ -10186,11 +10449,7 @@
         "versionId",
         "metadataXHEDocument"
       ],
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "xheIdentityType": {
@@ -10207,11 +10466,7 @@
       "required": [
         "id"
       ],
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "xheParameterType": {
@@ -10234,11 +10489,7 @@
         "typeCode",
         "value"
       ],
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "xhePartyType": {
@@ -10263,11 +10514,7 @@
           "minItems": 1
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "xhePayloadInstanceType": {
@@ -10401,11 +10648,7 @@
       "required": [
         "isOrHasEncrypted"
       ],
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "xhePayloadType": {
@@ -10430,11 +10673,7 @@
           "minItems": 1
         }
       },
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     },
     "xheReferenceType": {
@@ -10471,11 +10710,7 @@
       "required": [
         "id"
       ],
-      "allOf": [
-        {
-          "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType"
-        }
-      ],
+      "$ref": "UNECE-BasicComponents.json#/$defs/extensibleType",
       "unevaluatedProperties": false
     }
   }

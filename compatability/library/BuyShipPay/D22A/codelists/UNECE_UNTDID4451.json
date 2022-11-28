@@ -1,13 +1,1619 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/uncefact/spec-JSONschema/tree/main/compatability/library/BuyShipPay/D22A/UNECE_UNTDID4451",
+  "$id": "https://github.com/uncefact/spec-JSONschema/tree/main/JSONschema2020-12/library/BuyShipPay/D22A/UNECE_UNTDID4451",
   "title": "UNECE_UNTDID4451",
   "description": "Copyright (C) UN/CEFACT (2022). All Rights Reserved.\n\nThis document and translations of it may be copied and furnished to others, and derivative works that comment on or otherwise explain it or assist in its implementation may be prepared, copied, published and distributed, in whole or in part, without restriction of any kind, provided that the above copyright notice and this paragraph are included on all such copies and derivative works. However, this document itself may not be modified in any way, such as by removing the copyright notice or references to UN/CEFACT, except as needed for the purpose of developing UN/CEFACT specifications, in which case the procedures for copyrights defined in the UN/CEFACT Intellectual Property Rights document must be followed, or as required to translate it into languages other than English.\n\nThe limited permissions granted above are perpetual and will not be revoked by UN/CEFACT or its successors or assigns.\n\nThis document and the information contained herein is provided on an \"AS IS\" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.",
   "$defs": {
     "codeList": {
       "UNTDID4451Type": {
         "title": "Text subject code qualifier",
-        "description": "Code qualifying the subject of the text.\r\n\r\nApplicable codes:\r\n* 'AAA' - Goods item description\r\n* 'AAB' - Payment term\r\n* 'AAC' - Dangerous goods additional information\r\n* 'AAD' - Dangerous goods technical name\r\n* 'AAE' - Acknowledgement description\r\n* 'AAF' - Rate additional information\r\n* 'AAG' - Party instructions\r\n* 'AAI' - General information\r\n* 'AAJ' - Additional conditions of sale/purchase\r\n* 'AAK' - Price conditions\r\n* 'AAL' - Goods dimensions in characters\r\n* 'AAM' - Equipment re-usage restrictions\r\n* 'AAN' - Handling restriction\r\n* 'AAO' - Error description (free text)\r\n* 'AAP' - Response (free text)\r\n* 'AAQ' - Package content's description\r\n* 'AAR' - Terms of delivery\r\n* 'AAS' - Bill of lading remarks\r\n* 'AAT' - Mode of settlement information\r\n* 'AAU' - Consignment invoice information\r\n* 'AAV' - Clearance invoice information\r\n* 'AAW' - Letter of credit information\r\n* 'AAX' - License information\r\n* 'AAY' - Certification statements\r\n* 'AAZ' - Additional export information\r\n* 'ABA' - Tariff statements\r\n* 'ABB' - Medical history\r\n* 'ABC' - Conditions of sale or purchase\r\n* 'ABD' - Contract document type\r\n* 'ABE' - Additional terms and/or conditions (documentary credit)\r\n* 'ABF' - Instructions or information about standby documentary credit\r\n* 'ABG' - Instructions or information about partial shipment(s)\r\n* 'ABH' - Instructions or information about transhipment(s)\r\n* 'ABI' - Additional handling instructions documentary credit\r\n* 'ABJ' - Domestic routing information\r\n* 'ABK' - Chargeable category of equipment\r\n* 'ABL' - Government information\r\n* 'ABM' - Onward routing information\r\n* 'ABN' - Accounting information\r\n* 'ABO' - Discrepancy information\r\n* 'ABP' - Confirmation instructions\r\n* 'ABQ' - Method of issuance\r\n* 'ABR' - Documents delivery instructions\r\n* 'ABS' - Additional conditions\r\n* 'ABT' - Information/instructions about additional amounts covered\r\n* 'ABU' - Deferred payment termed additional\r\n* 'ABV' - Acceptance terms additional\r\n* 'ABW' - Negotiation terms additional\r\n* 'ABX' - Document name and documentary requirements\r\n* 'ABZ' - Instructions/information about revolving documentary credit\r\n* 'ACA' - Documentary requirements\r\n* 'ACB' - Additional information\r\n* 'ACC' - Factor assignment clause\r\n* 'ACD' - Reason\r\n* 'ACE' - Dispute\r\n* 'ACF' - Additional attribute information\r\n* 'ACG' - Absence declaration\r\n* 'ACH' - Aggregation statement\r\n* 'ACI' - Compilation statement\r\n* 'ACJ' - Definitional exception\r\n* 'ACK' - Privacy statement\r\n* 'ACL' - Quality statement\r\n* 'ACM' - Statistical description\r\n* 'ACN' - Statistical definition\r\n* 'ACO' - Statistical name\r\n* 'ACP' - Statistical title\r\n* 'ACQ' - Off-dimension information\r\n* 'ACR' - Unexpected stops information\r\n* 'ACS' - Principles\r\n* 'ACT' - Terms and definition\r\n* 'ACU' - Segment name\r\n* 'ACV' - Simple data element name\r\n* 'ACW' - Scope\r\n* 'ACX' - Message type name\r\n* 'ACY' - Introduction\r\n* 'ACZ' - Glossary\r\n* 'ADA' - Functional definition\r\n* 'ADB' - Examples\r\n* 'ADC' - Cover page\r\n* 'ADD' - Dependency (syntax) notes\r\n* 'ADE' - Code value name\r\n* 'ADF' - Code list name\r\n* 'ADG' - Clarification of usage\r\n* 'ADH' - Composite data element name\r\n* 'ADI' - Field of application\r\n* 'ADJ' - Type of assets and liabilities\r\n* 'ADK' - Promotion information\r\n* 'ADL' - Meter condition\r\n* 'ADM' - Meter reading information\r\n* 'ADN' - Type of transaction reason\r\n* 'ADO' - Type of survey question\r\n* 'ADP' - Carrier's agent counter information\r\n* 'ADQ' - Description of work item on equipment\r\n* 'ADR' - Message definition\r\n* 'ADS' - Booked item information\r\n* 'ADT' - Source of document\r\n* 'ADU' - Note\r\n* 'ADV' - Fixed part of segment clarification text\r\n* 'ADW' - Characteristics of goods\r\n* 'ADX' - Additional discharge instructions\r\n* 'ADY' - Container stripping instructions\r\n* 'ADZ' - CSC (Container Safety Convention) plate information\r\n* 'AEA' - Cargo remarks\r\n* 'AEB' - Temperature control instructions\r\n* 'AEC' - Text refers to expected data\r\n* 'AED' - Text refers to received data\r\n* 'AEE' - Section clarification text\r\n* 'AEF' - Information to the beneficiary\r\n* 'AEG' - Information to the applicant\r\n* 'AEH' - Instructions to the beneficiary\r\n* 'AEI' - Instructions to the applicant\r\n* 'AEJ' - Controlled atmosphere\r\n* 'AEK' - Take off annotation\r\n* 'AEL' - Price variation narrative\r\n* 'AEM' - Documentary credit amendment instructions\r\n* 'AEN' - Standard method narrative\r\n* 'AEO' - Project narrative\r\n* 'AEP' - Radioactive goods, additional information\r\n* 'AEQ' - Bank-to-bank information\r\n* 'AER' - Reimbursement instructions\r\n* 'AES' - Reason for amending a message\r\n* 'AET' - Instructions to the paying and/or accepting and/or negotiating bank\r\n* 'AEU' - Interest instructions\r\n* 'AEV' - Agent commission\r\n* 'AEW' - Remitting bank instructions\r\n* 'AEX' - Instructions to the collecting bank\r\n* 'AEY' - Collection amount instructions\r\n* 'AEZ' - Internal auditing information\r\n* 'AFA' - Constraint\r\n* 'AFB' - Comment\r\n* 'AFC' - Semantic note\r\n* 'AFD' - Help text\r\n* 'AFE' - Legend\r\n* 'AFF' - Batch code structure\r\n* 'AFG' - Product application\r\n* 'AFH' - Customer complaint\r\n* 'AFI' - Probable cause of fault\r\n* 'AFJ' - Defect description\r\n* 'AFK' - Repair description\r\n* 'AFL' - Review comments\r\n* 'AFM' - Title\r\n* 'AFN' - Description of amount\r\n* 'AFO' - Responsibilities\r\n* 'AFP' - Supplier\r\n* 'AFQ' - Purchase region\r\n* 'AFR' - Affiliation\r\n* 'AFS' - Borrower\r\n* 'AFT' - Line of business\r\n* 'AFU' - Financial institution\r\n* 'AFV' - Business founder\r\n* 'AFW' - Business history\r\n* 'AFX' - Banking arrangements\r\n* 'AFY' - Business origin\r\n* 'AFZ' - Brand names' description\r\n* 'AGA' - Business financing details\r\n* 'AGB' - Competition\r\n* 'AGC' - Construction process details\r\n* 'AGD' - Construction specialty\r\n* 'AGE' - Contract information\r\n* 'AGF' - Corporate filing\r\n* 'AGG' - Customer information\r\n* 'AGH' - Copyright notice\r\n* 'AGI' - Contingent debt\r\n* 'AGJ' - Conviction details\r\n* 'AGK' - Equipment\r\n* 'AGL' - Workforce description\r\n* 'AGM' - Exemption\r\n* 'AGN' - Future plans\r\n* 'AGO' - Interviewee conversation information\r\n* 'AGP' - Intangible asset\r\n* 'AGQ' - Inventory\r\n* 'AGR' - Investment\r\n* 'AGS' - Intercompany relations information\r\n* 'AGT' - Joint venture\r\n* 'AGU' - Loan\r\n* 'AGV' - Long term debt\r\n* 'AGW' - Location\r\n* 'AGX' - Current legal structure\r\n* 'AGY' - Marital contract\r\n* 'AGZ' - Marketing activities\r\n* 'AHA' - Merger\r\n* 'AHB' - Marketable securities\r\n* 'AHC' - Business debt\r\n* 'AHD' - Original legal structure\r\n* 'AHE' - Employee sharing arrangements\r\n* 'AHF' - Organization details\r\n* 'AHG' - Public record details\r\n* 'AHH' - Price range\r\n* 'AHI' - Qualifications\r\n* 'AHJ' - Registered activity\r\n* 'AHK' - Criminal sentence\r\n* 'AHL' - Sales method\r\n* 'AHM' - Educational institution information\r\n* 'AHN' - Status details\r\n* 'AHO' - Sales\r\n* 'AHP' - Spouse information\r\n* 'AHQ' - Educational degree information\r\n* 'AHR' - Shareholding information\r\n* 'AHS' - Sales territory\r\n* 'AHT' - Accountant's comments\r\n* 'AHU' - Exemption law location\r\n* 'AHV' - Share classifications\r\n* 'AHW' - Forecast\r\n* 'AHX' - Event location\r\n* 'AHY' - Facility occupancy\r\n* 'AHZ' - Import and export details\r\n* 'AIA' - Additional facility information\r\n* 'AIB' - Inventory value\r\n* 'AIC' - Education\r\n* 'AID' - Event\r\n* 'AIE' - Agent\r\n* 'AIF' - Domestically agreed financial statement details\r\n* 'AIG' - Other current asset description\r\n* 'AIH' - Other current liability description\r\n* 'AII' - Former business activity\r\n* 'AIJ' - Trade name use\r\n* 'AIK' - Signing authority\r\n* 'AIL' - Guarantee\r\n* 'AIM' - Holding company operation\r\n* 'AIN' - Consignment routing\r\n* 'AIO' - Letter of protest\r\n* 'AIP' - Question\r\n* 'AIQ' - Party information\r\n* 'AIR' - Area boundaries description\r\n* 'AIS' - Advertisement information\r\n* 'AIT' - Financial statement details\r\n* 'AIU' - Access instructions\r\n* 'AIV' - Liquidity\r\n* 'AIW' - Credit line\r\n* 'AIX' - Warranty terms\r\n* 'AIY' - Division description\r\n* 'AIZ' - Reporting instruction\r\n* 'AJA' - Examination result\r\n* 'AJB' - Laboratory result\r\n* 'ALC' - Allowance/charge information\r\n* 'ALD' - X-ray result\r\n* 'ALE' - Pathology result\r\n* 'ALF' - Intervention description\r\n* 'ALG' - Summary of admittance\r\n* 'ALH' - Medical treatment course detail\r\n* 'ALI' - Prognosis\r\n* 'ALJ' - Instruction to patient\r\n* 'ALK' - Instruction to physician\r\n* 'ALL' - All documents\r\n* 'ALM' - Medicine treatment\r\n* 'ALN' - Medicine dosage and administration\r\n* 'ALO' - Availability of patient\r\n* 'ALP' - Reason for service request\r\n* 'ALQ' - Purpose of service\r\n* 'ARR' - Arrival conditions\r\n* 'ARS' - Service requester's comment\r\n* 'AUT' - Authentication\r\n* 'AUU' - Requested location description\r\n* 'AUV' - Medicine administration condition\r\n* 'AUW' - Patient information\r\n* 'AUX' - Precautionary measure\r\n* 'AUY' - Service characteristic\r\n* 'AUZ' - Planned event comment\r\n* 'AVA' - Expected delay comment\r\n* 'AVB' - Transport requirements comment\r\n* 'AVC' - Temporary approval condition\r\n* 'AVD' - Customs Valuation Information\r\n* 'AVE' - Value Added Tax (VAT) margin scheme\r\n* 'AVF' - Maritime Declaration of Health\r\n* 'BAG' - Passenger baggage information\r\n* 'BAH' - Maritime Declaration of Health\r\n* 'BAI' - Additional product information address\r\n* 'BAJ' - Information to be printed on despatch advice\r\n* 'BAK' - Missing goods remarks\r\n* 'BAL' - Non-acceptance information\r\n* 'BAM' - Returns information\r\n* 'BAN' - Sub-line item information\r\n* 'BAO' - Test information\r\n* 'BAP' - External link\r\n* 'BAQ' - VAT exemption reason\r\n* 'BAR' - Processing Instructions\r\n* 'BAS' - Relay Instructions\r\n* 'BAT' - SIMA applicable\r\n* 'BAU' - Appeals program code\r\n* 'BAV' - SIMA subject\r\n* 'BAW' - Surtax applicable\r\n* 'BAX' - SIMA security bond\r\n* 'BAY' - Surtax subject\r\n* 'BAZ' - Safeguard applicable\r\n* 'BBA' - Safeguard applicable\r\n* 'BBB' - Safeguard subject\r\n* 'BLC' - Transport contract document clause\r\n* 'BLD' - Instruction to prepare the patient\r\n* 'BLE' - Medicine treatment comment\r\n* 'BLF' - Examination result comment\r\n* 'BLG' - Service request comment\r\n* 'BLH' - Prescription reason\r\n* 'BLI' - Prescription comment\r\n* 'BLJ' - Clinical investigation comment\r\n* 'BLK' - Medicinal specification comment\r\n* 'BLL' - Economic contribution comment\r\n* 'BLM' - Status of a plan\r\n* 'BLN' - Random sample test information\r\n* 'BLO' - Period of time\r\n* 'BLP' - Legislation\r\n* 'BLQ' - Security measures requested\r\n* 'BLR' - Transport contract document remark\r\n* 'BLS' - Previous port of call security information\r\n* 'BLT' - Security information\r\n* 'BLU' - Waste information\r\n* 'BLV' - B2C marketing information, short description\r\n* 'BLW' - B2B marketing information, long description\r\n* 'BLX' - B2C marketing information, long description\r\n* 'BLY' - Product ingredients\r\n* 'BLZ' - Location short name\r\n* 'BMA' - Packaging material information\r\n* 'BMB' - Filler material information\r\n* 'BMC' - Ship-to-ship activity information\r\n* 'BMD' - Package material description\r\n* 'BME' - Consumer level package marking\r\n* 'BMF' - SIMA measure in force\r\n* 'BMG' - Pre-CARM\r\n* 'BMH' - SIMA measure type\r\n* 'CCI' - Customs clearance instructions\r\n* 'CCJ' - Sub Type Code\r\n* 'CCK' - SIMA information\r\n* 'CCL' - Time limit end\r\n* 'CCM' - Time limit start\r\n* 'CCN' - Warehouse time limit\r\n* 'CCO' - Value for duty information\r\n* 'CEX' - Customs clearance instructions export\r\n* 'CHG' - Change information\r\n* 'CIP' - Customs clearance instruction import\r\n* 'CLP' - Clearance place requested\r\n* 'CLR' - Loading remarks\r\n* 'COI' - Order information\r\n* 'CUR' - Customer remarks\r\n* 'CUS' - Customs declaration information\r\n* 'DAR' - Damage remarks\r\n* 'DCL' - Document issuer declaration\r\n* 'DEL' - Delivery information\r\n* 'DIN' - Delivery instructions\r\n* 'DOC' - Documentation instructions\r\n* 'DUT' - Duty declaration\r\n* 'EUR' - Effective used routing\r\n* 'FBC' - First block to be printed on the transport contract\r\n* 'GBL' - Government bill of lading information\r\n* 'GEN' - Entire transaction set\r\n* 'GS7' - Further information concerning GGVS par. 7\r\n* 'HAN' - Consignment handling instruction\r\n* 'HAZ' - Hazard information\r\n* 'ICN' - Consignment information for consignee\r\n* 'IIN' - Insurance instructions\r\n* 'IMI' - Invoice mailing instructions\r\n* 'IND' - Commercial invoice item description\r\n* 'INS' - Insurance information\r\n* 'INV' - Invoice instruction\r\n* 'IRP' - Information for railway purpose\r\n* 'ITR' - Inland transport details\r\n* 'ITS' - Testing instructions\r\n* 'LAN' - Location Alias\r\n* 'LIN' - Line item\r\n* 'LOI' - Loading instruction\r\n* 'MCO' - Miscellaneous charge order\r\n* 'MDH' - Maritime Declaration of Health\r\n* 'MKS' - Additional marks/numbers information\r\n* 'ORI' - Order instruction\r\n* 'OSI' - Other service information\r\n* 'PAC' - Packing/marking information\r\n* 'PAI' - Payment instructions information\r\n* 'PAY' - Payables information\r\n* 'PKG' - Packaging information\r\n* 'PKT' - Packaging terms information\r\n* 'PMD' - Payment detail/remittance information\r\n* 'PMT' - Payment information\r\n* 'PRD' - Product information\r\n* 'PRF' - Price calculation formula\r\n* 'PRI' - Priority information\r\n* 'PUR' - Purchasing information\r\n* 'QIN' - Quarantine instructions\r\n* 'QQD' - Quality demands/requirements\r\n* 'QUT' - Quotation instruction/information\r\n* 'RAH' - Risk and handling information\r\n* 'REG' - Regulatory information\r\n* 'RET' - Return to origin information\r\n* 'REV' - Receivables\r\n* 'RQR' - Consignment route\r\n* 'SAF' - Safety information\r\n* 'SIC' - Consignment documentary instruction\r\n* 'SIN' - Special instructions\r\n* 'SLR' - Ship line requested\r\n* 'SPA' - Special permission for transport, generally\r\n* 'SPG' - Special permission concerning the goods to be transported\r\n* 'SPH' - Special handling\r\n* 'SPP' - Special permission concerning package\r\n* 'SPT' - Special permission concerning transport means\r\n* 'SRN' - Subsidiary risk number (IATA/DGR)\r\n* 'SSR' - Special service request\r\n* 'SUR' - Supplier remarks\r\n* 'TCA' - Consignment tariff\r\n* 'TDT' - Consignment transport\r\n* 'TRA' - Transportation information\r\n* 'TRR' - Requested tariff\r\n* 'TXD' - Tax declaration\r\n* 'WHI' - Warehouse instruction/information\r\n* 'ZZZ' - Mutually defined",
+        "description": "Code qualifying the subject of the text.",
+        "oneOf": [
+          {
+            "const": "AAA",
+            "title": "Goods item description"
+          },
+          {
+            "const": "AAB",
+            "title": "Payment term"
+          },
+          {
+            "const": "AAC",
+            "title": "Dangerous goods additional information"
+          },
+          {
+            "const": "AAD",
+            "title": "Dangerous goods technical name"
+          },
+          {
+            "const": "AAE",
+            "title": "Acknowledgement description"
+          },
+          {
+            "const": "AAF",
+            "title": "Rate additional information"
+          },
+          {
+            "const": "AAG",
+            "title": "Party instructions"
+          },
+          {
+            "const": "AAI",
+            "title": "General information"
+          },
+          {
+            "const": "AAJ",
+            "title": "Additional conditions of sale/purchase"
+          },
+          {
+            "const": "AAK",
+            "title": "Price conditions"
+          },
+          {
+            "const": "AAL",
+            "title": "Goods dimensions in characters"
+          },
+          {
+            "const": "AAM",
+            "title": "Equipment re-usage restrictions"
+          },
+          {
+            "const": "AAN",
+            "title": "Handling restriction"
+          },
+          {
+            "const": "AAO",
+            "title": "Error description (free text)"
+          },
+          {
+            "const": "AAP",
+            "title": "Response (free text)"
+          },
+          {
+            "const": "AAQ",
+            "title": "Package content's description"
+          },
+          {
+            "const": "AAR",
+            "title": "Terms of delivery"
+          },
+          {
+            "const": "AAS",
+            "title": "Bill of lading remarks"
+          },
+          {
+            "const": "AAT",
+            "title": "Mode of settlement information"
+          },
+          {
+            "const": "AAU",
+            "title": "Consignment invoice information"
+          },
+          {
+            "const": "AAV",
+            "title": "Clearance invoice information"
+          },
+          {
+            "const": "AAW",
+            "title": "Letter of credit information"
+          },
+          {
+            "const": "AAX",
+            "title": "License information"
+          },
+          {
+            "const": "AAY",
+            "title": "Certification statements"
+          },
+          {
+            "const": "AAZ",
+            "title": "Additional export information"
+          },
+          {
+            "const": "ABA",
+            "title": "Tariff statements"
+          },
+          {
+            "const": "ABB",
+            "title": "Medical history"
+          },
+          {
+            "const": "ABC",
+            "title": "Conditions of sale or purchase"
+          },
+          {
+            "const": "ABD",
+            "title": "Contract document type"
+          },
+          {
+            "const": "ABE",
+            "title": "Additional terms and/or conditions (documentary credit)"
+          },
+          {
+            "const": "ABF",
+            "title": "Instructions or information about standby documentary credit"
+          },
+          {
+            "const": "ABG",
+            "title": "Instructions or information about partial shipment(s)"
+          },
+          {
+            "const": "ABH",
+            "title": "Instructions or information about transhipment(s)"
+          },
+          {
+            "const": "ABI",
+            "title": "Additional handling instructions documentary credit"
+          },
+          {
+            "const": "ABJ",
+            "title": "Domestic routing information"
+          },
+          {
+            "const": "ABK",
+            "title": "Chargeable category of equipment"
+          },
+          {
+            "const": "ABL",
+            "title": "Government information"
+          },
+          {
+            "const": "ABM",
+            "title": "Onward routing information"
+          },
+          {
+            "const": "ABN",
+            "title": "Accounting information"
+          },
+          {
+            "const": "ABO",
+            "title": "Discrepancy information"
+          },
+          {
+            "const": "ABP",
+            "title": "Confirmation instructions"
+          },
+          {
+            "const": "ABQ",
+            "title": "Method of issuance"
+          },
+          {
+            "const": "ABR",
+            "title": "Documents delivery instructions"
+          },
+          {
+            "const": "ABS",
+            "title": "Additional conditions"
+          },
+          {
+            "const": "ABT",
+            "title": "Information/instructions about additional amounts covered"
+          },
+          {
+            "const": "ABU",
+            "title": "Deferred payment termed additional"
+          },
+          {
+            "const": "ABV",
+            "title": "Acceptance terms additional"
+          },
+          {
+            "const": "ABW",
+            "title": "Negotiation terms additional"
+          },
+          {
+            "const": "ABX",
+            "title": "Document name and documentary requirements"
+          },
+          {
+            "const": "ABZ",
+            "title": "Instructions/information about revolving documentary credit"
+          },
+          {
+            "const": "ACA",
+            "title": "Documentary requirements"
+          },
+          {
+            "const": "ACB",
+            "title": "Additional information"
+          },
+          {
+            "const": "ACC",
+            "title": "Factor assignment clause"
+          },
+          {
+            "const": "ACD",
+            "title": "Reason"
+          },
+          {
+            "const": "ACE",
+            "title": "Dispute"
+          },
+          {
+            "const": "ACF",
+            "title": "Additional attribute information"
+          },
+          {
+            "const": "ACG",
+            "title": "Absence declaration"
+          },
+          {
+            "const": "ACH",
+            "title": "Aggregation statement"
+          },
+          {
+            "const": "ACI",
+            "title": "Compilation statement"
+          },
+          {
+            "const": "ACJ",
+            "title": "Definitional exception"
+          },
+          {
+            "const": "ACK",
+            "title": "Privacy statement"
+          },
+          {
+            "const": "ACL",
+            "title": "Quality statement"
+          },
+          {
+            "const": "ACM",
+            "title": "Statistical description"
+          },
+          {
+            "const": "ACN",
+            "title": "Statistical definition"
+          },
+          {
+            "const": "ACO",
+            "title": "Statistical name"
+          },
+          {
+            "const": "ACP",
+            "title": "Statistical title"
+          },
+          {
+            "const": "ACQ",
+            "title": "Off-dimension information"
+          },
+          {
+            "const": "ACR",
+            "title": "Unexpected stops information"
+          },
+          {
+            "const": "ACS",
+            "title": "Principles"
+          },
+          {
+            "const": "ACT",
+            "title": "Terms and definition"
+          },
+          {
+            "const": "ACU",
+            "title": "Segment name"
+          },
+          {
+            "const": "ACV",
+            "title": "Simple data element name"
+          },
+          {
+            "const": "ACW",
+            "title": "Scope"
+          },
+          {
+            "const": "ACX",
+            "title": "Message type name"
+          },
+          {
+            "const": "ACY",
+            "title": "Introduction"
+          },
+          {
+            "const": "ACZ",
+            "title": "Glossary"
+          },
+          {
+            "const": "ADA",
+            "title": "Functional definition"
+          },
+          {
+            "const": "ADB",
+            "title": "Examples"
+          },
+          {
+            "const": "ADC",
+            "title": "Cover page"
+          },
+          {
+            "const": "ADD",
+            "title": "Dependency (syntax) notes"
+          },
+          {
+            "const": "ADE",
+            "title": "Code value name"
+          },
+          {
+            "const": "ADF",
+            "title": "Code list name"
+          },
+          {
+            "const": "ADG",
+            "title": "Clarification of usage"
+          },
+          {
+            "const": "ADH",
+            "title": "Composite data element name"
+          },
+          {
+            "const": "ADI",
+            "title": "Field of application"
+          },
+          {
+            "const": "ADJ",
+            "title": "Type of assets and liabilities"
+          },
+          {
+            "const": "ADK",
+            "title": "Promotion information"
+          },
+          {
+            "const": "ADL",
+            "title": "Meter condition"
+          },
+          {
+            "const": "ADM",
+            "title": "Meter reading information"
+          },
+          {
+            "const": "ADN",
+            "title": "Type of transaction reason"
+          },
+          {
+            "const": "ADO",
+            "title": "Type of survey question"
+          },
+          {
+            "const": "ADP",
+            "title": "Carrier's agent counter information"
+          },
+          {
+            "const": "ADQ",
+            "title": "Description of work item on equipment"
+          },
+          {
+            "const": "ADR",
+            "title": "Message definition"
+          },
+          {
+            "const": "ADS",
+            "title": "Booked item information"
+          },
+          {
+            "const": "ADT",
+            "title": "Source of document"
+          },
+          {
+            "const": "ADU",
+            "title": "Note"
+          },
+          {
+            "const": "ADV",
+            "title": "Fixed part of segment clarification text"
+          },
+          {
+            "const": "ADW",
+            "title": "Characteristics of goods"
+          },
+          {
+            "const": "ADX",
+            "title": "Additional discharge instructions"
+          },
+          {
+            "const": "ADY",
+            "title": "Container stripping instructions"
+          },
+          {
+            "const": "ADZ",
+            "title": "CSC (Container Safety Convention) plate information"
+          },
+          {
+            "const": "AEA",
+            "title": "Cargo remarks"
+          },
+          {
+            "const": "AEB",
+            "title": "Temperature control instructions"
+          },
+          {
+            "const": "AEC",
+            "title": "Text refers to expected data"
+          },
+          {
+            "const": "AED",
+            "title": "Text refers to received data"
+          },
+          {
+            "const": "AEE",
+            "title": "Section clarification text"
+          },
+          {
+            "const": "AEF",
+            "title": "Information to the beneficiary"
+          },
+          {
+            "const": "AEG",
+            "title": "Information to the applicant"
+          },
+          {
+            "const": "AEH",
+            "title": "Instructions to the beneficiary"
+          },
+          {
+            "const": "AEI",
+            "title": "Instructions to the applicant"
+          },
+          {
+            "const": "AEJ",
+            "title": "Controlled atmosphere"
+          },
+          {
+            "const": "AEK",
+            "title": "Take off annotation"
+          },
+          {
+            "const": "AEL",
+            "title": "Price variation narrative"
+          },
+          {
+            "const": "AEM",
+            "title": "Documentary credit amendment instructions"
+          },
+          {
+            "const": "AEN",
+            "title": "Standard method narrative"
+          },
+          {
+            "const": "AEO",
+            "title": "Project narrative"
+          },
+          {
+            "const": "AEP",
+            "title": "Radioactive goods, additional information"
+          },
+          {
+            "const": "AEQ",
+            "title": "Bank-to-bank information"
+          },
+          {
+            "const": "AER",
+            "title": "Reimbursement instructions"
+          },
+          {
+            "const": "AES",
+            "title": "Reason for amending a message"
+          },
+          {
+            "const": "AET",
+            "title": "Instructions to the paying and/or accepting and/or negotiating bank"
+          },
+          {
+            "const": "AEU",
+            "title": "Interest instructions"
+          },
+          {
+            "const": "AEV",
+            "title": "Agent commission"
+          },
+          {
+            "const": "AEW",
+            "title": "Remitting bank instructions"
+          },
+          {
+            "const": "AEX",
+            "title": "Instructions to the collecting bank"
+          },
+          {
+            "const": "AEY",
+            "title": "Collection amount instructions"
+          },
+          {
+            "const": "AEZ",
+            "title": "Internal auditing information"
+          },
+          {
+            "const": "AFA",
+            "title": "Constraint"
+          },
+          {
+            "const": "AFB",
+            "title": "Comment"
+          },
+          {
+            "const": "AFC",
+            "title": "Semantic note"
+          },
+          {
+            "const": "AFD",
+            "title": "Help text"
+          },
+          {
+            "const": "AFE",
+            "title": "Legend"
+          },
+          {
+            "const": "AFF",
+            "title": "Batch code structure"
+          },
+          {
+            "const": "AFG",
+            "title": "Product application"
+          },
+          {
+            "const": "AFH",
+            "title": "Customer complaint"
+          },
+          {
+            "const": "AFI",
+            "title": "Probable cause of fault"
+          },
+          {
+            "const": "AFJ",
+            "title": "Defect description"
+          },
+          {
+            "const": "AFK",
+            "title": "Repair description"
+          },
+          {
+            "const": "AFL",
+            "title": "Review comments"
+          },
+          {
+            "const": "AFM",
+            "title": "Title"
+          },
+          {
+            "const": "AFN",
+            "title": "Description of amount"
+          },
+          {
+            "const": "AFO",
+            "title": "Responsibilities"
+          },
+          {
+            "const": "AFP",
+            "title": "Supplier"
+          },
+          {
+            "const": "AFQ",
+            "title": "Purchase region"
+          },
+          {
+            "const": "AFR",
+            "title": "Affiliation"
+          },
+          {
+            "const": "AFS",
+            "title": "Borrower"
+          },
+          {
+            "const": "AFT",
+            "title": "Line of business"
+          },
+          {
+            "const": "AFU",
+            "title": "Financial institution"
+          },
+          {
+            "const": "AFV",
+            "title": "Business founder"
+          },
+          {
+            "const": "AFW",
+            "title": "Business history"
+          },
+          {
+            "const": "AFX",
+            "title": "Banking arrangements"
+          },
+          {
+            "const": "AFY",
+            "title": "Business origin"
+          },
+          {
+            "const": "AFZ",
+            "title": "Brand names' description"
+          },
+          {
+            "const": "AGA",
+            "title": "Business financing details"
+          },
+          {
+            "const": "AGB",
+            "title": "Competition"
+          },
+          {
+            "const": "AGC",
+            "title": "Construction process details"
+          },
+          {
+            "const": "AGD",
+            "title": "Construction specialty"
+          },
+          {
+            "const": "AGE",
+            "title": "Contract information"
+          },
+          {
+            "const": "AGF",
+            "title": "Corporate filing"
+          },
+          {
+            "const": "AGG",
+            "title": "Customer information"
+          },
+          {
+            "const": "AGH",
+            "title": "Copyright notice"
+          },
+          {
+            "const": "AGI",
+            "title": "Contingent debt"
+          },
+          {
+            "const": "AGJ",
+            "title": "Conviction details"
+          },
+          {
+            "const": "AGK",
+            "title": "Equipment"
+          },
+          {
+            "const": "AGL",
+            "title": "Workforce description"
+          },
+          {
+            "const": "AGM",
+            "title": "Exemption"
+          },
+          {
+            "const": "AGN",
+            "title": "Future plans"
+          },
+          {
+            "const": "AGO",
+            "title": "Interviewee conversation information"
+          },
+          {
+            "const": "AGP",
+            "title": "Intangible asset"
+          },
+          {
+            "const": "AGQ",
+            "title": "Inventory"
+          },
+          {
+            "const": "AGR",
+            "title": "Investment"
+          },
+          {
+            "const": "AGS",
+            "title": "Intercompany relations information"
+          },
+          {
+            "const": "AGT",
+            "title": "Joint venture"
+          },
+          {
+            "const": "AGU",
+            "title": "Loan"
+          },
+          {
+            "const": "AGV",
+            "title": "Long term debt"
+          },
+          {
+            "const": "AGW",
+            "title": "Location"
+          },
+          {
+            "const": "AGX",
+            "title": "Current legal structure"
+          },
+          {
+            "const": "AGY",
+            "title": "Marital contract"
+          },
+          {
+            "const": "AGZ",
+            "title": "Marketing activities"
+          },
+          {
+            "const": "AHA",
+            "title": "Merger"
+          },
+          {
+            "const": "AHB",
+            "title": "Marketable securities"
+          },
+          {
+            "const": "AHC",
+            "title": "Business debt"
+          },
+          {
+            "const": "AHD",
+            "title": "Original legal structure"
+          },
+          {
+            "const": "AHE",
+            "title": "Employee sharing arrangements"
+          },
+          {
+            "const": "AHF",
+            "title": "Organization details"
+          },
+          {
+            "const": "AHG",
+            "title": "Public record details"
+          },
+          {
+            "const": "AHH",
+            "title": "Price range"
+          },
+          {
+            "const": "AHI",
+            "title": "Qualifications"
+          },
+          {
+            "const": "AHJ",
+            "title": "Registered activity"
+          },
+          {
+            "const": "AHK",
+            "title": "Criminal sentence"
+          },
+          {
+            "const": "AHL",
+            "title": "Sales method"
+          },
+          {
+            "const": "AHM",
+            "title": "Educational institution information"
+          },
+          {
+            "const": "AHN",
+            "title": "Status details"
+          },
+          {
+            "const": "AHO",
+            "title": "Sales"
+          },
+          {
+            "const": "AHP",
+            "title": "Spouse information"
+          },
+          {
+            "const": "AHQ",
+            "title": "Educational degree information"
+          },
+          {
+            "const": "AHR",
+            "title": "Shareholding information"
+          },
+          {
+            "const": "AHS",
+            "title": "Sales territory"
+          },
+          {
+            "const": "AHT",
+            "title": "Accountant's comments"
+          },
+          {
+            "const": "AHU",
+            "title": "Exemption law location"
+          },
+          {
+            "const": "AHV",
+            "title": "Share classifications"
+          },
+          {
+            "const": "AHW",
+            "title": "Forecast"
+          },
+          {
+            "const": "AHX",
+            "title": "Event location"
+          },
+          {
+            "const": "AHY",
+            "title": "Facility occupancy"
+          },
+          {
+            "const": "AHZ",
+            "title": "Import and export details"
+          },
+          {
+            "const": "AIA",
+            "title": "Additional facility information"
+          },
+          {
+            "const": "AIB",
+            "title": "Inventory value"
+          },
+          {
+            "const": "AIC",
+            "title": "Education"
+          },
+          {
+            "const": "AID",
+            "title": "Event"
+          },
+          {
+            "const": "AIE",
+            "title": "Agent"
+          },
+          {
+            "const": "AIF",
+            "title": "Domestically agreed financial statement details"
+          },
+          {
+            "const": "AIG",
+            "title": "Other current asset description"
+          },
+          {
+            "const": "AIH",
+            "title": "Other current liability description"
+          },
+          {
+            "const": "AII",
+            "title": "Former business activity"
+          },
+          {
+            "const": "AIJ",
+            "title": "Trade name use"
+          },
+          {
+            "const": "AIK",
+            "title": "Signing authority"
+          },
+          {
+            "const": "AIL",
+            "title": "Guarantee"
+          },
+          {
+            "const": "AIM",
+            "title": "Holding company operation"
+          },
+          {
+            "const": "AIN",
+            "title": "Consignment routing"
+          },
+          {
+            "const": "AIO",
+            "title": "Letter of protest"
+          },
+          {
+            "const": "AIP",
+            "title": "Question"
+          },
+          {
+            "const": "AIQ",
+            "title": "Party information"
+          },
+          {
+            "const": "AIR",
+            "title": "Area boundaries description"
+          },
+          {
+            "const": "AIS",
+            "title": "Advertisement information"
+          },
+          {
+            "const": "AIT",
+            "title": "Financial statement details"
+          },
+          {
+            "const": "AIU",
+            "title": "Access instructions"
+          },
+          {
+            "const": "AIV",
+            "title": "Liquidity"
+          },
+          {
+            "const": "AIW",
+            "title": "Credit line"
+          },
+          {
+            "const": "AIX",
+            "title": "Warranty terms"
+          },
+          {
+            "const": "AIY",
+            "title": "Division description"
+          },
+          {
+            "const": "AIZ",
+            "title": "Reporting instruction"
+          },
+          {
+            "const": "AJA",
+            "title": "Examination result"
+          },
+          {
+            "const": "AJB",
+            "title": "Laboratory result"
+          },
+          {
+            "const": "ALC",
+            "title": "Allowance/charge information"
+          },
+          {
+            "const": "ALD",
+            "title": "X-ray result"
+          },
+          {
+            "const": "ALE",
+            "title": "Pathology result"
+          },
+          {
+            "const": "ALF",
+            "title": "Intervention description"
+          },
+          {
+            "const": "ALG",
+            "title": "Summary of admittance"
+          },
+          {
+            "const": "ALH",
+            "title": "Medical treatment course detail"
+          },
+          {
+            "const": "ALI",
+            "title": "Prognosis"
+          },
+          {
+            "const": "ALJ",
+            "title": "Instruction to patient"
+          },
+          {
+            "const": "ALK",
+            "title": "Instruction to physician"
+          },
+          {
+            "const": "ALL",
+            "title": "All documents"
+          },
+          {
+            "const": "ALM",
+            "title": "Medicine treatment"
+          },
+          {
+            "const": "ALN",
+            "title": "Medicine dosage and administration"
+          },
+          {
+            "const": "ALO",
+            "title": "Availability of patient"
+          },
+          {
+            "const": "ALP",
+            "title": "Reason for service request"
+          },
+          {
+            "const": "ALQ",
+            "title": "Purpose of service"
+          },
+          {
+            "const": "ARR",
+            "title": "Arrival conditions"
+          },
+          {
+            "const": "ARS",
+            "title": "Service requester's comment"
+          },
+          {
+            "const": "AUT",
+            "title": "Authentication"
+          },
+          {
+            "const": "AUU",
+            "title": "Requested location description"
+          },
+          {
+            "const": "AUV",
+            "title": "Medicine administration condition"
+          },
+          {
+            "const": "AUW",
+            "title": "Patient information"
+          },
+          {
+            "const": "AUX",
+            "title": "Precautionary measure"
+          },
+          {
+            "const": "AUY",
+            "title": "Service characteristic"
+          },
+          {
+            "const": "AUZ",
+            "title": "Planned event comment"
+          },
+          {
+            "const": "AVA",
+            "title": "Expected delay comment"
+          },
+          {
+            "const": "AVB",
+            "title": "Transport requirements comment"
+          },
+          {
+            "const": "AVC",
+            "title": "Temporary approval condition"
+          },
+          {
+            "const": "AVD",
+            "title": "Customs Valuation Information"
+          },
+          {
+            "const": "AVE",
+            "title": "Value Added Tax (VAT) margin scheme"
+          },
+          {
+            "const": "AVF",
+            "title": "Maritime Declaration of Health"
+          },
+          {
+            "const": "BAG",
+            "title": "Passenger baggage information"
+          },
+          {
+            "const": "BAH",
+            "title": "Maritime Declaration of Health"
+          },
+          {
+            "const": "BAI",
+            "title": "Additional product information address"
+          },
+          {
+            "const": "BAJ",
+            "title": "Information to be printed on despatch advice"
+          },
+          {
+            "const": "BAK",
+            "title": "Missing goods remarks"
+          },
+          {
+            "const": "BAL",
+            "title": "Non-acceptance information"
+          },
+          {
+            "const": "BAM",
+            "title": "Returns information"
+          },
+          {
+            "const": "BAN",
+            "title": "Sub-line item information"
+          },
+          {
+            "const": "BAO",
+            "title": "Test information"
+          },
+          {
+            "const": "BAP",
+            "title": "External link"
+          },
+          {
+            "const": "BAQ",
+            "title": "VAT exemption reason"
+          },
+          {
+            "const": "BAR",
+            "title": "Processing Instructions"
+          },
+          {
+            "const": "BAS",
+            "title": "Relay Instructions"
+          },
+          {
+            "const": "BAT",
+            "title": "SIMA applicable"
+          },
+          {
+            "const": "BAU",
+            "title": "Appeals program code"
+          },
+          {
+            "const": "BAV",
+            "title": "SIMA subject"
+          },
+          {
+            "const": "BAW",
+            "title": "Surtax applicable"
+          },
+          {
+            "const": "BAX",
+            "title": "SIMA security bond"
+          },
+          {
+            "const": "BAY",
+            "title": "Surtax subject"
+          },
+          {
+            "const": "BAZ",
+            "title": "Safeguard applicable"
+          },
+          {
+            "const": "BBA",
+            "title": "Safeguard applicable"
+          },
+          {
+            "const": "BBB",
+            "title": "Safeguard subject"
+          },
+          {
+            "const": "BLC",
+            "title": "Transport contract document clause"
+          },
+          {
+            "const": "BLD",
+            "title": "Instruction to prepare the patient"
+          },
+          {
+            "const": "BLE",
+            "title": "Medicine treatment comment"
+          },
+          {
+            "const": "BLF",
+            "title": "Examination result comment"
+          },
+          {
+            "const": "BLG",
+            "title": "Service request comment"
+          },
+          {
+            "const": "BLH",
+            "title": "Prescription reason"
+          },
+          {
+            "const": "BLI",
+            "title": "Prescription comment"
+          },
+          {
+            "const": "BLJ",
+            "title": "Clinical investigation comment"
+          },
+          {
+            "const": "BLK",
+            "title": "Medicinal specification comment"
+          },
+          {
+            "const": "BLL",
+            "title": "Economic contribution comment"
+          },
+          {
+            "const": "BLM",
+            "title": "Status of a plan"
+          },
+          {
+            "const": "BLN",
+            "title": "Random sample test information"
+          },
+          {
+            "const": "BLO",
+            "title": "Period of time"
+          },
+          {
+            "const": "BLP",
+            "title": "Legislation"
+          },
+          {
+            "const": "BLQ",
+            "title": "Security measures requested"
+          },
+          {
+            "const": "BLR",
+            "title": "Transport contract document remark"
+          },
+          {
+            "const": "BLS",
+            "title": "Previous port of call security information"
+          },
+          {
+            "const": "BLT",
+            "title": "Security information"
+          },
+          {
+            "const": "BLU",
+            "title": "Waste information"
+          },
+          {
+            "const": "BLV",
+            "title": "B2C marketing information, short description"
+          },
+          {
+            "const": "BLW",
+            "title": "B2B marketing information, long description"
+          },
+          {
+            "const": "BLX",
+            "title": "B2C marketing information, long description"
+          },
+          {
+            "const": "BLY",
+            "title": "Product ingredients"
+          },
+          {
+            "const": "BLZ",
+            "title": "Location short name"
+          },
+          {
+            "const": "BMA",
+            "title": "Packaging material information"
+          },
+          {
+            "const": "BMB",
+            "title": "Filler material information"
+          },
+          {
+            "const": "BMC",
+            "title": "Ship-to-ship activity information"
+          },
+          {
+            "const": "BMD",
+            "title": "Package material description"
+          },
+          {
+            "const": "BME",
+            "title": "Consumer level package marking"
+          },
+          {
+            "const": "BMF",
+            "title": "SIMA measure in force"
+          },
+          {
+            "const": "BMG",
+            "title": "Pre-CARM"
+          },
+          {
+            "const": "BMH",
+            "title": "SIMA measure type"
+          },
+          {
+            "const": "CCI",
+            "title": "Customs clearance instructions"
+          },
+          {
+            "const": "CCJ",
+            "title": "Sub Type Code"
+          },
+          {
+            "const": "CCK",
+            "title": "SIMA information"
+          },
+          {
+            "const": "CCL",
+            "title": "Time limit end"
+          },
+          {
+            "const": "CCM",
+            "title": "Time limit start"
+          },
+          {
+            "const": "CCN",
+            "title": "Warehouse time limit"
+          },
+          {
+            "const": "CCO",
+            "title": "Value for duty information"
+          },
+          {
+            "const": "CEX",
+            "title": "Customs clearance instructions export"
+          },
+          {
+            "const": "CHG",
+            "title": "Change information"
+          },
+          {
+            "const": "CIP",
+            "title": "Customs clearance instruction import"
+          },
+          {
+            "const": "CLP",
+            "title": "Clearance place requested"
+          },
+          {
+            "const": "CLR",
+            "title": "Loading remarks"
+          },
+          {
+            "const": "COI",
+            "title": "Order information"
+          },
+          {
+            "const": "CUR",
+            "title": "Customer remarks"
+          },
+          {
+            "const": "CUS",
+            "title": "Customs declaration information"
+          },
+          {
+            "const": "DAR",
+            "title": "Damage remarks"
+          },
+          {
+            "const": "DCL",
+            "title": "Document issuer declaration"
+          },
+          {
+            "const": "DEL",
+            "title": "Delivery information"
+          },
+          {
+            "const": "DIN",
+            "title": "Delivery instructions"
+          },
+          {
+            "const": "DOC",
+            "title": "Documentation instructions"
+          },
+          {
+            "const": "DUT",
+            "title": "Duty declaration"
+          },
+          {
+            "const": "EUR",
+            "title": "Effective used routing"
+          },
+          {
+            "const": "FBC",
+            "title": "First block to be printed on the transport contract"
+          },
+          {
+            "const": "GBL",
+            "title": "Government bill of lading information"
+          },
+          {
+            "const": "GEN",
+            "title": "Entire transaction set"
+          },
+          {
+            "const": "GS7",
+            "title": "Further information concerning GGVS par. 7"
+          },
+          {
+            "const": "HAN",
+            "title": "Consignment handling instruction"
+          },
+          {
+            "const": "HAZ",
+            "title": "Hazard information"
+          },
+          {
+            "const": "ICN",
+            "title": "Consignment information for consignee"
+          },
+          {
+            "const": "IIN",
+            "title": "Insurance instructions"
+          },
+          {
+            "const": "IMI",
+            "title": "Invoice mailing instructions"
+          },
+          {
+            "const": "IND",
+            "title": "Commercial invoice item description"
+          },
+          {
+            "const": "INS",
+            "title": "Insurance information"
+          },
+          {
+            "const": "INV",
+            "title": "Invoice instruction"
+          },
+          {
+            "const": "IRP",
+            "title": "Information for railway purpose"
+          },
+          {
+            "const": "ITR",
+            "title": "Inland transport details"
+          },
+          {
+            "const": "ITS",
+            "title": "Testing instructions"
+          },
+          {
+            "const": "LAN",
+            "title": "Location Alias"
+          },
+          {
+            "const": "LIN",
+            "title": "Line item"
+          },
+          {
+            "const": "LOI",
+            "title": "Loading instruction"
+          },
+          {
+            "const": "MCO",
+            "title": "Miscellaneous charge order"
+          },
+          {
+            "const": "MDH",
+            "title": "Maritime Declaration of Health"
+          },
+          {
+            "const": "MKS",
+            "title": "Additional marks/numbers information"
+          },
+          {
+            "const": "ORI",
+            "title": "Order instruction"
+          },
+          {
+            "const": "OSI",
+            "title": "Other service information"
+          },
+          {
+            "const": "PAC",
+            "title": "Packing/marking information"
+          },
+          {
+            "const": "PAI",
+            "title": "Payment instructions information"
+          },
+          {
+            "const": "PAY",
+            "title": "Payables information"
+          },
+          {
+            "const": "PKG",
+            "title": "Packaging information"
+          },
+          {
+            "const": "PKT",
+            "title": "Packaging terms information"
+          },
+          {
+            "const": "PMD",
+            "title": "Payment detail/remittance information"
+          },
+          {
+            "const": "PMT",
+            "title": "Payment information"
+          },
+          {
+            "const": "PRD",
+            "title": "Product information"
+          },
+          {
+            "const": "PRF",
+            "title": "Price calculation formula"
+          },
+          {
+            "const": "PRI",
+            "title": "Priority information"
+          },
+          {
+            "const": "PUR",
+            "title": "Purchasing information"
+          },
+          {
+            "const": "QIN",
+            "title": "Quarantine instructions"
+          },
+          {
+            "const": "QQD",
+            "title": "Quality demands/requirements"
+          },
+          {
+            "const": "QUT",
+            "title": "Quotation instruction/information"
+          },
+          {
+            "const": "RAH",
+            "title": "Risk and handling information"
+          },
+          {
+            "const": "REG",
+            "title": "Regulatory information"
+          },
+          {
+            "const": "RET",
+            "title": "Return to origin information"
+          },
+          {
+            "const": "REV",
+            "title": "Receivables"
+          },
+          {
+            "const": "RQR",
+            "title": "Consignment route"
+          },
+          {
+            "const": "SAF",
+            "title": "Safety information"
+          },
+          {
+            "const": "SIC",
+            "title": "Consignment documentary instruction"
+          },
+          {
+            "const": "SIN",
+            "title": "Special instructions"
+          },
+          {
+            "const": "SLR",
+            "title": "Ship line requested"
+          },
+          {
+            "const": "SPA",
+            "title": "Special permission for transport, generally"
+          },
+          {
+            "const": "SPG",
+            "title": "Special permission concerning the goods to be transported"
+          },
+          {
+            "const": "SPH",
+            "title": "Special handling"
+          },
+          {
+            "const": "SPP",
+            "title": "Special permission concerning package"
+          },
+          {
+            "const": "SPT",
+            "title": "Special permission concerning transport means"
+          },
+          {
+            "const": "SRN",
+            "title": "Subsidiary risk number (IATA/DGR)"
+          },
+          {
+            "const": "SSR",
+            "title": "Special service request"
+          },
+          {
+            "const": "SUR",
+            "title": "Supplier remarks"
+          },
+          {
+            "const": "TCA",
+            "title": "Consignment tariff"
+          },
+          {
+            "const": "TDT",
+            "title": "Consignment transport"
+          },
+          {
+            "const": "TRA",
+            "title": "Transportation information"
+          },
+          {
+            "const": "TRR",
+            "title": "Requested tariff"
+          },
+          {
+            "const": "TXD",
+            "title": "Tax declaration"
+          },
+          {
+            "const": "WHI",
+            "title": "Warehouse instruction/information"
+          },
+          {
+            "const": "ZZZ",
+            "title": "Mutually defined"
+          }
+        ],
         "type": "string"
       }
     }

@@ -1,11 +1,17 @@
 GEFEG.FX Export JSON Schema
 ********************
 
-Data model: BSP SPS Acknowledgement; D22A
+Data model: POF Request Cancellation; D22A
 
+INFO: BBIE Applied_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
+INFO: BBIE Basic_ Work Item. Index. Value skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
+INFO: BBIE Basic_ Work Item. Status. Code skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
+INFO: BBIE Basic_ Work Item. Reference File. Binary Object skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
+INFO: ASBIE Basic_ Work Item. Subordinate. Basic_ Work Item skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
 INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
 INFO: BBIE Trade_ Payment Terms. Due Date. Date Time skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
 INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
+INFO: BBIE Work Item_ Quantity Analysis. Status. Code skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
 ERROR: Empty code list: codelists/IANA_MIMEMediaType.json#/$defs/codeList/MIMEMediaTypeType (Binary Object. Mime. Code)
 ERROR: Empty code list: codelists/ISO_CashAccountType.json#/$defs/codeList/CashAccountTypeType (Cash Account Type_ Code. Content)
 ERROR: Empty code list: codelists/ISO_FinancingStatus.json#/$defs/codeList/FinancingStatusType (Financing Status_ Code. Content)
@@ -24,9 +30,6 @@ INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP 
 INFO: BBIE Trade_ Payment Terms. Due Date. Date Time skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
 INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
 INFO: BBIE Work Item_ Quantity Analysis. Status. Code skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
-INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
-INFO: BBIE Trade_ Payment Terms. Due Date. Date Time skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
-INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
 INFO: BBIE Applied_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
 INFO: BBIE Basic_ Work Item. Index. Value skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
 INFO: BBIE Basic_ Work Item. Status. Code skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
@@ -49,37 +52,15 @@ INFO: BBIE Trade_ Payment Terms. Due Date. Date Time skipped due to FLag.Type=DE
 INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
 INFO: BBIE Work Item_ Quantity Analysis. Status. Code skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
 INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
+INFO: BBIE Trade_ Payment Terms. Due Date. Date Time skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
 INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
 INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
 INFO: BBIE Trade_ Payment Terms. Due Date. Date Time skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
 INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
 INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
-INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
 INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
 INFO: BBIE Trade_ Payment Terms. Due Date. Date Time skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
 INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
-INFO: BBIE Applied_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
-INFO: BBIE Basic_ Work Item. Index. Value skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
-INFO: BBIE Basic_ Work Item. Status. Code skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
-INFO: BBIE Basic_ Work Item. Reference File. Binary Object skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
-INFO: ASBIE Basic_ Work Item. Subordinate. Basic_ Work Item skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
-INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
-INFO: BBIE Trade_ Payment Terms. Due Date. Date Time skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
-INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
-INFO: BBIE Work Item_ Quantity Analysis. Status. Code skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
-INFO: BBIE Applied_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
-INFO: BBIE Basic_ Work Item. Index. Value skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
-INFO: BBIE Basic_ Work Item. Status. Code skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
-INFO: BBIE Basic_ Work Item. Reference File. Binary Object skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
-INFO: ASBIE Basic_ Work Item. Subordinate. Basic_ Work Item skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
-INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
-INFO: BBIE Trade_ Payment Terms. Due Date. Date Time skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
-INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
-INFO: BBIE Work Item_ Quantity Analysis. Status. Code skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
-INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
-INFO: BBIE Trade_ Payment Terms. Due Date. Date Time skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
-INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
-INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
 INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
 INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
 INFO: BBIE Applied_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
@@ -97,6 +78,22 @@ INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.App
 INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
 INFO: BBIE Trade_ Payment Terms. Due Date. Date Time skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
 INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
+INFO: BBIE Applied_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
+INFO: BBIE Basic_ Work Item. Index. Value skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
+INFO: BBIE Basic_ Work Item. Status. Code skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
+INFO: BBIE Basic_ Work Item. Reference File. Binary Object skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
+INFO: ASBIE Basic_ Work Item. Subordinate. Basic_ Work Item skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
+INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
+INFO: BBIE Trade_ Payment Terms. Due Date. Date Time skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
+INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
+INFO: BBIE Work Item_ Quantity Analysis. Status. Code skipped due to FLag.Type=DEP and FLag.AppliedCCL=D09B
+INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
+INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
+INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
+INFO: BBIE Trade_ Payment Terms. Due Date. Date Time skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
+INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
+INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
+INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
 INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
 INFO: BBIE Trade_ Payment Terms. Due Date. Date Time skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
 INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
@@ -104,18 +101,12 @@ INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP 
 INFO: BBIE Trade_ Payment Terms. Due Date. Date Time skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
 INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
 INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
+INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
 INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
 INFO: BBIE Trade_ Payment Terms. Due Date. Date Time skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
 INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
+INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
+INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
+INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
 INFO: BBIE Trade_ Payment Terms. Due Date. Date Time skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
-INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
-ERROR: Duplicated attribute name "thirdPartyIssuedId" found in schema object "laboratoryObservationPartyType"
-INFO: ASBIE Payment_ Financial Account. Servicer. Responsible_ Party skipped due to FLag.Type=DEP and FLag.AppliedCCL=D10A
-INFO: ASBIE Payment_ Financial Account. Owner. Responsible_ Party skipped due to FLag.Type=DEP and FLag.AppliedCCL=D10A
-INFO: ASBIE Payment_ Financial Account. Servicing. Payment_ Financial Institution skipped due to FLag.Type=DEP and FLag.AppliedCCL=D10A
-INFO: ASBIE Payment_ Financial Institution. Location. Unstructured_ Address skipped due to FLag.Type=DEP and FLag.AppliedCCL=D10A
-INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
-INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
-INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
-INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
 INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A
