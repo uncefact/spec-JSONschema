@@ -85,7 +85,8 @@ This type is used to represent all kind of amounts.
 
 <a name="jsonFilenames" />
 
-* All files originally published by UN/CEFACT start with the prefix __UNECE-__
+* All files originally published by UN/CEFACT start with the prefix __UNECE__. Files, like code lists, that origin 
+  from other standardisation organisations start with their naming abbreviation, i.e. __ISO__.
 * The json schema file containing all basic components is named __UNECE-BasicComponents.json__
 * All Reference Data Models (RDMs) and their contextualisations _end_ with the suffix __ContextCCL__.  
   The following files are representations of the official published RDMs. All other files ending with ContextCCL 
@@ -105,6 +106,8 @@ This type is used to represent all kind of amounts.
 * All other json schema files with no special suffix are representations of business document message 
   structures. For example is the __UNECE-CrossIndustryInvoice.json__ the json schema represenation of
   the Cross Industry Invoice business document structure.
+* Code lists are stored in the sub-folder __codelists__. A few code lists are not published in this library.
+  The list can be found in the corresponding __error.log__ file.
 
 
 ## What is this meta-library ?
