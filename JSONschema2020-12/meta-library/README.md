@@ -84,6 +84,7 @@ This type is used to represent all kind of amounts.
 ## JSON filenames and sub-folder structure
 
 <a name="jsonFilenames" />
+<<<<<<< HEAD
 
 * All files originally published by UN/CEFACT start with the prefix __UNECE-__
 * The json schema file containing all basic components is named __UNECE-BasicComponents.json__
@@ -103,6 +104,26 @@ This type is used to represent all kind of amounts.
   For example the master message structure where all other business document structures are derived from
   is named __UNECE-BSPMaster.json__.
 * All other json schema files with no special suffix are representations of business document message 
+=======
+- All files originally published by UN/CEFACT start with the prefix __UNECE-__
+- The json schema file containing all basic components is named __UNECE-BasicComponents.json__
+- All Reference Data Models (RDMs) and their contextualisations _end_ with the suffix __ContextCCL__.  
+  The following files are representations of the official published RDMs. All other files ending with ContextCCL 
+  are subsets of the corresponding RDMs.
+    - Buy Ship Pay RDM: __UNECE-BSPContextCCL.json__
+    - Multi Modal Transport RDM: __UNECE-MMTContextCCL.json__
+    - Supply Chain RDM: __UNECE-SCRDMContextCCL.json__
+    - Cross Border Management RDM: __UNECE-CBMContextCCL.json__
+    - Pay RDM: __UNECE-PAYContextCCL.json__
+    - eCertification RDM: __UNECE-eCertContextCCL.json__
+    - Sustainable Development and Circular Economy RDM: __UNECE-SDCEContextCCL.json__
+    - Experience Program RDM: __UNECE-EPContextCCL.json__
+- All business documents (messages) are based on so called master-messages for the corresponding RDM. 
+  All master message structures have a suffix __Master__.  
+  For example the master message structure where all other business document structures are derived from
+  is named __UNECE-BSPMaster.json__.
+- All other json schema files with no special suffix are representations of business document message 
+>>>>>>> 3fbc870a9a69c886e3e72407f1d27c24f818b36e
   structures. For example is the __UNECE-CrossIndustryInvoice.json__ the json schema represenation of
   the Cross Industry Invoice business document structure.
 
