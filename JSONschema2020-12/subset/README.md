@@ -30,6 +30,7 @@ The subset library export includes all Reference Data Model data types.
 ### Links to other export variants
 
 <a name="exportLinks" />
+
 In the [library](https://github.com/uncefact/spec-JSONschema/tree/main/JSONschema2020-12/library) directory, 
 the UN/CEFACT reference data models are provided in the library variant without the meta-schema extension.
 
