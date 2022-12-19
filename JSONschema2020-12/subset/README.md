@@ -11,7 +11,7 @@ structures are provided. All contextualisations of the base classes have been fu
 ## Table of contents
 <!-- TOC depthFrom:1 depthTo:3 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [Basic schema design rules](../meta-library/README.md#basicPrinciples)
+- [Basic schema design rules, external file](../meta-library/README.md#basicPrinciples)
   - [Basic Components](../meta-library/README.md#basicComponents)
     - [Primitive data types](../meta-library/README.md#pdt)
 	- [Unqualified data types](../meta-library/README.md#udt)
