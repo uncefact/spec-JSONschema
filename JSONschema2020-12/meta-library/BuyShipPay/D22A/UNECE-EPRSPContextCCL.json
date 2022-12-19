@@ -1,0 +1,1149 @@
+{
+  "$schema": "https://raw.githubusercontent.com/uncefact/spec-JSONschema/main/JSONschema2020-12/meta-schema",
+  "$id": "https://raw.githubusercontent.com/uncefact/spec-JSONschema/main/JSONschema2020-12/meta-library/BuyShipPay/D22A/EPRSPContextCCL",
+  "title": "EPRSP Context CCL",
+  "description": "Copyright (C) UN/CEFACT (2022). All Rights Reserved.\n\nThis document and translations of it may be copied and furnished to others, and derivative works that comment on or otherwise explain it or assist in its implementation may be prepared, copied, published and distributed, in whole or in part, without restriction of any kind, provided that the above copyright notice and this paragraph are included on all such copies and derivative works. However, this document itself may not be modified in any way, such as by removing the copyright notice or references to UN/CEFACT, except as needed for the purpose of developing UN/CEFACT specifications, in which case the procedures for copyrights defined in the UN/CEFACT Intellectual Property Rights document must be followed, or as required to translate it into languages other than English.\n\nThe limited permissions granted above are perpetual and will not be revoked by UN/CEFACT or its successors or assigns.\n\nThis document and the information contained herein is provided on an \"AS IS\" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.",
+  "$defs": {
+    "qdt": {
+      "accessRightsTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/accessRightsTypeCodeType"
+      },
+      "accountingAccountBalanceReopeningTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/accountingAccountBalanceReopeningTypeCodeType"
+      },
+      "accountingAccountClassificationCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/accountingAccountClassificationCodeType"
+      },
+      "accountingAccountNatureTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/accountingAccountNatureTypeCodeType"
+      },
+      "accountingAccountStatusCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/accountingAccountStatusCodeType"
+      },
+      "accountingAccountTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/accountingAccountTypeCodeType"
+      },
+      "accountingAmountQualifierCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/accountingAmountQualifierCodeType"
+      },
+      "accountingAmountTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/accountingAmountTypeCodeType"
+      },
+      "accountingContactCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/accountingContactCodeType"
+      },
+      "accountingDocumentTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/accountingDocumentTypeCodeType"
+      },
+      "accountingEntryCategoryCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/accountingEntryCategoryCodeType"
+      },
+      "accountingEntryLineCategoryCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/accountingEntryLineCategoryCodeType"
+      },
+      "accountingEntryLineSourceCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/accountingEntryLineSourceCodeType"
+      },
+      "accountingEntryProcessingCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/accountingEntryProcessingCodeType"
+      },
+      "accountingJournalCategoryCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/accountingJournalCategoryCodeType"
+      },
+      "accountingJournalCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/accountingJournalCodeType"
+      },
+      "accountingPeriodFunctionCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/accountingPeriodFunctionCodeType"
+      },
+      "accountingPerquisiteCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/accountingPerquisiteCodeType"
+      },
+      "accountingVoucherMediumCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/accountingVoucherMediumCodeType"
+      },
+      "additionalPostponementCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/additionalPostponementCodeType"
+      },
+      "addressFormatTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/addressFormatTypeCodeType"
+      },
+      "alternateCurrencyAmountTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/alternateCurrencyAmountTypeCodeType"
+      },
+      "amortizationMethodCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/amortizationMethodCodeType"
+      },
+      "amountWeightTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/amountWeightTypeCodeType"
+      },
+      "certificateTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/certificateTypeCodeType"
+      },
+      "financialAccountTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/financialAccountTypeCodeType"
+      },
+      "financialInstitutionRoleCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/financialInstitutionRoleCodeType"
+      },
+      "lifetimeEndCostCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/lifetimeEndCostCodeType"
+      },
+      "organizationFunctionTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/organizationFunctionTypeCodeType"
+      },
+      "partyTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/partyTypeCodeType"
+      },
+      "refundMethodCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/refundMethodCodeType"
+      },
+      "scenarioTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/scenarioTypeCodeType"
+      },
+      "softwareUserTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/softwareUserTypeCodeType"
+      },
+      "taxExemptionReasonCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/taxExemptionReasonCodeType"
+      },
+      "binaryObjectCharacterSetCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/binaryObjectCharacterSetCodeType"
+      },
+      "binaryObjectEncodingCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/binaryObjectEncodingCodeType"
+      },
+      "mimeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/mimeCodeType"
+      },
+      "dateOnlyFormattedDateTimeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/dateOnlyFormattedDateTimeType"
+      },
+      "formattedDateTimeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/formattedDateTimeType"
+      },
+      "cargoCommodityCategoryCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/cargoCommodityCategoryCodeType"
+      },
+      "customsProcedureGuaranteeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/customsProcedureGuaranteeCodeType"
+      },
+      "goodsTypeExtensionCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/goodsTypeExtensionCodeType"
+      },
+      "goodsTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/goodsTypeCodeType"
+      },
+      "logisticsChargeCalculationBasisCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/logisticsChargeCalculationBasisCodeType"
+      },
+      "airFlowUnitMeasureType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/airFlowUnitMeasureType"
+      },
+      "durationUnitMeasureType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/durationUnitMeasureType"
+      },
+      "fileSizeUnitMeasureType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/fileSizeUnitMeasureType"
+      },
+      "linearUnitMeasureType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/linearUnitMeasureType"
+      },
+      "temperatureUnitMeasureType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/temperatureUnitMeasureType"
+      },
+      "unitMeasureType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/unitMeasureType"
+      },
+      "volumeUnitMeasureType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/volumeUnitMeasureType"
+      },
+      "weightUnitMeasureType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/weightUnitMeasureType"
+      },
+      "cargoCategoryCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/cargoCategoryCodeType"
+      },
+      "deliveryTermsCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/deliveryTermsCodeType"
+      },
+      "freightChargeTypeIdType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/freightChargeTypeIdType"
+      },
+      "logisticsStatusCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/logisticsStatusCodeType"
+      },
+      "packageTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/packageTypeCodeType"
+      },
+      "transportModeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/transportModeCodeType"
+      },
+      "cashAccountTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/cashAccountTypeCodeType"
+      },
+      "financingStatusReasonCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/financingStatusReasonCodeType"
+      },
+      "financingStatusCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/financingStatusCodeType"
+      },
+      "titleCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/titleCodeType"
+      },
+      "currencyCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/currencyCodeType"
+      },
+      "languageCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/languageCodeType"
+      },
+      "languageIdType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/languageIdType"
+      },
+      "accountingDebitCreditStatusCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/accountingDebitCreditStatusCodeType"
+      },
+      "accountingDocumentCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/accountingDocumentCodeType"
+      },
+      "acknowledgementCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/acknowledgementCodeType"
+      },
+      "addressTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/addressTypeCodeType"
+      },
+      "adjustmentReasonCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/adjustmentReasonCodeType"
+      },
+      "allowanceChargeIdCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/allowanceChargeIdCodeType"
+      },
+      "allowanceChargeReasonCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/allowanceChargeReasonCodeType"
+      },
+      "automaticDataCaptureMethodCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/automaticDataCaptureMethodCodeType"
+      },
+      "billingDocumentCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/billingDocumentCodeType"
+      },
+      "cancellationDocumentStatusCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/cancellationDocumentStatusCodeType"
+      },
+      "cargoOperationalCategoryCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/cargoOperationalCategoryCodeType"
+      },
+      "cargoTypeClassificationCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/cargoTypeClassificationCodeType"
+      },
+      "chargePayingPartyRoleCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/chargePayingPartyRoleCodeType"
+      },
+      "codeListResponsibleAgencyCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/codeListResponsibleAgencyCodeType"
+      },
+      "commitmentLevelCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/commitmentLevelCodeType"
+      },
+      "communicationChannelCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/communicationChannelCodeType"
+      },
+      "contactTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/contactTypeCodeType"
+      },
+      "countryIdType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/countryIdType"
+      },
+      "customsDutyRegimeTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/customsDutyRegimeTypeCodeType"
+      },
+      "dangerousGoodsPackagingLevelCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/dangerousGoodsPackagingLevelCodeType"
+      },
+      "dangerousGoodsRegulationCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/dangerousGoodsRegulationCodeType"
+      },
+      "dateTimePeriodFunctionCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/dateTimePeriodFunctionCodeType"
+      },
+      "deliveryTermsFunctionCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/deliveryTermsFunctionCodeType"
+      },
+      "dimensionTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/dimensionTypeCodeType"
+      },
+      "documentStatusCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/documentStatusCodeType"
+      },
+      "documentCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/documentCodeType"
+      },
+      "financialAdjustmentReasonCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/financialAdjustmentReasonCodeType"
+      },
+      "freightChargeTariffClassCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/freightChargeTariffClassCodeType"
+      },
+      "governmentActionCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/governmentActionCodeType"
+      },
+      "invoiceDocumentCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/invoiceDocumentCodeType"
+      },
+      "lineStatusCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/lineStatusCodeType"
+      },
+      "locationFunctionCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/locationFunctionCodeType"
+      },
+      "markingInstructionCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/markingInstructionCodeType"
+      },
+      "measuredAttributeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/measuredAttributeCodeType"
+      },
+      "messageFunctionCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/messageFunctionCodeType"
+      },
+      "packagingLevelCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/packagingLevelCodeType"
+      },
+      "packagingMarkingCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/packagingMarkingCodeType"
+      },
+      "partyRoleCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/partyRoleCodeType"
+      },
+      "paymentGuaranteeMeansCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/paymentGuaranteeMeansCodeType"
+      },
+      "paymentMeansChannelCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/paymentMeansChannelCodeType"
+      },
+      "paymentMeansCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/paymentMeansCodeType"
+      },
+      "paymentMethodCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/paymentMethodCodeType"
+      },
+      "paymentTermsEventTimeReferenceCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/paymentTermsEventTimeReferenceCodeType"
+      },
+      "paymentTermsTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/paymentTermsTypeCodeType"
+      },
+      "paymentTermsIdType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/paymentTermsIdType"
+      },
+      "priceTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/priceTypeCodeType"
+      },
+      "priorityDescriptionCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/priorityDescriptionCodeType"
+      },
+      "processTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/processTypeCodeType"
+      },
+      "quotationDocumentCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/quotationDocumentCodeType"
+      },
+      "referenceCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/referenceCodeType"
+      },
+      "remittanceDocumentCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/remittanceDocumentCodeType"
+      },
+      "responseTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/responseTypeCodeType"
+      },
+      "responsibleGovernmentAgencyInvolvementCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/responsibleGovernmentAgencyInvolvementCodeType"
+      },
+      "responsibleGovernmentAgencyCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/responsibleGovernmentAgencyCodeType"
+      },
+      "schedulingDocumentCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/schedulingDocumentCodeType"
+      },
+      "sealConditionCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/sealConditionCodeType"
+      },
+      "sealingPartyRoleCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/sealingPartyRoleCodeType"
+      },
+      "statusCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/statusCodeType"
+      },
+      "subjectCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/subjectCodeType"
+      },
+      "taxCategoryCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/taxCategoryCodeType"
+      },
+      "taxTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/taxTypeCodeType"
+      },
+      "temperatureTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/temperatureTypeCodeType"
+      },
+      "timeReferenceCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/timeReferenceCodeType"
+      },
+      "transportContractMovementCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/transportContractMovementCodeType"
+      },
+      "transportEquipmentCategoryCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/transportEquipmentCategoryCodeType"
+      },
+      "transportEquipmentFullnessCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/transportEquipmentFullnessCodeType"
+      },
+      "transportEquipmentHaulageArrangementsCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/transportEquipmentHaulageArrangementsCodeType"
+      },
+      "transportEquipmentLegalStatusCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/transportEquipmentLegalStatusCodeType"
+      },
+      "transportEquipmentMovementStatusCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/transportEquipmentMovementStatusCodeType"
+      },
+      "transportEquipmentOperationalStatusCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/transportEquipmentOperationalStatusCodeType"
+      },
+      "transportEquipmentSizeTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/transportEquipmentSizeTypeCodeType"
+      },
+      "transportEquipmentSupplierPartyRoleCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/transportEquipmentSupplierPartyRoleCodeType"
+      },
+      "transportMeansDirectionCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/transportMeansDirectionCodeType"
+      },
+      "transportMeansTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/transportMeansTypeCodeType"
+      },
+      "transportMovementStageCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/transportMovementStageCodeType"
+      },
+      "transportMovementTypeCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/transportMovementTypeCodeType"
+      },
+      "transportServiceCategoryCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/transportServiceCategoryCodeType"
+      },
+      "transportServiceConditionCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/transportServiceConditionCodeType"
+      },
+      "transportServicePaymentArrangementCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/transportServicePaymentArrangementCodeType"
+      },
+      "transportServicePriorityCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/transportServicePriorityCodeType"
+      },
+      "transportServiceRequirementCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/transportServiceRequirementCodeType"
+      },
+      "validationDocumentStatusCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/validationDocumentStatusCodeType"
+      },
+      "workflowStatusCodeType": {
+        "$ref": "UNECE-EPContextCCL.json#/$defs/qdt/$defs/workflowStatusCodeType"
+      }
+    },
+    "contactPersonType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/contactPersonType"
+        },
+        {
+          "properties": {
+            "titleCode": {
+              "$ref": "#/$defs/qdt/$defs/titleCodeType"
+            },
+            "residenceCountryId": {
+              "$ref": "#/$defs/qdt/$defs/countryIdType"
+            }
+          }
+        }
+      ]
+    },
+    "cooperatingOrganizationType": {
+      "$ref": "UNECE-EPContextCCL.json#/$defs/cooperatingOrganizationType"
+    },
+    "diseaseProtectionMeansType": {
+      "$ref": "UNECE-EPContextCCL.json#/$defs/diseaseProtectionMeansType"
+    },
+    "documentContextParameterType": {
+      "$ref": "UNECE-EPContextCCL.json#/$defs/documentContextParameterType"
+    },
+    "exchangedDocumentContextType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/exchangedDocumentContextType"
+        },
+        {
+          "properties": {
+            "businessProcessSpecifiedDocumentContextParameter": {
+              "maxItems": 1
+            },
+            "guidelineSpecifiedDocumentContextParameter": {
+              "maxItems": 1
+            }
+          }
+        }
+      ]
+    },
+    "exchangedDocumentType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/exchangedDocumentType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/documentCodeType"
+            },
+            "statusCode": {
+              "$ref": "#/$defs/qdt/$defs/documentStatusCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "experienceItemPreferenceType": {
+      "$ref": "UNECE-EPContextCCL.json#/$defs/experienceItemPreferenceType"
+    },
+    "experienceItemVoucherType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/experienceItemVoucherType"
+        },
+        {
+          "properties": {
+            "issueDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            }
+          }
+        }
+      ]
+    },
+    "experienceProgramActionType": {
+      "$ref": "UNECE-EPContextCCL.json#/$defs/experienceProgramActionType"
+    },
+    "experienceEventType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/experienceEventType"
+        },
+        {
+          "properties": {
+            "meetingDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "breakUpDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "providedRequirement": {
+              "$ref": "#/$defs/requirementType"
+            },
+            "requiredUsageCondition": {
+              "$ref": "#/$defs/usageConditionType"
+            },
+            "distinctiveFeature": {
+              "$ref": "#/$defs/featureType"
+            },
+            "calculatedTradePrice": {
+              "$ref": "#/$defs/tradePriceType"
+            }
+          }
+        }
+      ]
+    },
+    "experienceFacilityType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/experienceFacilityType"
+        },
+        {
+          "properties": {
+            "completionDateTime": {
+              "$ref": "#/$defs/qdt/$defs/dateOnlyFormattedDateTimeType"
+            },
+            "latestRenovationDateTime": {
+              "$ref": "#/$defs/qdt/$defs/dateOnlyFormattedDateTimeType"
+            }
+          }
+        }
+      ]
+    },
+    "experienceProductType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/experienceProductType"
+        },
+        {
+          "properties": {
+            "providedRequirement": {
+              "$ref": "#/$defs/requirementType"
+            },
+            "distinctiveFeature": {
+              "$ref": "#/$defs/featureType"
+            },
+            "requiredUsageCondition": {
+              "$ref": "#/$defs/usageConditionType"
+            },
+            "calculatedTradePrice": {
+              "$ref": "#/$defs/tradePriceType"
+            }
+          }
+        }
+      ]
+    },
+    "financialGuaranteeType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/financialGuaranteeType"
+        },
+        {
+          "properties": {
+            "effectiveDelimitedPeriod": {
+              "$ref": "#/$defs/delimitedPeriodType"
+            }
+          }
+        }
+      ]
+    },
+    "guestAllergyType": {
+      "$ref": "UNECE-EPContextCCL.json#/$defs/guestAllergyType"
+    },
+    "guestCarriedEquipmentType": {
+      "$ref": "UNECE-EPContextCCL.json#/$defs/guestCarriedEquipmentType"
+    },
+    "guestDisabilityType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/guestDisabilityType"
+        },
+        {
+          "properties": {
+            "registeredDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            }
+          }
+        }
+      ]
+    },
+    "guestFoodChoiceType": {
+      "$ref": "UNECE-EPContextCCL.json#/$defs/guestFoodChoiceType"
+    },
+    "guestHealthIndicationType": {
+      "$ref": "UNECE-EPContextCCL.json#/$defs/guestHealthIndicationType"
+    },
+    "guestPersonType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/guestPersonType"
+        },
+        {
+          "properties": {
+            "birthDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "age": {
+              "$ref": "#/$defs/qdt/$defs/durationUnitMeasureType"
+            },
+            "accompanyingPetAnimal": {
+              "$ref": "#/$defs/petAnimalType"
+            },
+            "specifiedGuestCarriedEquipment": {
+              "$ref": "#/$defs/guestCarriedEquipmentType"
+            },
+            "notifiedGuestDisability": {
+              "$ref": "#/$defs/guestDisabilityType"
+            },
+            "notifiedGuestAllergy": {
+              "$ref": "#/$defs/guestAllergyType"
+            },
+            "notifiedDiseaseProtectionMeans": {
+              "$ref": "#/$defs/diseaseProtectionMeansType"
+            },
+            "notifiedGuestHealthIndication": {
+              "$ref": "#/$defs/guestHealthIndicationType"
+            },
+            "notifiedExperienceItemPreference": {
+              "$ref": "#/$defs/experienceItemPreferenceType"
+            },
+            "notifiedGuestFoodChoice": {
+              "$ref": "#/$defs/guestFoodChoiceType"
+            }
+          }
+        }
+      ]
+    },
+    "paymentCashType": {
+      "$ref": "UNECE-EPContextCCL.json#/$defs/paymentCashType"
+    },
+    "paymentChequeType": {
+      "$ref": "UNECE-EPContextCCL.json#/$defs/paymentChequeType"
+    },
+    "paymentDigitalMethodType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/paymentDigitalMethodType"
+        },
+        {
+          "properties": {
+            "expiryDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "validFromDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            }
+          }
+        }
+      ]
+    },
+    "paymentFinancialAccountType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/paymentFinancialAccountType"
+        },
+        {
+          "properties": {
+            "currencyCode": {
+              "$ref": "#/$defs/qdt/$defs/currencyCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "paymentFinancialInstitutionType": {
+      "$ref": "UNECE-EPContextCCL.json#/$defs/paymentFinancialInstitutionType"
+    },
+    "paymentTradeSettlementType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/paymentTradeSettlementType"
+        },
+        {
+          "properties": {
+            "paymentCurrencyCode": {
+              "$ref": "#/$defs/qdt/$defs/currencyCodeType"
+            },
+            "creationDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "dueDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "receiptDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "specifiedTradeSettlementPaymentMonetarySummation": {
+              "$ref": "#/$defs/tradeSettlementPaymentMonetarySummationType"
+            },
+            "identifiedFinancialGuarantee": {
+              "$ref": "#/$defs/financialGuaranteeType"
+            }
+          }
+        }
+      ]
+    },
+    "personalLanguageProficiencyType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/personalLanguageProficiencyType"
+        },
+        {
+          "properties": {
+            "languageId": {
+              "$ref": "#/$defs/qdt/$defs/languageIdType"
+            },
+            "languageCode": {
+              "$ref": "#/$defs/qdt/$defs/languageCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "petAnimalType": {
+      "$ref": "UNECE-EPContextCCL.json#/$defs/petAnimalType"
+    },
+    "specialQueryType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/specialQueryType"
+        },
+        {
+          "properties": {
+            "submittedDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "latestResponseDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "responseDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            }
+          }
+        }
+      ]
+    },
+    "certificateType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/certificateType"
+        },
+        {
+          "properties": {
+            "issueDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "expiryDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "validityExtendedUntilDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "actualEffectiveDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "requestedEffectiveDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "endorsementDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "latestEndorsementDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "availableLanguageCode": {
+              "$ref": "#/$defs/qdt/$defs/languageCodeType"
+            },
+            "effectiveFromDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "reportedDocumentStatus": {
+              "$ref": "#/$defs/documentStatusType"
+            }
+          }
+        }
+      ]
+    },
+    "customerClassType": {
+      "$ref": "UNECE-EPContextCCL.json#/$defs/customerClassType"
+    },
+    "experienceItemType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/experienceItemType"
+        },
+        {
+          "properties": {
+            "calculatedTradePrice": {
+              "$ref": "#/$defs/tradePriceType"
+            }
+          }
+        }
+      ]
+    },
+    "featureType": {
+      "$ref": "UNECE-EPContextCCL.json#/$defs/featureType"
+    },
+    "guestArrivalType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/guestArrivalType"
+        },
+        {
+          "properties": {
+            "expectedDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            }
+          }
+        }
+      ]
+    },
+    "informationSourceType": {
+      "$ref": "UNECE-EPContextCCL.json#/$defs/informationSourceType"
+    },
+    "locationType": {
+      "$ref": "UNECE-EPContextCCL.json#/$defs/locationType"
+    },
+    "membershipType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/membershipType"
+        },
+        {
+          "properties": {
+            "startDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "endDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            }
+          }
+        }
+      ]
+    },
+    "noteType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/noteType"
+        },
+        {
+          "properties": {
+            "creationDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            }
+          }
+        }
+      ]
+    },
+    "periodType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/periodType"
+        },
+        {
+          "properties": {
+            "minimumDuration": {
+              "$ref": "#/$defs/qdt/$defs/durationUnitMeasureType"
+            },
+            "maximumDuration": {
+              "$ref": "#/$defs/qdt/$defs/durationUnitMeasureType"
+            }
+          }
+        }
+      ]
+    },
+    "requirementType": {
+      "$ref": "UNECE-EPContextCCL.json#/$defs/requirementType"
+    },
+    "routeType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/routeType"
+        },
+        {
+          "properties": {
+            "distance": {
+              "$ref": "#/$defs/qdt/$defs/linearUnitMeasureType"
+            }
+          }
+        }
+      ]
+    },
+    "usageConditionType": {
+      "$ref": "UNECE-EPContextCCL.json#/$defs/usageConditionType"
+    },
+    "sustainabilityAssertionType": {
+      "$ref": "UNECE-EPContextCCL.json#/$defs/sustainabilityAssertionType"
+    },
+    "tradeSettlementPaymentMonetarySummationType": {
+      "$ref": "UNECE-EPContextCCL.json#/$defs/tradeSettlementPaymentMonetarySummationType"
+    },
+    "tradeSettlementFinancialCardType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/tradeSettlementFinancialCardType"
+        },
+        {
+          "properties": {
+            "validFromDateTime": {
+              "$ref": "#/$defs/qdt/$defs/dateOnlyFormattedDateTimeType"
+            },
+            "expiryDateTime": {
+              "$ref": "#/$defs/qdt/$defs/dateOnlyFormattedDateTimeType"
+            }
+          }
+        }
+      ]
+    },
+    "tradeSettlementPaymentMeansType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/tradeSettlementPaymentMeansType"
+        },
+        {
+          "properties": {
+            "paymentChannelCode": {
+              "$ref": "#/$defs/qdt/$defs/paymentMeansChannelCodeType"
+            },
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/paymentMeansCodeType"
+            },
+            "guaranteeMethodCode": {
+              "$ref": "#/$defs/qdt/$defs/paymentGuaranteeMeansCodeType"
+            },
+            "identifiedPaymentCash": {
+              "$ref": "#/$defs/paymentCashType"
+            }
+          }
+        }
+      ]
+    },
+    "tradeAddressType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/tradeAddressType"
+        },
+        {
+          "properties": {
+            "countryId": {
+              "$ref": "#/$defs/qdt/$defs/countryIdType"
+            },
+            "countryName": {
+              "maxItems": 1
+            }
+          }
+        }
+      ]
+    },
+    "tradeAllowanceChargeType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/tradeAllowanceChargeType"
+        },
+        {
+          "properties": {
+            "reasonCode": {
+              "$ref": "#/$defs/qdt/$defs/allowanceChargeReasonCodeType"
+            },
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/allowanceChargeIdCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "tradeContactType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/tradeContactType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/contactTypeCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "tradeContractType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/tradeContractType"
+        },
+        {
+          "properties": {
+            "signedDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "automaticExtensionDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "automaticExtensionDuration": {
+              "$ref": "#/$defs/qdt/$defs/durationUnitMeasureType"
+            }
+          }
+        }
+      ]
+    },
+    "tradePartyType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/tradePartyType"
+        },
+        {
+          "properties": {
+            "roleCode": {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/qdt/$defs/partyRoleCodeType"
+                },
+                {
+                  "maxItems": 1
+                }
+              ]
+            },
+            "specifiedCooperatingOrganization": {
+              "$ref": "#/$defs/cooperatingOrganizationType"
+            }
+          }
+        }
+      ]
+    },
+    "tradePriceType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/tradePriceType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/priceTypeCodeType"
+            },
+            "expiryDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "tradeComparisonReferencePrice": {
+              "$ref": "#/$defs/referencePriceType"
+            },
+            "applicableCustomerClass": {
+              "$ref": "#/$defs/customerClassType"
+            }
+          }
+        }
+      ]
+    },
+    "tradeTaxType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/tradeTaxType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/taxTypeCodeType"
+            },
+            "categoryCode": {
+              "$ref": "#/$defs/qdt/$defs/taxCategoryCodeType"
+            },
+            "currencyCode": {
+              "$ref": "#/$defs/qdt/$defs/currencyCodeType"
+            },
+            "paymentMethodCode": {
+              "$ref": "#/$defs/qdt/$defs/paymentMethodCodeType"
+            },
+            "regimeTypeCode": {
+              "$ref": "#/$defs/qdt/$defs/customsDutyRegimeTypeCodeType"
+            },
+            "dueDateTypeCode": {
+              "$ref": "#/$defs/qdt/$defs/timeReferenceCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "universalCommunicationType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-EPContextCCL.json#/$defs/universalCommunicationType"
+        },
+        {
+          "properties": {
+            "channelCode": {
+              "$ref": "#/$defs/qdt/$defs/communicationChannelCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "waterSourceType": {
+      "$ref": "UNECE-EPContextCCL.json#/$defs/waterSourceType"
+    }
+  }
+}

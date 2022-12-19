@@ -1,0 +1,168 @@
+{
+  "$schema": "https://raw.githubusercontent.com/uncefact/spec-JSONschema/main/JSONschema2020-12/meta-schema",
+  "$id": "https://raw.githubusercontent.com/uncefact/spec-JSONschema/main/JSONschema2020-12/meta-library/BuyShipPay/D22A/CrossIndustryDemandForecastResponse",
+  "title": "Cross Industry Demand Forecast Response",
+  "description": "Copyright (C) UN/CEFACT (2022). All Rights Reserved.\n\nThis document and translations of it may be copied and furnished to others, and derivative works that comment on or otherwise explain it or assist in its implementation may be prepared, copied, published and distributed, in whole or in part, without restriction of any kind, provided that the above copyright notice and this paragraph are included on all such copies and derivative works. However, this document itself may not be modified in any way, such as by removing the copyright notice or references to UN/CEFACT, except as needed for the purpose of developing UN/CEFACT specifications, in which case the procedures for copyrights defined in the UN/CEFACT Intellectual Property Rights document must be followed, or as required to translate it into languages other than English.\n\nThe limited permissions granted above are perpetual and will not be revoked by UN/CEFACT or its successors or assigns.\n\nThis document and the information contained herein is provided on an \"AS IS\" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.",
+  "allOf": [
+    {
+      "$ref": "UNECE-SCRDMMaster.json#"
+    },
+    {
+      "properties": {
+        "exchangedDocumentContext": {
+          "properties": {
+            "isOrHasTest": false
+          }
+        },
+        "exchangedDocument": {
+          "properties": {
+            "purposeCode": {
+              "maxItems": 1
+            },
+            "effectivePeriod": {
+              "properties": {
+                "isOrHasOpen": false,
+                "purposeCode": false
+              }
+            }
+          }
+        },
+        "specifiedConsignment": false,
+        "tradeSettlementPayment": false,
+        "tradeTransaction": {
+          "minItems": 1,
+          "maxItems": 1,
+          "properties": {
+            "includedTradeLineItem": {
+              "properties": {
+                "descriptionCode": false,
+                "specifiedTradeProduct": {
+                  "minItems": 1,
+                  "maxItems": 1,
+                  "properties": {
+                    "id": {
+                      "maxItems": 1
+                    },
+                    "globalId": {
+                      "maxItems": 1
+                    },
+                    "manufacturerAssignedId": {
+                      "maxItems": 1
+                    },
+                    "industryAssignedId": {
+                      "maxItems": 1
+                    },
+                    "grossWeight": {
+                      "maxItems": 1
+                    },
+                    "scientificName": false,
+                    "sizeDescription": false,
+                    "originTradeCountry": {
+                      "maxItems": 1
+                    },
+                    "linearSpatialDimension": {
+                      "maxItems": 1
+                    },
+                    "minimumLinearSpatialDimension": {
+                      "maxItems": 1
+                    },
+                    "maximumLinearSpatialDimension": {
+                      "maxItems": 1
+                    },
+                    "manufacturer": {
+                      "maxItems": 1
+                    },
+                    "msdsReferenceReferencedDocument": {
+                      "maxItems": 1
+                    }
+                  }
+                },
+                "substitutedReferencedProduct": {
+                  "properties": {
+                    "manufacturerAssignedId": {
+                      "maxItems": 1
+                    },
+                    "industryAssignedId": {
+                      "maxItems": 1
+                    }
+                  }
+                },
+                "substituteApplicableReferencedProduct": {
+                  "properties": {
+                    "manufacturerAssignedId": {
+                      "maxItems": 1
+                    },
+                    "industryAssignedId": {
+                      "maxItems": 1
+                    }
+                  }
+                },
+                "specifiedLineTradeAgreement": {
+                  "properties": {
+                    "grossPriceProductTradePrice": {
+                      "properties": {
+                        "appliedTradeAllowanceCharge": {
+                          "properties": {
+                            "categoryTradeTax": {
+                              "properties": {
+                                "lineTotalBasisAmount": false,
+                                "allowanceChargeBasisAmount": false
+                              }
+                            }
+                          }
+                        },
+                        "includedTradeTax": false
+                      }
+                    },
+                    "netPriceProductTradePrice": {
+                      "properties": {
+                        "appliedTradeAllowanceCharge": {
+                          "properties": {
+                            "categoryTradeTax": {
+                              "properties": {
+                                "lineTotalBasisAmount": false,
+                                "allowanceChargeBasisAmount": false
+                              }
+                            }
+                          }
+                        },
+                        "includedTradeTax": false
+                      }
+                    }
+                  }
+                },
+                "specifiedLineTradeDelivery": {
+                  "properties": {
+                    "relatedConsignment": {
+                      "properties": {
+                        "insuranceValueAmount": false,
+                        "deliveryInstructions": false
+                      }
+                    }
+                  }
+                }
+              },
+              "required": [
+                "associatedDocumentLineDocument"
+              ]
+            },
+            "applicableHeaderTradeDelivery": {
+              "minItems": 1,
+              "maxItems": 1,
+              "properties": {
+                "plannedReleaseEvent": false,
+                "inventoryManager": {
+                  "maxItems": 1
+                }
+              }
+            }
+          }
+        },
+        "valuationBreakdownStatement": false
+      },
+      "required": [
+        "exchangedDocument"
+      ]
+    }
+  ]
+}

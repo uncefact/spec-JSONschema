@@ -1,0 +1,2111 @@
+{
+  "$schema": "https://raw.githubusercontent.com/uncefact/spec-JSONschema/main/JSONschema2020-12/meta-schema",
+  "$id": "https://raw.githubusercontent.com/uncefact/spec-JSONschema/main/JSONschema2020-12/meta-library/BuyShipPay/D22A/MMTContextCCLContainer",
+  "title": "MMT Context CCL Container",
+  "description": "Copyright (C) UN/CEFACT (2022). All Rights Reserved.\n\nThis document and translations of it may be copied and furnished to others, and derivative works that comment on or otherwise explain it or assist in its implementation may be prepared, copied, published and distributed, in whole or in part, without restriction of any kind, provided that the above copyright notice and this paragraph are included on all such copies and derivative works. However, this document itself may not be modified in any way, such as by removing the copyright notice or references to UN/CEFACT, except as needed for the purpose of developing UN/CEFACT specifications, in which case the procedures for copyrights defined in the UN/CEFACT Intellectual Property Rights document must be followed, or as required to translate it into languages other than English.\n\nThe limited permissions granted above are perpetual and will not be revoked by UN/CEFACT or its successors or assigns.\n\nThis document and the information contained herein is provided on an \"AS IS\" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.",
+  "$defs": {
+    "qdt": {
+      "accessRightsTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/accessRightsTypeCodeType"
+      },
+      "accountingAccountBalanceReopeningTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/accountingAccountBalanceReopeningTypeCodeType"
+      },
+      "accountingAccountClassificationCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/accountingAccountClassificationCodeType"
+      },
+      "accountingAccountNatureTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/accountingAccountNatureTypeCodeType"
+      },
+      "accountingAccountStatusCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/accountingAccountStatusCodeType"
+      },
+      "accountingAccountTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/accountingAccountTypeCodeType"
+      },
+      "accountingAmountQualifierCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/accountingAmountQualifierCodeType"
+      },
+      "accountingAmountTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/accountingAmountTypeCodeType"
+      },
+      "accountingContactCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/accountingContactCodeType"
+      },
+      "accountingDocumentTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/accountingDocumentTypeCodeType"
+      },
+      "accountingEntryCategoryCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/accountingEntryCategoryCodeType"
+      },
+      "accountingEntryLineCategoryCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/accountingEntryLineCategoryCodeType"
+      },
+      "accountingEntryLineSourceCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/accountingEntryLineSourceCodeType"
+      },
+      "accountingEntryProcessingCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/accountingEntryProcessingCodeType"
+      },
+      "accountingJournalCategoryCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/accountingJournalCategoryCodeType"
+      },
+      "accountingJournalCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/accountingJournalCodeType"
+      },
+      "accountingPeriodFunctionCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/accountingPeriodFunctionCodeType"
+      },
+      "accountingPerquisiteCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/accountingPerquisiteCodeType"
+      },
+      "accountingVoucherMediumCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/accountingVoucherMediumCodeType"
+      },
+      "additionalPostponementCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/additionalPostponementCodeType"
+      },
+      "addressFormatTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/addressFormatTypeCodeType"
+      },
+      "alternateCurrencyAmountTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/alternateCurrencyAmountTypeCodeType"
+      },
+      "amortizationMethodCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/amortizationMethodCodeType"
+      },
+      "amountWeightTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/amountWeightTypeCodeType"
+      },
+      "certificateTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/certificateTypeCodeType"
+      },
+      "financialAccountTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/financialAccountTypeCodeType"
+      },
+      "financialInstitutionRoleCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/financialInstitutionRoleCodeType"
+      },
+      "lifetimeEndCostCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/lifetimeEndCostCodeType"
+      },
+      "organizationFunctionTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/organizationFunctionTypeCodeType"
+      },
+      "partyTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/partyTypeCodeType"
+      },
+      "refundMethodCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/refundMethodCodeType"
+      },
+      "scenarioTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/scenarioTypeCodeType"
+      },
+      "softwareUserTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/softwareUserTypeCodeType"
+      },
+      "taxExemptionReasonCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/taxExemptionReasonCodeType"
+      },
+      "binaryObjectCharacterSetCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/binaryObjectCharacterSetCodeType"
+      },
+      "binaryObjectEncodingCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/binaryObjectEncodingCodeType"
+      },
+      "mimeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/mimeCodeType"
+      },
+      "dateOnlyFormattedDateTimeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/dateOnlyFormattedDateTimeType"
+      },
+      "formattedDateTimeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/formattedDateTimeType"
+      },
+      "cargoCommodityCategoryCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/cargoCommodityCategoryCodeType"
+      },
+      "customsProcedureGuaranteeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/customsProcedureGuaranteeCodeType"
+      },
+      "goodsTypeExtensionCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/goodsTypeExtensionCodeType"
+      },
+      "goodsTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/goodsTypeCodeType"
+      },
+      "logisticsChargeCalculationBasisCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/logisticsChargeCalculationBasisCodeType"
+      },
+      "airFlowUnitMeasureType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/airFlowUnitMeasureType"
+      },
+      "durationUnitMeasureType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/durationUnitMeasureType"
+      },
+      "fileSizeUnitMeasureType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/fileSizeUnitMeasureType"
+      },
+      "linearUnitMeasureType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/linearUnitMeasureType"
+      },
+      "temperatureUnitMeasureType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/temperatureUnitMeasureType"
+      },
+      "unitMeasureType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/unitMeasureType"
+      },
+      "volumeUnitMeasureType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/volumeUnitMeasureType"
+      },
+      "weightUnitMeasureType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/weightUnitMeasureType"
+      },
+      "cargoCategoryCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/cargoCategoryCodeType"
+      },
+      "deliveryTermsCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/deliveryTermsCodeType"
+      },
+      "freightChargeTypeIdType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/freightChargeTypeIdType"
+      },
+      "logisticsStatusCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/logisticsStatusCodeType"
+      },
+      "packageTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/packageTypeCodeType"
+      },
+      "transportModeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/transportModeCodeType"
+      },
+      "cashAccountTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/cashAccountTypeCodeType"
+      },
+      "financingStatusReasonCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/financingStatusReasonCodeType"
+      },
+      "financingStatusCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/financingStatusCodeType"
+      },
+      "titleCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/titleCodeType"
+      },
+      "currencyCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/currencyCodeType"
+      },
+      "languageCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/languageCodeType"
+      },
+      "languageIdType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/languageIdType"
+      },
+      "accountingDebitCreditStatusCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/accountingDebitCreditStatusCodeType"
+      },
+      "accountingDocumentCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/accountingDocumentCodeType"
+      },
+      "acknowledgementCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/acknowledgementCodeType"
+      },
+      "addressTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/addressTypeCodeType"
+      },
+      "adjustmentReasonCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/adjustmentReasonCodeType"
+      },
+      "allowanceChargeIdCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/allowanceChargeIdCodeType"
+      },
+      "allowanceChargeReasonCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/allowanceChargeReasonCodeType"
+      },
+      "automaticDataCaptureMethodCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/automaticDataCaptureMethodCodeType"
+      },
+      "billingDocumentCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/billingDocumentCodeType"
+      },
+      "cancellationDocumentStatusCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/cancellationDocumentStatusCodeType"
+      },
+      "cargoOperationalCategoryCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/cargoOperationalCategoryCodeType"
+      },
+      "cargoTypeClassificationCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/cargoTypeClassificationCodeType"
+      },
+      "chargePayingPartyRoleCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/chargePayingPartyRoleCodeType"
+      },
+      "codeListResponsibleAgencyCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/codeListResponsibleAgencyCodeType"
+      },
+      "commitmentLevelCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/commitmentLevelCodeType"
+      },
+      "communicationChannelCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/communicationChannelCodeType"
+      },
+      "contactTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/contactTypeCodeType"
+      },
+      "countryIdType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/countryIdType"
+      },
+      "customsDutyRegimeTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/customsDutyRegimeTypeCodeType"
+      },
+      "dangerousGoodsPackagingLevelCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/dangerousGoodsPackagingLevelCodeType"
+      },
+      "dangerousGoodsRegulationCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/dangerousGoodsRegulationCodeType"
+      },
+      "dateTimePeriodFunctionCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/dateTimePeriodFunctionCodeType"
+      },
+      "deliveryTermsFunctionCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/deliveryTermsFunctionCodeType"
+      },
+      "dimensionTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/dimensionTypeCodeType"
+      },
+      "documentStatusCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/documentStatusCodeType"
+      },
+      "documentCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/documentCodeType"
+      },
+      "financialAdjustmentReasonCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/financialAdjustmentReasonCodeType"
+      },
+      "freightChargeTariffClassCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/freightChargeTariffClassCodeType"
+      },
+      "governmentActionCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/governmentActionCodeType"
+      },
+      "invoiceDocumentCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/invoiceDocumentCodeType"
+      },
+      "lineStatusCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/lineStatusCodeType"
+      },
+      "locationFunctionCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/locationFunctionCodeType"
+      },
+      "markingInstructionCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/markingInstructionCodeType"
+      },
+      "measuredAttributeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/measuredAttributeCodeType"
+      },
+      "messageFunctionCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/messageFunctionCodeType"
+      },
+      "packagingLevelCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/packagingLevelCodeType"
+      },
+      "packagingMarkingCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/packagingMarkingCodeType"
+      },
+      "partyRoleCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/partyRoleCodeType"
+      },
+      "paymentGuaranteeMeansCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/paymentGuaranteeMeansCodeType"
+      },
+      "paymentMeansChannelCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/paymentMeansChannelCodeType"
+      },
+      "paymentMeansCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/paymentMeansCodeType"
+      },
+      "paymentMethodCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/paymentMethodCodeType"
+      },
+      "paymentTermsEventTimeReferenceCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/paymentTermsEventTimeReferenceCodeType"
+      },
+      "paymentTermsTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/paymentTermsTypeCodeType"
+      },
+      "paymentTermsIdType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/paymentTermsIdType"
+      },
+      "priceTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/priceTypeCodeType"
+      },
+      "priorityDescriptionCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/priorityDescriptionCodeType"
+      },
+      "processTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/processTypeCodeType"
+      },
+      "quotationDocumentCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/quotationDocumentCodeType"
+      },
+      "referenceCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/referenceCodeType"
+      },
+      "remittanceDocumentCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/remittanceDocumentCodeType"
+      },
+      "responseTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/responseTypeCodeType"
+      },
+      "responsibleGovernmentAgencyInvolvementCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/responsibleGovernmentAgencyInvolvementCodeType"
+      },
+      "responsibleGovernmentAgencyCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/responsibleGovernmentAgencyCodeType"
+      },
+      "schedulingDocumentCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/schedulingDocumentCodeType"
+      },
+      "sealConditionCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/sealConditionCodeType"
+      },
+      "sealingPartyRoleCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/sealingPartyRoleCodeType"
+      },
+      "statusCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/statusCodeType"
+      },
+      "subjectCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/subjectCodeType"
+      },
+      "taxCategoryCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/taxCategoryCodeType"
+      },
+      "taxTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/taxTypeCodeType"
+      },
+      "temperatureTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/temperatureTypeCodeType"
+      },
+      "timeReferenceCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/timeReferenceCodeType"
+      },
+      "transportContractMovementCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/transportContractMovementCodeType"
+      },
+      "transportEquipmentCategoryCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/transportEquipmentCategoryCodeType"
+      },
+      "transportEquipmentFullnessCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/transportEquipmentFullnessCodeType"
+      },
+      "transportEquipmentHaulageArrangementsCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/transportEquipmentHaulageArrangementsCodeType"
+      },
+      "transportEquipmentLegalStatusCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/transportEquipmentLegalStatusCodeType"
+      },
+      "transportEquipmentMovementStatusCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/transportEquipmentMovementStatusCodeType"
+      },
+      "transportEquipmentOperationalStatusCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/transportEquipmentOperationalStatusCodeType"
+      },
+      "transportEquipmentSizeTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/transportEquipmentSizeTypeCodeType"
+      },
+      "transportEquipmentSupplierPartyRoleCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/transportEquipmentSupplierPartyRoleCodeType"
+      },
+      "transportMeansDirectionCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/transportMeansDirectionCodeType"
+      },
+      "transportMeansTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/transportMeansTypeCodeType"
+      },
+      "transportMovementStageCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/transportMovementStageCodeType"
+      },
+      "transportMovementTypeCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/transportMovementTypeCodeType"
+      },
+      "transportServiceCategoryCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/transportServiceCategoryCodeType"
+      },
+      "transportServiceConditionCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/transportServiceConditionCodeType"
+      },
+      "transportServicePaymentArrangementCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/transportServicePaymentArrangementCodeType"
+      },
+      "transportServicePriorityCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/transportServicePriorityCodeType"
+      },
+      "transportServiceRequirementCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/transportServiceRequirementCodeType"
+      },
+      "validationDocumentStatusCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/validationDocumentStatusCodeType"
+      },
+      "workflowStatusCodeType": {
+        "$ref": "UNECE-MMTContextCCL.json#/$defs/qdt/$defs/workflowStatusCodeType"
+      }
+    },
+    "calibratedMeasurementType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/calibratedMeasurementType"
+    },
+    "communicationEventType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/communicationEventType"
+    },
+    "communicationPairingType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/communicationPairingType"
+    },
+    "controlSettingParameterType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/controlSettingParameterType"
+    },
+    "correctiveActionType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/correctiveActionType"
+    },
+    "correctiveEventType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/correctiveEventType"
+    },
+    "csEngineeringCoordinateReferenceSystemType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/csEngineeringCoordinateReferenceSystemType"
+    },
+    "documentHandlingInstructionsType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/documentHandlingInstructionsType"
+    },
+    "exchangedDocumentType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/exchangedDocumentType"
+        },
+        {
+          "properties": {
+            "name": false,
+            "description": false,
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/documentCodeType"
+            },
+            "statusCode": false,
+            "isOrHasCopy": false,
+            "submissionDateTime": false,
+            "remarks": false,
+            "languageId": false,
+            "acceptanceDateTime": false,
+            "originalRequiredQuantity": false,
+            "copyRequiredQuantity": false,
+            "originalIssuedQuantity": false,
+            "copyIssuedQuantity": false,
+            "purposeCode": false,
+            "amendmentPurposeCode": false,
+            "information": false,
+            "isOrHasElectronicPresentation": false,
+            "revisionDateTime": false,
+            "traderAssignedId": false,
+            "senderAssignedId": false,
+            "recipientAssignedId": false,
+            "customsId": false,
+            "versionId": false,
+            "categoryCode": false,
+            "cancellationDateTime": false,
+            "rejectionResponseDateTime": false,
+            "responseDateTime": false,
+            "requestedResponseTypeCode": false,
+            "creationDateTime": false,
+            "urgencyCode": false,
+            "urgency": false,
+            "offsetProcessingStatus": false,
+            "includedNote": false,
+            "referenceReferencedDocument": false,
+            "effectivePeriod": false,
+            "issueLogisticsLocation": false,
+            "lodgementLogisticsLocation": false,
+            "contractualDocumentClause": false,
+            "firstSignatoryDocumentAuthentication": false,
+            "secondSignatoryDocumentAuthentication": false,
+            "thirdSignatoryDocumentAuthentication": false,
+            "fourthSignatoryDocumentAuthentication": false,
+            "agent": false,
+            "issuer": false,
+            "attachedBinaryFile": false
+          }
+        }
+      ]
+    },
+    "foundStowawayType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/foundStowawayType"
+        },
+        {
+          "properties": {
+            "discoveredDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "interviewDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "claimedNationalityId": {
+              "$ref": "#/$defs/qdt/$defs/countryIdType"
+            }
+          }
+        }
+      ]
+    },
+    "geographicalCoordinateType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/geographicalCoordinateType"
+        },
+        {
+          "properties": {
+            "altitude": false,
+            "isOrHasLatitudeDirection": false,
+            "isOrHasLongitudeDirection": false,
+            "systemId": false,
+            "id": false,
+            "altimetricSystemId": false,
+            "timeZoneDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            }
+          }
+        }
+      ]
+    },
+    "handlingInstructionsType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/handlingInstructionsType"
+        },
+        {
+          "properties": {
+            "description": false,
+            "descriptionCode": false,
+            "maximumStackabilityWeightApplicable": false,
+            "maximumStackabilityApplicableQuantity": false,
+            "maximumStorageHumidityApplicable": false,
+            "minimumStorageHumidityApplicable": false,
+            "id": false,
+            "applicableTransportSettingTemperature": false,
+            "storageApplicableInstructedTemperature": false
+          }
+        }
+      ]
+    },
+    "inspectionInstructionsType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/inspectionInstructionsType"
+    },
+    "inspectionNoteType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/inspectionNoteType"
+    },
+    "inspectionReferenceType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/inspectionReferenceType"
+    },
+    "logisticsLocationType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/logisticsLocationType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/locationFunctionCodeType"
+            },
+            "description": false,
+            "countryName": false,
+            "countryId": {
+              "$ref": "#/$defs/qdt/$defs/countryIdType"
+            },
+            "countrySubDivisionId": false,
+            "postalTradeAddress": false,
+            "servicingSpecifiedLocationParty": false,
+            "stayPeriod": false,
+            "specifiedInspectionEvent": {
+              "$ref": "#/$defs/inspectionEventType"
+            }
+          }
+        }
+      ]
+    },
+    "logisticsPackageType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/logisticsPackageType"
+        },
+        {
+          "properties": {
+            "grossWeight": false,
+            "netWeight": false,
+            "grossVolume": false,
+            "levelCode": {
+              "$ref": "#/$defs/qdt/$defs/packagingLevelCodeType"
+            },
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/packageTypeCodeType"
+            },
+            "type": false,
+            "sequenceNumeric": false,
+            "id": false,
+            "seriesStartId": false,
+            "seriesEndId": false,
+            "isOrHasReturnable": false,
+            "colourCode": false,
+            "perPackageUnitQuantity": false,
+            "physicalLogisticsShippingMarks": false,
+            "includedTradeLineItem": false,
+            "linearSpatialDimension": false,
+            "usedPackaging": false,
+            "statedCondition": {
+              "$ref": "#/$defs/conditionType"
+            }
+          }
+        }
+      ]
+    },
+    "logisticsPackagingType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/logisticsPackagingType"
+        },
+        {
+          "properties": {
+            "specifiedPackagingMarking": {
+              "$ref": "#/$defs/packagingMarkingType"
+            },
+            "applicablePackagingInstructions": {
+              "$ref": "#/$defs/packagingInstructionsType"
+            }
+          }
+        }
+      ]
+    },
+    "logisticsStatusType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/logisticsStatusType"
+        },
+        {
+          "properties": {
+            "conditionCode": {
+              "$ref": "#/$defs/qdt/$defs/logisticsStatusCodeType"
+            },
+            "referenceDateTime": false,
+            "reasonCode": {
+              "$ref": "#/$defs/qdt/$defs/logisticsStatusCodeType"
+            },
+            "sequenceNumeric": false,
+            "specifiedLogisticsLocation": false,
+            "validityPeriod": false,
+            "arrivalReportedEvent": false,
+            "departureReportedEvent": false,
+            "loadingReportedEvent": false,
+            "unloadingReportedEvent": false
+          }
+        }
+      ]
+    },
+    "logisticsTransportEquipmentType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/logisticsTransportEquipmentType"
+        },
+        {
+          "properties": {
+            "grossWeight": false,
+            "netWeight": false,
+            "tareWeight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "loadingLength": false,
+            "requiredLaneLength": false,
+            "grossVolume": false,
+            "loadedPackageQuantity": false,
+            "humidityPercent": false,
+            "categoryCode": {
+              "$ref": "#/$defs/qdt/$defs/transportEquipmentCategoryCodeType"
+            },
+            "characteristic": false,
+            "supplierPartyRoleCode": false,
+            "usedCapacityCode": {
+              "$ref": "#/$defs/qdt/$defs/transportEquipmentFullnessCodeType"
+            },
+            "operationalStatusCode": {
+              "$ref": "#/$defs/qdt/$defs/transportEquipmentOperationalStatusCodeType"
+            },
+            "transportMovementStatusCode": false,
+            "legalStatusCode": false,
+            "haulageArrangementCode": false,
+            "loadingRemark": false,
+            "damageRemark": false,
+            "information": false,
+            "sequenceNumeric": false,
+            "powerSupplyTypeCode": false,
+            "powerSupplyType": false,
+            "powerSupplyConnectorQuantity": false,
+            "isOrHasAccompanied": false,
+            "releaseId": false,
+            "releaseRestriction": false,
+            "sealQuantity": false,
+            "unitQuantity": false,
+            "airFlow": false,
+            "containedConsignmentQuantity": false,
+            "unloadingSequenceNumeric": false,
+            "loadingSequenceNumeric": false,
+            "carrierAssignedBookingId": false,
+            "isOrHasSealed": false,
+            "isOrHasReturnable": false,
+            "shipperReferenceInformation": false,
+            "manufacturingDateTime": false,
+            "containedConsignment": false,
+            "loadedConsignmentItem": false,
+            "quarantineInstructions": false,
+            "handlingInstructions": false,
+            "deliveryInstructions": false,
+            "loadingInstructions": false,
+            "unloadingInstructions": false,
+            "additionalInstructions": false,
+            "affixedLogisticsSeal": false,
+            "attachedTransportEquipment": false,
+            "carriedAssociatedTransportEquipment": false,
+            "containedAssociatedTransportEquipment": false,
+            "settingTransportSettingTemperature": false,
+            "applicableLogisticsServiceCharge": false,
+            "loadingEvent": false,
+            "unloadingEvent": false,
+            "storageEvent": false,
+            "bondedWarehouseStorageEvent": false,
+            "loading": false,
+            "transportServicesBuyer": false,
+            "carrier": false,
+            "notified": false,
+            "specifiedLogisticsTransportMeans": false,
+            "reportedLogisticsStatus": {
+              "$ref": "#/$defs/logisticsStatusType"
+            },
+            "consolidationEvent": false,
+            "deliveryEvent": false,
+            "associatedReferencedDocument": false,
+            "applicableNote": false,
+            "specifiedLogisticsRiskAnalysisResult": false
+          }
+        }
+      ]
+    },
+    "logisticsTransportMeansType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/logisticsTransportMeansType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/transportMeansTypeCodeType"
+            },
+            "type": false,
+            "grossWeight": false,
+            "netWeight": false,
+            "length": false,
+            "draughtLevel": false,
+            "cargoGrossWeight": false,
+            "requiredLaneLength": false,
+            "loadedCargo": false,
+            "sequenceNumeric": false,
+            "isOrHasDriverAccompanied": false,
+            "conferenceCode": false,
+            "manoeuvringSpeed": false,
+            "forwardDraughtLevel": false,
+            "aftDraughtLevel": false,
+            "isOrHasWasteReportingExemption": false,
+            "isOrHasHelipad": false,
+            "ispsSecurityLevelCode": false,
+            "isOrHasApprovedSecurityPlanOnboard": false,
+            "tareWeight": false,
+            "manufacturingDateTime": false,
+            "deadweightTonnage": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "airDraughtLevel": {
+              "$ref": "#/$defs/qdt/$defs/linearUnitMeasureType"
+            },
+            "attachedLogisticsTransportEquipment": false,
+            "applicableLogisticsServiceCharge": false,
+            "operatorNationalityTradeCountry": false,
+            "registrationTradeCountry": false,
+            "owner": false,
+            "specifiedSpatialDimension": false,
+            "serviceProvider": false,
+            "specifiedHandlingInstructions": false,
+            "requiredService": false,
+            "registrationEvent": false,
+            "certifiedCalculatedEmission": false,
+            "ownerAgent": false,
+            "isscIssuingAuthority": false,
+            "specifiedIdentifiedFault": false,
+            "isscReferencedDocument": false,
+            "companySecurityOfficerPerson": false,
+            "manufacturer": false,
+            "specifiedCalculatedEmission": {
+              "$ref": "#/$defs/calculatedEmissionType"
+            }
+          }
+        }
+      ]
+    },
+    "logisticsTransportMovementType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/logisticsTransportMovementType"
+        },
+        {
+          "properties": {
+            "stageCode": {
+              "$ref": "#/$defs/qdt/$defs/transportMovementStageCodeType"
+            },
+            "modeCode": {
+              "$ref": "#/$defs/qdt/$defs/transportModeCodeType"
+            },
+            "mode": false,
+            "scheduledId": false,
+            "tradingConsolidatorAssignedId": false,
+            "terminalOperatorAssignedId": false,
+            "stayId": false,
+            "closingDateTime": false,
+            "borderCrossingDateTime": false,
+            "transitDirectionCode": false,
+            "passengerQuantity": false,
+            "crewQuantity": false,
+            "transportEquipmentQuantity": false,
+            "tradedParcelQuantity": false,
+            "sailingAdviceNotificationInformation": false,
+            "consignmentQuantity": false,
+            "packageQuantity": false,
+            "information": false,
+            "pilotageExemptionId": false,
+            "cargoDescription": false,
+            "isOrHasDangerousGoods": false,
+            "isOrHasManifestOnboard": false,
+            "statusCode": {
+              "$ref": "#/$defs/qdt/$defs/statusCodeType"
+            },
+            "serviceCode": false,
+            "service": false,
+            "type": false,
+            "cycle": false,
+            "reportedSecurityInformation": false,
+            "callPurposeCode": false,
+            "name": false,
+            "masterResponsiblePerson": false,
+            "crewPerson": false,
+            "arrivalEvent": false,
+            "firstArrivalEvent": false,
+            "departureEvent": false,
+            "applicableLogisticsServiceCharge": false,
+            "consortiumCarrier": false,
+            "nvoccCarrier": false,
+            "terminalOperator": false,
+            "commodityConsolidator": false,
+            "commodityConsolidatorAgent": false,
+            "inspection": false,
+            "loadingInspection": false,
+            "unloadingInspection": false,
+            "stevedore": false,
+            "notified": false,
+            "documentaryInstructionsNotified": false,
+            "sailingAdviceNotified": false,
+            "liftingInstructionsRelatedReferencedDocument": false,
+            "manifestRelatedReferencedDocument": false,
+            "specialSpecifiedInstructions": false,
+            "unloadingInspectionSpecifiedInstructions": false,
+            "loadingInspectionSpecifiedInstructions": false,
+            "applicableCrossBorderRegulatoryProcedure": false,
+            "transportContractRelatedReferencedDocument": false,
+            "transshipmentIntermediateEvent": false,
+            "excessTransportService": false,
+            "callEvent": false,
+            "associatedLogisticsConvoy": false,
+            "borderCrossingEvent": false,
+            "passengerNationalityTradeCountry": false,
+            "crewNationalityTradeCountry": false,
+            "ispsRelatedReferencedDocument": false,
+            "specifiedCalculatedEmission": false,
+            "carrierAgent": false,
+            "carriedMaterialGoodsCharacteristic": false,
+            "specifiedHandlingInstructions": false,
+            "carriedInactiveReferencedTransportMeans": false,
+            "transportMeansSecurityOfficerPerson": false,
+            "crewListRelatedReferencedDocument": false,
+            "passengerListRelatedReferencedDocument": false,
+            "specifiedEvent": false,
+            "specifiedLogisticsRiskAnalysisResult": false,
+            "onboardPerson": false,
+            "crewPersonalEffects": false,
+            "onboardStoresItemInventory": false,
+            "reportedTransportationWasteMaterial": false,
+            "reportedMDHTransportationHealth": {
+              "$ref": "#/$defs/mdhTransportationHealthType"
+            },
+            "shipToShipEvent": false,
+            "specifiedLogisticsStatus": {
+              "$ref": "#/$defs/logisticsStatusType"
+            }
+          }
+        }
+      ]
+    },
+    "mdhHealthIndicationType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/mdhHealthIndicationType"
+        },
+        {
+          "properties": {
+            "reportedDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "appliedMDHSanitaryMeasure": {
+              "$ref": "#/$defs/mdhSanitaryMeasureType"
+            }
+          }
+        }
+      ]
+    },
+    "mdhIllnessType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/mdhIllnessType"
+        },
+        {
+          "properties": {
+            "symptomOnsetDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            }
+          }
+        }
+      ]
+    },
+    "mdhSanitaryMeasureType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/mdhSanitaryMeasureType"
+        },
+        {
+          "properties": {
+            "applicationDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            }
+          }
+        }
+      ]
+    },
+    "mdhTransportationHealthType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/mdhTransportationHealthType"
+    },
+    "monitoringIOTDeviceType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/monitoringIOTDeviceType"
+    },
+    "monitoringSensorType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/monitoringSensorType"
+        },
+        {
+          "properties": {
+            "manufacturer": {
+              "properties": {
+                "definedTradeContact": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    "oemEquipmentType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/oemEquipmentType"
+    },
+    "operationalParameterType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/operationalParameterType"
+    },
+    "personalLanguageProficiencyType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/personalLanguageProficiencyType"
+        },
+        {
+          "properties": {
+            "languageId": {
+              "$ref": "#/$defs/qdt/$defs/languageIdType"
+            },
+            "languageCode": {
+              "$ref": "#/$defs/qdt/$defs/languageCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "preventiveActionType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/preventiveActionType"
+    },
+    "radioactiveRadionuclideType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/radioactiveRadionuclideType"
+    },
+    "referencedDocumentType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/referencedDocumentType"
+        },
+        {
+          "properties": {
+            "statusCode": false,
+            "lineId": false,
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/documentCodeType"
+            },
+            "relationshipTypeCode": false,
+            "remarks": false,
+            "isOrHasAuthenticatedOriginal": false,
+            "isOrHasElectronicPresentation": false,
+            "categoryCode": false,
+            "referenceTypeCode": false,
+            "languageId": false,
+            "issueDateTime": false,
+            "pageId": false,
+            "subordinateLineId": false,
+            "referenceDateTime": false,
+            "includedAmount": false,
+            "effectivePeriod": false,
+            "issuer": false,
+            "issueLogisticsLocation": false,
+            "signatoryDocumentAuthentication": false,
+            "attachedBinaryFile": false,
+            "includedNote": false,
+            "specifiedDocumentStatus": false,
+            "issuerSpecifiedDocumentHandlingInstructions": {
+              "$ref": "#/$defs/documentHandlingInstructionsType"
+            }
+          }
+        }
+      ]
+    },
+    "referencedConsignmentType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/referencedConsignmentType"
+        },
+        {
+          "properties": {
+            "consignorAssignedId": false,
+            "consigneeAssignedId": false,
+            "carrierAssignedId": false,
+            "freightForwarderAssignedId": false,
+            "sequenceNumeric": false,
+            "transportSplitDescription": false,
+            "grossWeight": false,
+            "netWeight": false,
+            "grossVolume": false,
+            "consignmentItemQuantity": false,
+            "carrierAcceptanceDateTime": false,
+            "customsId": false,
+            "includedReferencedConsignmentItem": false,
+            "consignor": false,
+            "consignee": false,
+            "despatch": false,
+            "delivery": false,
+            "notified": false,
+            "carrier": false,
+            "relatedTradeTransaction": false,
+            "transportLogisticsPackage": false,
+            "vanningEvent": false,
+            "carrierAcceptanceLogisticsLocation": false,
+            "applicableCrossBorderRegulatoryProcedure": false,
+            "transportContractReferencedDocument": false,
+            "preCarriageLogisticsTransportMovement": false,
+            "utilizedLogisticsTransportEquipment": false,
+            "warehouseStorageEvent": false,
+            "specifiedLogisticsRiskAnalysisResult": false,
+            "devanningEvent": false
+          }
+        }
+      ]
+    },
+    "spatialDimensionType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/spatialDimensionType"
+        },
+        {
+          "properties": {
+            "typeCode": false,
+            "diameter": false
+          }
+        }
+      ]
+    },
+    "actionType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/actionType"
+    },
+    "certificateType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/certificateType"
+        },
+        {
+          "properties": {
+            "issueDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "expiryDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "validityExtendedUntilDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "actualEffectiveDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "requestedEffectiveDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "endorsementDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "latestEndorsementDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "availableLanguageCode": {
+              "$ref": "#/$defs/qdt/$defs/languageCodeType"
+            },
+            "effectiveFromDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "reportedDocumentStatus": {
+              "$ref": "#/$defs/documentStatusType"
+            }
+          }
+        }
+      ]
+    },
+    "chemicalTreatmentType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/chemicalTreatmentType"
+    },
+    "circleType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/circleType"
+        },
+        {
+          "properties": {
+            "centreGeographicalPoint": {
+              "$ref": "#/$defs/geographicalPointType"
+            }
+          }
+        }
+      ]
+    },
+    "conditionType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/conditionType"
+        },
+        {
+          "properties": {
+            "subjectTypeCode": {
+              "$ref": "#/$defs/qdt/$defs/subjectCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "faultType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/faultType"
+        },
+        {
+          "properties": {
+            "operationalApplicableTolerance": {
+              "$ref": "#/$defs/toleranceType"
+            }
+          }
+        }
+      ]
+    },
+    "geographicalFeatureType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/geographicalFeatureType"
+        },
+        {
+          "properties": {
+            "includedGeographicalPoint": {
+              "$ref": "#/$defs/geographicalPointType"
+            },
+            "includedGeographicalLine": {
+              "$ref": "#/$defs/geographicalLineType"
+            },
+            "includedGeographicalSurface": {
+              "$ref": "#/$defs/geographicalSurfaceType"
+            },
+            "includedGeographicalMultiPoint": false,
+            "includedGeographicalMultiCurve": false,
+            "includedGeographicalMultiSurface": false,
+            "includedPolygon": false,
+            "includedGeographicalGrid": false,
+            "includedCircle": {
+              "$ref": "#/$defs/circleType"
+            }
+          }
+        }
+      ]
+    },
+    "geographicalLineType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/geographicalLineType"
+        },
+        {
+          "properties": {
+            "associatedDirectPositionList": {
+              "$ref": "#/$defs/directPositionListType"
+            }
+          }
+        }
+      ]
+    },
+    "geographicalObjectCharacteristicType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/geographicalObjectCharacteristicType"
+    },
+    "geographicalPointType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/geographicalPointType"
+        },
+        {
+          "properties": {
+            "associatedDirectPositionList": {
+              "$ref": "#/$defs/directPositionListType"
+            }
+          }
+        }
+      ]
+    },
+    "geographicalSurfaceType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/geographicalSurfaceType"
+        },
+        {
+          "properties": {
+            "includedPolygon": {
+              "$ref": "#/$defs/polygonType"
+            }
+          }
+        }
+      ]
+    },
+    "inspectionResultType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/inspectionResultType"
+        },
+        {
+          "properties": {
+            "attachedInspectionNote": {
+              "$ref": "#/$defs/inspectionNoteType"
+            },
+            "minimumStandardValueApplicableInspectionResultCharacteristic": {
+              "$ref": "#/$defs/inspectionResultCharacteristicType"
+            },
+            "maximumStandardValueApplicableInspectionResultCharacteristic": {
+              "$ref": "#/$defs/inspectionResultCharacteristicType"
+            },
+            "observedValueApplicableInspectionResultCharacteristic": {
+              "$ref": "#/$defs/inspectionResultCharacteristicType"
+            },
+            "expectedValueApplicableInspectionResultCharacteristic": {
+              "$ref": "#/$defs/inspectionResultCharacteristicType"
+            },
+            "applicableInspectionResultCharacteristic": {
+              "$ref": "#/$defs/inspectionResultCharacteristicType"
+            },
+            "applicableCorrectiveAction": {
+              "$ref": "#/$defs/correctiveActionType"
+            },
+            "applicablePreventiveAction": {
+              "$ref": "#/$defs/preventiveActionType"
+            },
+            "applicableAction": {
+              "$ref": "#/$defs/actionType"
+            }
+          }
+        }
+      ]
+    },
+    "inspectionType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/inspectionType"
+        },
+        {
+          "properties": {
+            "executionInspectionPerson": {
+              "$ref": "#/$defs/inspectionPersonType"
+            },
+            "specifiedInspectionEvent": {
+              "$ref": "#/$defs/inspectionEventType"
+            },
+            "specifiedInspectionStatus": {
+              "$ref": "#/$defs/inspectionStatusType"
+            }
+          }
+        }
+      ]
+    },
+    "linearRingType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/linearRingType"
+        },
+        {
+          "properties": {
+            "coordinateDirectPosition": {
+              "$ref": "#/$defs/directPositionType"
+            }
+          }
+        }
+      ]
+    },
+    "materialType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/materialType"
+        },
+        {
+          "properties": {
+            "applicableMaterialGoodsCharacteristic": {
+              "$ref": "#/$defs/materialGoodsCharacteristicType"
+            },
+            "applicableTradeProductCertification": {
+              "$ref": "#/$defs/tradeProductCertificationType"
+            },
+            "applicableWasteMaterialRecoveryDisposalProcess": {
+              "$ref": "#/$defs/wasteMaterialRecoveryDisposalProcessType"
+            }
+          }
+        }
+      ]
+    },
+    "methodType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/methodType"
+    },
+    "objectType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/objectType"
+    },
+    "parameterType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/parameterType"
+        },
+        {
+          "properties": {
+            "valueTolerance": {
+              "$ref": "#/$defs/toleranceType"
+            }
+          }
+        }
+      ]
+    },
+    "periodType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/periodType"
+        },
+        {
+          "properties": {
+            "minimumDuration": {
+              "$ref": "#/$defs/qdt/$defs/durationUnitMeasureType"
+            },
+            "maximumDuration": {
+              "$ref": "#/$defs/qdt/$defs/durationUnitMeasureType"
+            }
+          }
+        }
+      ]
+    },
+    "polygonType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/polygonType"
+        },
+        {
+          "properties": {
+            "interiorLinearRing": false,
+            "exteriorLinearRing": {
+              "$ref": "#/$defs/linearRingType"
+            }
+          }
+        }
+      ]
+    },
+    "radioactiveIsotopeType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/radioactiveIsotopeType"
+    },
+    "rangeType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/rangeType"
+        },
+        {
+          "properties": {
+            "typeCode": false,
+            "totalItemQuantity": false
+          }
+        }
+      ]
+    },
+    "toleranceType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/toleranceType"
+    },
+    "subordinateLocationType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/subordinateLocationType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/locationFunctionCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "subordinateLocationType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/subordinateLocationType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/locationFunctionCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "consignmentItemType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/consignmentItemType"
+        },
+        {
+          "properties": {
+            "sequenceNumeric": false,
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/goodsTypeCodeType"
+            },
+            "typeExtensionCode": {
+              "$ref": "#/$defs/qdt/$defs/goodsTypeExtensionCodeType"
+            },
+            "firstTypeExtensionCode": false,
+            "secondTypeExtensionCode": false,
+            "nationalTypeExtensionCode": false,
+            "exportTypeCode": false,
+            "importTypeCode": false,
+            "declaredValueForCustomsAmount": false,
+            "declaredValueForCarriageAmount": false,
+            "declaredValueForStatisticsAmount": false,
+            "fobAmount": false,
+            "insuranceValueAmount": false,
+            "invoiceAmount": false,
+            "totalChargeAmount": false,
+            "totalExportExitToImportEntryChargeAmount": false,
+            "grossWeight": false,
+            "netWeight": false,
+            "chargeableWeight": false,
+            "grossVolume": false,
+            "specialInstructions": false,
+            "deliveryInstructions": false,
+            "damageRemarks": false,
+            "information": false,
+            "cargoToleranceInformation": false,
+            "loadingLength": false,
+            "tariffQuantity": false,
+            "packageQuantity": false,
+            "packageType": false,
+            "tradeLineItemQuantity": false,
+            "globalId": false,
+            "natureIdCargo": false,
+            "applicableDangerousGoods": false,
+            "handlingInstructions": false,
+            "quarantineInstructions": false,
+            "transportSettingTemperature": false,
+            "physicalLogisticsShippingMarks": false,
+            "linearSpatialDimension": false,
+            "originTradeGeopoliticalRegion": false,
+            "exportTradeGeopoliticalRegion": false,
+            "exportTradeCountry": false,
+            "destinationTradeCountry": false,
+            "importationTradeCountry": false,
+            "transitTradeCountry": false,
+            "declaredForCustomsLogisticsLocation": false,
+            "associatedReferencedLogisticsTransportEquipment": false,
+            "manufacturer": false,
+            "despatch": false,
+            "delivery": false,
+            "associatedReferencedDocument": false,
+            "applicableLogisticsTransportMeans": false,
+            "transportLogisticsPackage": false,
+            "applicableLogisticsServiceCharge": false,
+            "reportedLogisticsStatus": false,
+            "deliveryEvent": false,
+            "examinationEvent": false,
+            "vanningEvent": false,
+            "applicableCrossBorderRegulatoryProcedure": false,
+            "transportContractReferencedDocument": false,
+            "applicableCrossBorderCustomsValuation": false,
+            "pickUpEvent": false,
+            "borderClearanceInstructions": false,
+            "previousAdministrativeReferencedDocument": false,
+            "applicableNote": false,
+            "specifiedInspectionEvent": {
+              "$ref": "#/$defs/inspectionEventType"
+            },
+            "specifiedLogisticsRiskAnalysisResult": {
+              "$ref": "#/$defs/logisticsRiskAnalysisResultType"
+            }
+          }
+        }
+      ]
+    },
+    "consignmentType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/consignmentType"
+        },
+        {
+          "properties": {
+            "tradedParcelId": false,
+            "sequenceNumeric": false,
+            "loadingSequenceNumeric": false,
+            "exportExitDateTime": false,
+            "warehouseArrivalDateTime": false,
+            "grossWeight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "netWeight": false,
+            "grossVolume": {
+              "$ref": "#/$defs/qdt/$defs/volumeUnitMeasureType"
+            },
+            "loadingLength": false,
+            "chargeableWeight": false,
+            "fobAmount": false,
+            "insuranceValueAmount": false,
+            "insurancePremiumAmount": false,
+            "associatedInvoiceAmount": false,
+            "totalChargeAmount": false,
+            "totalCollectChargeAmount": false,
+            "totalPrepaidChargeAmount": false,
+            "totalAllowanceChargeAmount": false,
+            "totalDisbursementAmount": false,
+            "totalExportExitToImportEntryChargeAmount": false,
+            "declaredValueForCustomsAmount": false,
+            "codAmount": false,
+            "associatedInvoiceDiscountAmount": false,
+            "associatedInvoiceDiscountPercent": false,
+            "isOrHasNilCustomsValue": false,
+            "isOrHasNilCarriageValue": false,
+            "isOrHasNilInsuranceValue": false,
+            "isOrHasContainerization": false,
+            "chargeableTransportationStageQuantity": false,
+            "loadingListQuantity": false,
+            "summaryDescription": false,
+            "goodsReleaseRestriction": false,
+            "information": false,
+            "carrierProvidedInformation": false,
+            "transportSplitDescription": false,
+            "loadingInformation": false,
+            "demurrageInformation": false,
+            "isOrHasShipStores": false,
+            "riskFactorCode": false,
+            "declaredValueForCarriageAmount": false,
+            "paymentArrangementCode": false,
+            "deliveryInformation": false,
+            "unloadingSequenceNumeric": false,
+            "packageType": false,
+            "cargoInsuranceInstructionsInformation": false,
+            "isOrHasTransshipmentPermission": false,
+            "netVolume": false,
+            "relatedBookingType": false,
+            "shippedOnboardDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "serviceChargeCurrencyCode": {
+              "$ref": "#/$defs/qdt/$defs/currencyCodeType"
+            },
+            "carrierAgent": false,
+            "importer": false,
+            "exporter": false,
+            "despatch": false,
+            "delivery": false,
+            "shipFrom": false,
+            "shipTo": false,
+            "customsImportAgent": false,
+            "customsExportAgent": false,
+            "customsTransitAgent": false,
+            "connectingCarrier": false,
+            "dangerousGoodsNotifier": false,
+            "intermediateConsignee": false,
+            "consolidator": false,
+            "deconsolidator": false,
+            "consignorAgent": false,
+            "consigneeAgent": false,
+            "groupingCentre": false,
+            "transshipmentLogisticsLocation": false,
+            "transitLogisticsLocation": false,
+            "declaredForCustomsLogisticsLocation": false,
+            "finalDestinationLogisticsLocation": false,
+            "customsRequiredInvoiceReferencedDocument": false,
+            "associatedReferencedDocument": false,
+            "manifestAssociatedReferencedDocument": false,
+            "physicalLogisticsShippingMarks": false,
+            "haulageInstructions": false,
+            "loadingInstructions": false,
+            "deliveryEvent": false,
+            "examinationEvent": false,
+            "pickUpEvent": false,
+            "storageEvent": false,
+            "bondedWarehouseStorageEvent": false,
+            "vanningEvent": false,
+            "borderCrossingLogisticsTransportMovement": false,
+            "atArrivalLogisticsTransportMovement": false,
+            "atDepartureLogisticsTransportMovement": false,
+            "specifiedLogisticsTransportMovement": false,
+            "transitTradeCountry": false,
+            "destinationTradeCountry": false,
+            "finalDestinationTradeCountry": false,
+            "importTradeCountry": false,
+            "exportTradeCountry": false,
+            "reExportTradeCountry": false,
+            "originTradeGeopoliticalRegion": false,
+            "exportTradeGeopoliticalRegion": false,
+            "applicableCargoInsurance": false,
+            "applicableTradeCurrencyExchange": false,
+            "invoiceApplicableTradeCurrencyExchange": false,
+            "serviceChargeApplicableTradeCurrencyExchange": false,
+            "insuranceApplicableTradeCurrencyExchange": false,
+            "specifiedTradeDeliveryTerms": {
+              "$ref": "#/$defs/tradeDeliveryTermsType"
+            },
+            "applicableLogisticsServiceCharge": false,
+            "estimatedApplicableLogisticsServiceCharge": false,
+            "applicableTradeAllowanceCharge": false,
+            "reportedLogisticsStatus": {
+              "$ref": "#/$defs/logisticsStatusType"
+            },
+            "relatedTradeTransaction": false,
+            "associated": false,
+            "localConsigneeAgent": false,
+            "pickUp": false,
+            "natureIdCargo": false,
+            "applicableCrossBorderRegulatoryProcedure": false,
+            "applicableDangerousGoods": false,
+            "applicableCrossBorderCustomsValuation": false,
+            "consignorProvidedBorderClearanceInstructions": false,
+            "deliveryInstructions": false,
+            "invoiceeAssociated": false,
+            "previousAdministrativeReferencedDocument": false,
+            "specifiedLogisticsRiskAnalysisResult": false,
+            "devanningEvent": false,
+            "specifiedInspectionEvent": {
+              "$ref": "#/$defs/inspectionEventType"
+            },
+            "specifiedLogisticsStatus": {
+              "$ref": "#/$defs/logisticsStatusType"
+            }
+          }
+        }
+      ]
+    },
+    "tradeLineItemType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/tradeLineItemType"
+        },
+        {
+          "properties": {
+            "id": false,
+            "barcodeId": false,
+            "typeCode": false,
+            "typeExtensionCode": false,
+            "sequenceNumeric": false,
+            "descriptionCode": false,
+            "includedWithinConsignmentItem": false,
+            "associatedDocumentLineDocument": false,
+            "additionalInformationNote": false,
+            "referenceReferencedDocument": false,
+            "referencedLogisticsPackage": false,
+            "invoiceAssociatedReferencedDocument": false,
+            "appliedProductHandlingProcess": {
+              "$ref": "#/$defs/productHandlingProcessType"
+            }
+          }
+        }
+      ]
+    },
+    "tradeContactType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/tradeContactType"
+        },
+        {
+          "properties": {
+            "id": false,
+            "departmentName": false,
+            "typeCode": false,
+            "authorizedPersonName": false,
+            "directTelephoneUniversalCommunication": false,
+            "mobileTelephoneUniversalCommunication": false,
+            "faxUniversalCommunication": false,
+            "telexUniversalCommunication": false,
+            "specifiedNote": false
+          }
+        }
+      ]
+    },
+    "tradeCountryType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/tradeCountryType"
+        },
+        {
+          "properties": {
+            "id": {
+              "$ref": "#/$defs/qdt/$defs/countryIdType"
+            }
+          }
+        }
+      ]
+    },
+    "tradeDeliveryTermsType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/tradeDeliveryTermsType"
+        },
+        {
+          "properties": {
+            "deliveryTypeCode": {
+              "$ref": "#/$defs/qdt/$defs/deliveryTermsCodeType"
+            },
+            "description": false,
+            "functionCode": false,
+            "deliveryDiscontinuationCode": false,
+            "isOrHasPartialDeliveryAllowed": false
+          }
+        }
+      ]
+    },
+    "tradeLocationType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/tradeLocationType"
+        },
+        {
+          "properties": {
+            "countryId": false
+          }
+        }
+      ]
+    },
+    "tradePartyType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/tradePartyType"
+        },
+        {
+          "properties": {
+            "id": {
+              "maxItems": 1
+            },
+            "roleCode": false,
+            "isOrHasQualityAssurance": false,
+            "languageCode": false,
+            "registeredId": false,
+            "role": false,
+            "specifiedLegalOrganization": false,
+            "postalTradeAddress": false,
+            "telephoneUniversalCommunication": false,
+            "uriUniversalCommunication": false,
+            "providedService": false,
+            "specifiedTaxRegistration": false,
+            "specifiedAuthoritativeSignatoryPerson": false,
+            "applicableLogisticsServiceCharge": false,
+            "specifiedGovernmentRegistration": false,
+            "specifiedLogisticsRiskAnalysisResult": false,
+            "applicableOrganizationalCertification": {
+              "$ref": "#/$defs/organizationalCertificationType"
+            },
+            "specifiedCooperatingOrganization": {
+              "$ref": "#/$defs/cooperatingOrganizationType"
+            }
+          }
+        }
+      ]
+    },
+    "transportationWasteRecoveryDisposalProcessType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/transportationWasteRecoveryDisposalProcessType"
+    },
+    "dangerousGoodsType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/dangerousGoodsType"
+        },
+        {
+          "properties": {
+            "regulatoryAuthorityName": false,
+            "regulationCode": false,
+            "regulationName": false,
+            "technicalName": false,
+            "information": false,
+            "emsId": false,
+            "tremId": false,
+            "upperPartOrangeHazardPlacardId": false,
+            "lowerPartOrangeHazardPlacardId": false,
+            "mfagId": false,
+            "packagingDangerLevelCode": false,
+            "marking": false,
+            "packingInstructionTypeCode": false,
+            "pollutantLevelCode": false,
+            "grossWeight": false,
+            "hazardTypeCode": false,
+            "hazardClassificationId": false,
+            "additionalHazardClassificationId": false,
+            "hazardClassVersionId": false,
+            "grossVolume": false,
+            "isOrHasPollutant": false,
+            "isOrHasMarinePollutant": false,
+            "netWeight": false,
+            "explosiveCargoNetWeight": false,
+            "properShippingName": false,
+            "supplementaryInformation": false,
+            "explosiveCompatibilityGroupCode": false,
+            "reportableQuantity": false,
+            "tunnelRestrictionCode": false,
+            "specialProvisionId": false,
+            "hazardCategoryCode": false,
+            "imdgSegregationGroupCode": false,
+            "authorizationInformation": false,
+            "allPackedInOneInformation": false,
+            "qValueNumeric": false,
+            "overpackInformation": false,
+            "aircraftLimitationInformation": false,
+            "complianceDeclarationInformation": false,
+            "shipperDeclarationInformation": false,
+            "limitedQuantityCode": false,
+            "packageTypeCode": false,
+            "marinePollutantVolume": {
+              "$ref": "#/$defs/qdt/$defs/volumeUnitMeasureType"
+            },
+            "meltingPointTemperature": {
+              "$ref": "#/$defs/qdt/$defs/temperatureUnitMeasureType"
+            },
+            "transportExpertTradeContact": false,
+            "emergencyTradeContact": false,
+            "flashpointTemperatureMeasurement": false,
+            "controlTemperatureMeasurement": false,
+            "emergencyTemperatureMeasurement": false,
+            "radioactiveMaterial": false,
+            "handlingInstructions": false,
+            "associatedReferencedLogisticsTransportEquipment": false,
+            "specifiedLogisticsPackage": false,
+            "statedCondition": {
+              "$ref": "#/$defs/conditionType"
+            }
+          }
+        }
+      ]
+    },
+    "transportEventType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/transportEventType"
+        },
+        {
+          "properties": {
+            "typeCode": false,
+            "description": false,
+            "arrivalRelatedDateTime": false,
+            "departureRelatedDateTime": false,
+            "estimatedTransportMeansArrivalOccurrenceDateTime": false,
+            "unitQuantity": false,
+            "scheduledArrivalRelatedDateTime": false,
+            "actualArrivalRelatedDateTime": false,
+            "scheduledDepartureRelatedDateTime": false,
+            "actualDepartureRelatedDateTime": false,
+            "securityLevelCode": false,
+            "reportedConditionTypeCode": false,
+            "value": false,
+            "receivedDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "isOrHasExpected": false,
+            "specifiedInstructions": false,
+            "occurrenceLogisticsLocation": {
+              "properties": {
+                "typeCode": {
+                  "properties": {
+                    "content": {
+                      "enum": [
+                        "10",
+                        "98"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "occurrencePeriod": false,
+            "transportMeansStayOccurrencePeriod": false,
+            "delayOccurrencePeriod": false,
+            "laycanOccurrencePeriod": false,
+            "cargoFacilityRelatedLogisticsLocation": false,
+            "conveyanceFacilityRelatedLogisticsLocation": false,
+            "certifying": false,
+            "relatedRoute": false,
+            "requestedRelatedReferencedService": false,
+            "delaySpecifiedReferencedEvent": false,
+            "staySpecifiedReferencedEvent": false,
+            "applicableNote": false,
+            "relatedObservation": false,
+            "additionalSecurityMeasuresApplicableNote": false,
+            "previousAssociatedGeographicalFeature": false,
+            "scheduledOccurrencePeriod": false
+          }
+        }
+      ]
+    },
+    "transportRouteType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/transportRouteType"
+        },
+        {
+          "properties": {
+            "id": false,
+            "transportMeans": false,
+            "frequencyTypeCode": false,
+            "statusCode": false,
+            "securityLevelCode": false,
+            "type": false,
+            "frequencyEffectivePeriod": false
+          }
+        }
+      ]
+    },
+    "serviceType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/serviceType"
+        },
+        {
+          "properties": {
+            "description": false,
+            "chargeAmount": false,
+            "conditionTypeCode": false,
+            "categoryTypeCode": false,
+            "priorityCode": false,
+            "serviceRequirementCode": {
+              "$ref": "#/$defs/qdt/$defs/transportServiceRequirementCodeType"
+            },
+            "paymentArrangementCode": false,
+            "reasonCode": false,
+            "contractMovementTypeCode": {
+              "$ref": "#/$defs/qdt/$defs/transportContractMovementCodeType"
+            },
+            "effectivePeriod": false,
+            "uriUniversalCommunication": false,
+            "requester": false
+          }
+        }
+      ]
+    },
+    "universalCommunicationType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/universalCommunicationType"
+        },
+        {
+          "properties": {
+            "channelCode": false
+          }
+        }
+      ]
+    },
+    "xheContextType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/xheContextType"
+        },
+        {
+          "properties": {
+            "specifiedXHEParameter": {
+              "$ref": "#/$defs/xheParameterType"
+            }
+          }
+        }
+      ]
+    },
+    "xheDocumentType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/xheDocumentType"
+        },
+        {
+          "properties": {
+            "senderXHEParty": {
+              "$ref": "#/$defs/xhePartyType"
+            },
+            "recipientXHEParty": {
+              "$ref": "#/$defs/xhePartyType"
+            },
+            "scopeXHEContext": {
+              "$ref": "#/$defs/xheContextType"
+            }
+          }
+        }
+      ]
+    },
+    "xheEnvelopeType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTContextCCL.json#/$defs/xheEnvelopeType"
+        },
+        {
+          "properties": {
+            "includedXHEPayload": {
+              "$ref": "#/$defs/xhePayloadType"
+            }
+          }
+        }
+      ]
+    },
+    "xheIdentityType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/xheIdentityType"
+    },
+    "xheParameterType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/xheParameterType"
+    },
+    "xhePartyType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/xhePartyType"
+    },
+    "xhePayloadInstanceType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/xhePayloadInstanceType"
+    },
+    "xhePayloadType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/xhePayloadType"
+    },
+    "xheReferenceType": {
+      "$ref": "UNECE-MMTContextCCL.json#/$defs/xheReferenceType"
+    }
+  }
+}

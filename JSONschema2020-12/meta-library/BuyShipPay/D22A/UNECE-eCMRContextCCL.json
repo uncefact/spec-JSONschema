@@ -1,0 +1,3563 @@
+{
+  "$schema": "https://raw.githubusercontent.com/uncefact/spec-JSONschema/main/JSONschema2020-12/meta-schema",
+  "$id": "https://raw.githubusercontent.com/uncefact/spec-JSONschema/main/JSONschema2020-12/meta-library/BuyShipPay/D22A/eCMRContextCCL",
+  "title": "eCMR Context CCL",
+  "description": "Copyright (C) UN/CEFACT (2022). All Rights Reserved.\n\nThis document and translations of it may be copied and furnished to others, and derivative works that comment on or otherwise explain it or assist in its implementation may be prepared, copied, published and distributed, in whole or in part, without restriction of any kind, provided that the above copyright notice and this paragraph are included on all such copies and derivative works. However, this document itself may not be modified in any way, such as by removing the copyright notice or references to UN/CEFACT, except as needed for the purpose of developing UN/CEFACT specifications, in which case the procedures for copyrights defined in the UN/CEFACT Intellectual Property Rights document must be followed, or as required to translate it into languages other than English.\n\nThe limited permissions granted above are perpetual and will not be revoked by UN/CEFACT or its successors or assigns.\n\nThis document and the information contained herein is provided on an \"AS IS\" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.",
+  "$defs": {
+    "qdt": {
+      "accessRightsTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/accessRightsTypeCodeType"
+      },
+      "accountingAccountBalanceReopeningTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/accountingAccountBalanceReopeningTypeCodeType"
+      },
+      "accountingAccountClassificationCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/accountingAccountClassificationCodeType"
+      },
+      "accountingAccountNatureTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/accountingAccountNatureTypeCodeType"
+      },
+      "accountingAccountStatusCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/accountingAccountStatusCodeType"
+      },
+      "accountingAccountTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/accountingAccountTypeCodeType"
+      },
+      "accountingAmountQualifierCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/accountingAmountQualifierCodeType"
+      },
+      "accountingAmountTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/accountingAmountTypeCodeType"
+      },
+      "accountingContactCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/accountingContactCodeType"
+      },
+      "accountingDocumentTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/accountingDocumentTypeCodeType"
+      },
+      "accountingEntryCategoryCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/accountingEntryCategoryCodeType"
+      },
+      "accountingEntryLineCategoryCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/accountingEntryLineCategoryCodeType"
+      },
+      "accountingEntryLineSourceCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/accountingEntryLineSourceCodeType"
+      },
+      "accountingEntryProcessingCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/accountingEntryProcessingCodeType"
+      },
+      "accountingJournalCategoryCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/accountingJournalCategoryCodeType"
+      },
+      "accountingJournalCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/accountingJournalCodeType"
+      },
+      "accountingPeriodFunctionCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/accountingPeriodFunctionCodeType"
+      },
+      "accountingPerquisiteCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/accountingPerquisiteCodeType"
+      },
+      "accountingVoucherMediumCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/accountingVoucherMediumCodeType"
+      },
+      "additionalPostponementCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/additionalPostponementCodeType"
+      },
+      "addressFormatTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/addressFormatTypeCodeType"
+      },
+      "alternateCurrencyAmountTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/alternateCurrencyAmountTypeCodeType"
+      },
+      "amortizationMethodCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/amortizationMethodCodeType"
+      },
+      "amountWeightTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/amountWeightTypeCodeType"
+      },
+      "certificateTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/certificateTypeCodeType"
+      },
+      "financialAccountTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/financialAccountTypeCodeType"
+      },
+      "financialInstitutionRoleCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/financialInstitutionRoleCodeType"
+      },
+      "lifetimeEndCostCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/lifetimeEndCostCodeType"
+      },
+      "organizationFunctionTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/organizationFunctionTypeCodeType"
+      },
+      "partyTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/partyTypeCodeType"
+      },
+      "refundMethodCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/refundMethodCodeType"
+      },
+      "scenarioTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/scenarioTypeCodeType"
+      },
+      "softwareUserTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/softwareUserTypeCodeType"
+      },
+      "taxExemptionReasonCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/taxExemptionReasonCodeType"
+      },
+      "binaryObjectCharacterSetCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/binaryObjectCharacterSetCodeType"
+      },
+      "binaryObjectEncodingCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/binaryObjectEncodingCodeType"
+      },
+      "mimeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/mimeCodeType"
+      },
+      "dateOnlyFormattedDateTimeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/dateOnlyFormattedDateTimeType"
+      },
+      "formattedDateTimeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/formattedDateTimeType"
+      },
+      "cargoCommodityCategoryCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/cargoCommodityCategoryCodeType"
+      },
+      "customsProcedureGuaranteeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/customsProcedureGuaranteeCodeType"
+      },
+      "goodsTypeExtensionCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/goodsTypeExtensionCodeType"
+      },
+      "goodsTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/goodsTypeCodeType"
+      },
+      "logisticsChargeCalculationBasisCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/logisticsChargeCalculationBasisCodeType"
+      },
+      "airFlowUnitMeasureType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/airFlowUnitMeasureType"
+      },
+      "durationUnitMeasureType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/durationUnitMeasureType"
+      },
+      "fileSizeUnitMeasureType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/fileSizeUnitMeasureType"
+      },
+      "linearUnitMeasureType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/linearUnitMeasureType"
+      },
+      "temperatureUnitMeasureType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/temperatureUnitMeasureType"
+      },
+      "unitMeasureType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/unitMeasureType"
+      },
+      "volumeUnitMeasureType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/volumeUnitMeasureType"
+      },
+      "weightUnitMeasureType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/weightUnitMeasureType"
+      },
+      "cargoCategoryCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/cargoCategoryCodeType"
+      },
+      "deliveryTermsCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/deliveryTermsCodeType"
+      },
+      "freightChargeTypeIdType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/freightChargeTypeIdType"
+      },
+      "logisticsStatusCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/logisticsStatusCodeType"
+      },
+      "packageTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/packageTypeCodeType"
+      },
+      "transportModeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/transportModeCodeType"
+      },
+      "cashAccountTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/cashAccountTypeCodeType"
+      },
+      "financingStatusReasonCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/financingStatusReasonCodeType"
+      },
+      "financingStatusCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/financingStatusCodeType"
+      },
+      "titleCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/titleCodeType"
+      },
+      "currencyCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/currencyCodeType"
+      },
+      "languageCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/languageCodeType"
+      },
+      "languageIdType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/languageIdType"
+      },
+      "accountingDebitCreditStatusCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/accountingDebitCreditStatusCodeType"
+      },
+      "accountingDocumentCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/accountingDocumentCodeType"
+      },
+      "acknowledgementCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/acknowledgementCodeType"
+      },
+      "addressTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/addressTypeCodeType"
+      },
+      "adjustmentReasonCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/adjustmentReasonCodeType"
+      },
+      "allowanceChargeIdCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/allowanceChargeIdCodeType"
+      },
+      "allowanceChargeReasonCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/allowanceChargeReasonCodeType"
+      },
+      "automaticDataCaptureMethodCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/automaticDataCaptureMethodCodeType"
+      },
+      "billingDocumentCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/billingDocumentCodeType"
+      },
+      "cancellationDocumentStatusCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/cancellationDocumentStatusCodeType"
+      },
+      "cargoOperationalCategoryCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/cargoOperationalCategoryCodeType"
+      },
+      "cargoTypeClassificationCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/cargoTypeClassificationCodeType"
+      },
+      "chargePayingPartyRoleCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/chargePayingPartyRoleCodeType"
+      },
+      "codeListResponsibleAgencyCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/codeListResponsibleAgencyCodeType"
+      },
+      "commitmentLevelCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/commitmentLevelCodeType"
+      },
+      "communicationChannelCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/communicationChannelCodeType"
+      },
+      "contactTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/contactTypeCodeType"
+      },
+      "countryIdType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/countryIdType"
+      },
+      "customsDutyRegimeTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/customsDutyRegimeTypeCodeType"
+      },
+      "dangerousGoodsPackagingLevelCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/dangerousGoodsPackagingLevelCodeType"
+      },
+      "dangerousGoodsRegulationCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/dangerousGoodsRegulationCodeType"
+      },
+      "dateTimePeriodFunctionCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/dateTimePeriodFunctionCodeType"
+      },
+      "deliveryTermsFunctionCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/deliveryTermsFunctionCodeType"
+      },
+      "dimensionTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/dimensionTypeCodeType"
+      },
+      "documentStatusCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/documentStatusCodeType"
+      },
+      "documentCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/documentCodeType"
+      },
+      "financialAdjustmentReasonCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/financialAdjustmentReasonCodeType"
+      },
+      "freightChargeTariffClassCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/freightChargeTariffClassCodeType"
+      },
+      "governmentActionCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/governmentActionCodeType"
+      },
+      "invoiceDocumentCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/invoiceDocumentCodeType"
+      },
+      "lineStatusCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/lineStatusCodeType"
+      },
+      "locationFunctionCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/locationFunctionCodeType"
+      },
+      "markingInstructionCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/markingInstructionCodeType"
+      },
+      "measuredAttributeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/measuredAttributeCodeType"
+      },
+      "messageFunctionCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/messageFunctionCodeType"
+      },
+      "packagingLevelCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/packagingLevelCodeType"
+      },
+      "packagingMarkingCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/packagingMarkingCodeType"
+      },
+      "partyRoleCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/partyRoleCodeType"
+      },
+      "paymentGuaranteeMeansCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/paymentGuaranteeMeansCodeType"
+      },
+      "paymentMeansChannelCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/paymentMeansChannelCodeType"
+      },
+      "paymentMeansCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/paymentMeansCodeType"
+      },
+      "paymentMethodCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/paymentMethodCodeType"
+      },
+      "paymentTermsEventTimeReferenceCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/paymentTermsEventTimeReferenceCodeType"
+      },
+      "paymentTermsTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/paymentTermsTypeCodeType"
+      },
+      "paymentTermsIdType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/paymentTermsIdType"
+      },
+      "priceTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/priceTypeCodeType"
+      },
+      "priorityDescriptionCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/priorityDescriptionCodeType"
+      },
+      "processTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/processTypeCodeType"
+      },
+      "quotationDocumentCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/quotationDocumentCodeType"
+      },
+      "referenceCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/referenceCodeType"
+      },
+      "remittanceDocumentCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/remittanceDocumentCodeType"
+      },
+      "responseTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/responseTypeCodeType"
+      },
+      "responsibleGovernmentAgencyInvolvementCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/responsibleGovernmentAgencyInvolvementCodeType"
+      },
+      "responsibleGovernmentAgencyCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/responsibleGovernmentAgencyCodeType"
+      },
+      "schedulingDocumentCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/schedulingDocumentCodeType"
+      },
+      "sealConditionCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/sealConditionCodeType"
+      },
+      "sealingPartyRoleCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/sealingPartyRoleCodeType"
+      },
+      "statusCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/statusCodeType"
+      },
+      "subjectCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/subjectCodeType"
+      },
+      "taxCategoryCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/taxCategoryCodeType"
+      },
+      "taxTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/taxTypeCodeType"
+      },
+      "temperatureTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/temperatureTypeCodeType"
+      },
+      "timeReferenceCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/timeReferenceCodeType"
+      },
+      "transportContractMovementCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/transportContractMovementCodeType"
+      },
+      "transportEquipmentCategoryCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/transportEquipmentCategoryCodeType"
+      },
+      "transportEquipmentFullnessCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/transportEquipmentFullnessCodeType"
+      },
+      "transportEquipmentHaulageArrangementsCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/transportEquipmentHaulageArrangementsCodeType"
+      },
+      "transportEquipmentLegalStatusCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/transportEquipmentLegalStatusCodeType"
+      },
+      "transportEquipmentMovementStatusCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/transportEquipmentMovementStatusCodeType"
+      },
+      "transportEquipmentOperationalStatusCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/transportEquipmentOperationalStatusCodeType"
+      },
+      "transportEquipmentSizeTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/transportEquipmentSizeTypeCodeType"
+      },
+      "transportEquipmentSupplierPartyRoleCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/transportEquipmentSupplierPartyRoleCodeType"
+      },
+      "transportMeansDirectionCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/transportMeansDirectionCodeType"
+      },
+      "transportMeansTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/transportMeansTypeCodeType"
+      },
+      "transportMovementStageCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/transportMovementStageCodeType"
+      },
+      "transportMovementTypeCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/transportMovementTypeCodeType"
+      },
+      "transportServiceCategoryCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/transportServiceCategoryCodeType"
+      },
+      "transportServiceConditionCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/transportServiceConditionCodeType"
+      },
+      "transportServicePaymentArrangementCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/transportServicePaymentArrangementCodeType"
+      },
+      "transportServicePriorityCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/transportServicePriorityCodeType"
+      },
+      "transportServiceRequirementCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/transportServiceRequirementCodeType"
+      },
+      "validationDocumentStatusCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/validationDocumentStatusCodeType"
+      },
+      "workflowStatusCodeType": {
+        "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/qdt/$defs/workflowStatusCodeType"
+      }
+    },
+    "academicQualificationType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/academicQualificationType"
+    },
+    "appliedChemicalTreatmentType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/appliedChemicalTreatmentType"
+        },
+        {
+          "properties": {
+            "applicableTemperature": {
+              "$ref": "#/$defs/temperatureType"
+            }
+          }
+        }
+      ]
+    },
+    "associatedTransportEquipmentType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/associatedTransportEquipmentType"
+        },
+        {
+          "properties": {
+            "categoryCode": false,
+            "characteristicCode": false,
+            "settingTransportSettingTemperature": {
+              "$ref": "#/$defs/transportSettingTemperatureType"
+            }
+          }
+        }
+      ]
+    },
+    "attachedTransportEquipmentType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/attachedTransportEquipmentType"
+        },
+        {
+          "properties": {
+            "categoryCode": false,
+            "characteristicCode": false
+          }
+        }
+      ]
+    },
+    "authoritativeSignatoryPersonType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/authoritativeSignatoryPersonType"
+        },
+        {
+          "properties": {
+            "attainedAcademicQualification": {
+              "$ref": "#/$defs/academicQualificationType"
+            }
+          }
+        }
+      ]
+    },
+    "calculatedEmissionType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/calculatedEmissionType"
+        },
+        {
+          "properties": {
+            "affectedDistance": {
+              "$ref": "#/$defs/qdt/$defs/linearUnitMeasureType"
+            },
+            "weight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            }
+          }
+        }
+      ]
+    },
+    "calibratedMeasurementType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/calibratedMeasurementType"
+    },
+    "certificationTestSpecificationReportType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/certificationTestSpecificationReportType"
+    },
+    "certifiedAccreditationType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/certifiedAccreditationType"
+        },
+        {
+          "properties": {
+            "obtainedDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "expiryDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            }
+          }
+        }
+      ]
+    },
+    "communicationEventType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/communicationEventType"
+    },
+    "communicationPairingType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/communicationPairingType"
+    },
+    "controlSettingParameterType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/controlSettingParameterType"
+    },
+    "correctiveActionType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/correctiveActionType"
+    },
+    "correctiveEventType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/correctiveEventType"
+    },
+    "crossBorderCustomsValuationType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/crossBorderCustomsValuationType"
+    },
+    "crossBorderRegulatoryProcedureType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/crossBorderRegulatoryProcedureType"
+        },
+        {
+          "properties": {
+            "paymentMethodCode": {
+              "$ref": "#/$defs/qdt/$defs/paymentMethodCodeType"
+            },
+            "transportMovementTypeCode": {
+              "$ref": "#/$defs/qdt/$defs/transportMovementTypeCodeType"
+            },
+            "responsibleAgencyCode": {
+              "$ref": "#/$defs/qdt/$defs/responsibleGovernmentAgencyCodeType"
+            },
+            "responsibleAgencyInvolvementCode": {
+              "$ref": "#/$defs/qdt/$defs/responsibleGovernmentAgencyInvolvementCodeType"
+            },
+            "responsibleAgencyActionCode": {
+              "$ref": "#/$defs/qdt/$defs/governmentActionCodeType"
+            },
+            "reportedLogisticsStatus": {
+              "$ref": "#/$defs/logisticsStatusType"
+            },
+            "borderClearanceInstructions": {
+              "$ref": "#/$defs/instructionsType"
+            },
+            "entryCustomsOfficeSpecifiedLogisticsLocation": {
+              "properties": {
+                "id": {
+                  "properties": {
+                    "schemeAgencyId": {
+                      "enum": [
+                        "1",
+                        "93",
+                        "95",
+                        "96",
+                        "98",
+                        "105",
+                        "109",
+                        "110",
+                        "140",
+                        "141",
+                        "143",
+                        "144",
+                        "145",
+                        "146",
+                        "147",
+                        "148",
+                        "149",
+                        "150",
+                        "151",
+                        "152",
+                        "153",
+                        "154",
+                        "155",
+                        "156",
+                        "157",
+                        "158",
+                        "159",
+                        "336",
+                        "380",
+                        "386",
+                        "406",
+                        "407",
+                        "408",
+                        "409",
+                        "410",
+                        "411",
+                        "412"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "exitCustomsOfficeSpecifiedLogisticsLocation": {
+              "properties": {
+                "id": {
+                  "properties": {
+                    "schemeAgencyId": {
+                      "enum": [
+                        "1",
+                        "93",
+                        "95",
+                        "96",
+                        "98",
+                        "105",
+                        "106",
+                        "107",
+                        "109",
+                        "110",
+                        "111",
+                        "140",
+                        "141",
+                        "142",
+                        "143",
+                        "144",
+                        "145",
+                        "146",
+                        "147",
+                        "148",
+                        "149",
+                        "150",
+                        "151",
+                        "152",
+                        "153",
+                        "154",
+                        "155",
+                        "156",
+                        "157",
+                        "158",
+                        "159",
+                        "336",
+                        "383",
+                        "386",
+                        "406",
+                        "407",
+                        "408",
+                        "409",
+                        "410",
+                        "411",
+                        "412"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "importCustomsOfficeSpecifiedLogisticsLocation": {
+              "properties": {
+                "id": {
+                  "properties": {
+                    "schemeAgencyId": {
+                      "enum": [
+                        "1",
+                        "93",
+                        "95",
+                        "96",
+                        "105",
+                        "109",
+                        "110",
+                        "140",
+                        "141",
+                        "142",
+                        "143",
+                        "144",
+                        "145",
+                        "146",
+                        "147",
+                        "148",
+                        "149",
+                        "150",
+                        "151",
+                        "152",
+                        "153",
+                        "154",
+                        "155",
+                        "156",
+                        "157",
+                        "158",
+                        "159",
+                        "336",
+                        "383",
+                        "386",
+                        "406",
+                        "407",
+                        "408",
+                        "409",
+                        "410",
+                        "411",
+                        "412"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "exportCustomsOfficeSpecifiedLogisticsLocation": {
+              "properties": {
+                "id": {
+                  "properties": {
+                    "schemeAgencyId": {
+                      "enum": [
+                        "1",
+                        "93",
+                        "95",
+                        "96",
+                        "98",
+                        "105",
+                        "106",
+                        "109",
+                        "110",
+                        "140",
+                        "141",
+                        "142",
+                        "143",
+                        "144",
+                        "145",
+                        "146",
+                        "147",
+                        "148",
+                        "149",
+                        "150",
+                        "151",
+                        "152",
+                        "153",
+                        "154",
+                        "155",
+                        "156",
+                        "157",
+                        "158",
+                        "159",
+                        "336",
+                        "383",
+                        "386",
+                        "406",
+                        "407",
+                        "408",
+                        "409",
+                        "410",
+                        "411",
+                        "412"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "transitCustomsOfficeSpecifiedLogisticsLocation": {
+              "properties": {
+                "id": {
+                  "properties": {
+                    "schemeAgencyId": {
+                      "enum": [
+                        "1",
+                        "93",
+                        "95",
+                        "96",
+                        "98",
+                        "105",
+                        "109",
+                        "110",
+                        "140",
+                        "141",
+                        "142",
+                        "143",
+                        "144",
+                        "145",
+                        "146",
+                        "147",
+                        "148",
+                        "149",
+                        "150",
+                        "151",
+                        "152",
+                        "153",
+                        "154",
+                        "155",
+                        "156",
+                        "157",
+                        "158",
+                        "159",
+                        "336",
+                        "383",
+                        "386",
+                        "406",
+                        "407",
+                        "408",
+                        "409",
+                        "410",
+                        "411",
+                        "412"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "transitReleaseCustomsOfficeSpecifiedLogisticsLocation": {
+              "properties": {
+                "id": {
+                  "properties": {
+                    "schemeAgencyId": {
+                      "enum": [
+                        "1",
+                        "93",
+                        "95",
+                        "96",
+                        "98",
+                        "105",
+                        "109",
+                        "110",
+                        "111",
+                        "140",
+                        "141",
+                        "142",
+                        "143",
+                        "144",
+                        "145",
+                        "146",
+                        "147",
+                        "148",
+                        "149",
+                        "150",
+                        "151",
+                        "152",
+                        "153",
+                        "154",
+                        "155",
+                        "156",
+                        "157",
+                        "158",
+                        "159",
+                        "336",
+                        "381",
+                        "383",
+                        "386",
+                        "406",
+                        "407",
+                        "408",
+                        "409",
+                        "410",
+                        "411",
+                        "412"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "requiredAppliedChemicalTreatment": {
+              "$ref": "#/$defs/appliedChemicalTreatmentType"
+            },
+            "requiredCertificationTestSpecificationReport": {
+              "$ref": "#/$defs/certificationTestSpecificationReportType"
+            }
+          }
+        }
+      ]
+    },
+    "csEngineeringCoordinateReferenceSystemType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/csEngineeringCoordinateReferenceSystemType"
+        },
+        {
+          "properties": {
+            "specifiedDelimitedPeriod": {
+              "$ref": "#/$defs/delimitedPeriodType"
+            }
+          }
+        }
+      ]
+    },
+    "deliveryInstructionsType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/deliveryInstructionsType"
+    },
+    "documentContextParameterType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/documentContextParameterType"
+    },
+    "documentHandlingInstructionsType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/documentHandlingInstructionsType"
+    },
+    "documentLineDocumentType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/documentLineDocumentType"
+        },
+        {
+          "properties": {
+            "lineStatusCode": {
+              "$ref": "#/$defs/qdt/$defs/lineStatusCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "documentAuthenticationType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/documentAuthenticationType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/governmentActionCodeType"
+            },
+            "includedDocumentClause": false,
+            "locationProvider": false
+          }
+        }
+      ]
+    },
+    "documentClauseType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/documentClauseType"
+        },
+        {
+          "properties": {
+            "associatedMeasurement": {
+              "$ref": "#/$defs/measurementType"
+            }
+          }
+        }
+      ]
+    },
+    "documentStatusType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/documentStatusType"
+        },
+        {
+          "properties": {
+            "conditionCode": {
+              "$ref": "#/$defs/qdt/$defs/documentStatusCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "documentVersionType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/documentVersionType"
+    },
+    "exchangedDocumentContextType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/exchangedDocumentContextType"
+    },
+    "exchangedDeclarationType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/exchangedDeclarationType"
+        },
+        {
+          "properties": {
+            "issueDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "grossWeight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "jurisdictionEntryDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/documentCodeType"
+            },
+            "applicableCrossBorderCustomsValuation": {
+              "$ref": "#/$defs/crossBorderCustomsValuationType"
+            }
+          }
+        }
+      ]
+    },
+    "exchangedDocumentType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/exchangedDocumentType"
+        },
+        {
+          "properties": {
+            "description": false,
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/documentCodeType"
+            },
+            "statusCode": {
+              "$ref": "#/$defs/qdt/$defs/documentStatusCodeType"
+            },
+            "purposeCode": {
+              "$ref": "#/$defs/qdt/$defs/messageFunctionCodeType"
+            },
+            "information": false,
+            "isOrHasElectronicPresentation": false,
+            "creationDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "referenceReferencedDocument": false
+          }
+        }
+      ]
+    },
+    "financialAdjustmentType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/financialAdjustmentType"
+        },
+        {
+          "properties": {
+            "directionCode": {
+              "$ref": "#/$defs/qdt/$defs/accountingDebitCreditStatusCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "foundStowawayType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/foundStowawayType"
+        },
+        {
+          "properties": {
+            "discoveredDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "interviewDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "claimedNationalityId": {
+              "$ref": "#/$defs/qdt/$defs/countryIdType"
+            }
+          }
+        }
+      ]
+    },
+    "geographicalCoordinateType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/geographicalCoordinateType"
+        },
+        {
+          "properties": {
+            "timeZoneDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "acquisitionDateTime": false,
+            "alternativeSourceSystemId": false,
+            "usedCSEngineeringCoordinateReferenceSystem": false,
+            "usedGeographicalCoordinateSourceSystem": false
+          }
+        }
+      ]
+    },
+    "governmentRegistrationType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/governmentRegistrationType"
+        },
+        {
+          "properties": {
+            "versionId": false,
+            "categoryCode": false,
+            "recordedDate": false,
+            "lastRegisteredYearDateTime": false,
+            "countrySubDivisionId": false,
+            "validityPeriod": false
+          }
+        }
+      ]
+    },
+    "handlingInstructionsType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/handlingInstructionsType"
+        },
+        {
+          "properties": {
+            "maximumStackabilityWeightApplicable": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "applicableTransportSettingTemperature": {
+              "$ref": "#/$defs/transportSettingTemperatureType"
+            },
+            "storageApplicableInstructedTemperature": {
+              "$ref": "#/$defs/instructedTemperatureType"
+            }
+          }
+        }
+      ]
+    },
+    "haulageInstructionsType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/haulageInstructionsType"
+    },
+    "headerTradeAgreementType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/headerTradeAgreementType"
+        },
+        {
+          "properties": {
+            "deliveryPriorityCode": {
+              "$ref": "#/$defs/qdt/$defs/priorityDescriptionCodeType"
+            },
+            "buyerApprovedDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "applicableTradeDeliveryTerms": {
+              "$ref": "#/$defs/tradeDeliveryTermsType"
+            },
+            "applicableForecastTerms": {
+              "$ref": "#/$defs/forecastTermsType"
+            }
+          }
+        }
+      ]
+    },
+    "headerTradeDeliveryType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/headerTradeDeliveryType"
+        },
+        {
+          "properties": {
+            "pickUpAvailabilityDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "ultimateShipToDeliveryDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "goodsOwnershipChangeDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "buyerOrderDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "includedPackaging": {
+              "$ref": "#/$defs/packagingType"
+            },
+            "specifiedDeliveryInstructions": {
+              "$ref": "#/$defs/deliveryInstructionsType"
+            }
+          }
+        }
+      ]
+    },
+    "headerTradeSettlementType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/headerTradeSettlementType"
+        },
+        {
+          "properties": {
+            "taxCurrencyCode": {
+              "$ref": "#/$defs/qdt/$defs/currencyCodeType"
+            },
+            "orderCurrencyCode": {
+              "$ref": "#/$defs/qdt/$defs/currencyCodeType"
+            },
+            "invoiceCurrencyCode": {
+              "$ref": "#/$defs/qdt/$defs/currencyCodeType"
+            },
+            "priceCurrencyCode": {
+              "$ref": "#/$defs/qdt/$defs/currencyCodeType"
+            },
+            "paymentCurrencyCode": {
+              "$ref": "#/$defs/qdt/$defs/currencyCodeType"
+            },
+            "quotationCurrencyCode": {
+              "$ref": "#/$defs/qdt/$defs/currencyCodeType"
+            },
+            "specifiedTradeSettlementHeaderMonetarySummation": {
+              "$ref": "#/$defs/tradeSettlementHeaderMonetarySummationType"
+            },
+            "specifiedFinancialAdjustment": {
+              "$ref": "#/$defs/financialAdjustmentType"
+            },
+            "specifiedAdvancePayment": {
+              "$ref": "#/$defs/advancePaymentType"
+            },
+            "specifiedPaymentInstalmentPlan": {
+              "$ref": "#/$defs/paymentInstalmentPlanType"
+            }
+          }
+        }
+      ]
+    },
+    "identifiedFaultType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/identifiedFaultType"
+    },
+    "inspectionInstructionsType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/inspectionInstructionsType"
+    },
+    "inspectionNoteType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/inspectionNoteType"
+    },
+    "inspectionReferenceType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/inspectionReferenceType"
+    },
+    "instructedTemperatureType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/instructedTemperatureType"
+    },
+    "legalOrganizationType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/legalOrganizationType"
+    },
+    "legalRegistrationType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/legalRegistrationType"
+    },
+    "locationPartyType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/locationPartyType"
+        },
+        {
+          "properties": {
+            "countryId": false,
+            "specifiedPerson": false,
+            "postalTradeAddress": false,
+            "telephoneUniversalCommunication": false,
+            "faxUniversalCommunication": false,
+            "uriUniversalCommunication": false,
+            "providedService": false
+          }
+        }
+      ]
+    },
+    "logisticsConvoyType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/logisticsConvoyType"
+        },
+        {
+          "properties": {
+            "overallLength": {
+              "$ref": "#/$defs/qdt/$defs/linearUnitMeasureType"
+            },
+            "maximumWidth": {
+              "$ref": "#/$defs/qdt/$defs/linearUnitMeasureType"
+            }
+          }
+        }
+      ]
+    },
+    "logisticsLabelType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/logisticsLabelType"
+    },
+    "logisticsLocationType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/logisticsLocationType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/locationFunctionCodeType"
+            },
+            "countryId": {
+              "$ref": "#/$defs/qdt/$defs/countryIdType"
+            },
+            "isOrHasHealthAffectedArea": false,
+            "servicingSpecifiedLocationParty": {
+              "maxItems": 1,
+              "properties": {
+                "id": false,
+                "name": false,
+                "roleCode": false
+              }
+            },
+            "associatedGeographicalFeature": false,
+            "previousAssociatedGeographicalFeature": false,
+            "specifiedInspectionEvent": {
+              "$ref": "#/$defs/inspectionEventType"
+            }
+          }
+        }
+      ]
+    },
+    "logisticsPackageType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/logisticsPackageType"
+        },
+        {
+          "properties": {
+            "levelCode": {
+              "$ref": "#/$defs/qdt/$defs/packagingLevelCodeType"
+            },
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/packageTypeCodeType"
+            },
+            "physicalLogisticsShippingMarks": {
+              "$ref": "#/$defs/logisticsShippingMarksType"
+            },
+            "usedPackaging": {
+              "$ref": "#/$defs/packagingType"
+            },
+            "statedCondition": {
+              "$ref": "#/$defs/conditionType"
+            }
+          }
+        }
+      ]
+    },
+    "logisticsPackagingType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/logisticsPackagingType"
+        },
+        {
+          "properties": {
+            "specifiedPackagingMarking": {
+              "$ref": "#/$defs/packagingMarkingType"
+            },
+            "applicablePackagingInstructions": {
+              "$ref": "#/$defs/packagingInstructionsType"
+            }
+          }
+        }
+      ]
+    },
+    "logisticsRegulatedGoodsType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/logisticsRegulatedGoodsType"
+    },
+    "logisticsSealType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/logisticsSealType"
+        },
+        {
+          "properties": {
+            "conditionCode": {
+              "$ref": "#/$defs/qdt/$defs/sealConditionCodeType"
+            },
+            "sealingPartyRoleCode": {
+              "$ref": "#/$defs/qdt/$defs/sealingPartyRoleCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "logisticsServiceChargeType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/logisticsServiceChargeType"
+        },
+        {
+          "properties": {
+            "id": {
+              "$ref": "#/$defs/qdt/$defs/freightChargeTypeIdType"
+            },
+            "paymentArrangementCode": {
+              "$ref": "#/$defs/qdt/$defs/transportServicePaymentArrangementCodeType"
+            },
+            "tariffClassCode": {
+              "$ref": "#/$defs/qdt/$defs/freightChargeTariffClassCodeType"
+            },
+            "categoryCode": {
+              "$ref": "#/$defs/qdt/$defs/transportServiceCategoryCodeType"
+            },
+            "allowanceCharge": false,
+            "payingPartyRoleCode": {
+              "$ref": "#/$defs/qdt/$defs/chargePayingPartyRoleCodeType"
+            },
+            "calculationBasisCode": {
+              "$ref": "#/$defs/qdt/$defs/logisticsChargeCalculationBasisCodeType"
+            },
+            "calculationBasis": false,
+            "calculationBasisTradePrice": false
+          }
+        }
+      ]
+    },
+    "logisticsShippingMarksType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/logisticsShippingMarksType"
+        },
+        {
+          "properties": {
+            "markingInstructionCode": {
+              "$ref": "#/$defs/qdt/$defs/markingInstructionCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "logisticsStatusType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/logisticsStatusType"
+        },
+        {
+          "properties": {
+            "conditionCode": {
+              "$ref": "#/$defs/qdt/$defs/logisticsStatusCodeType"
+            },
+            "reasonCode": {
+              "$ref": "#/$defs/qdt/$defs/logisticsStatusCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "logisticsTransportEquipmentType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/logisticsTransportEquipmentType"
+        },
+        {
+          "properties": {
+            "grossWeight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "netWeight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "tareWeight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "loadingLength": {
+              "$ref": "#/$defs/qdt/$defs/linearUnitMeasureType"
+            },
+            "requiredLaneLength": {
+              "$ref": "#/$defs/qdt/$defs/linearUnitMeasureType"
+            },
+            "grossVolume": {
+              "$ref": "#/$defs/qdt/$defs/volumeUnitMeasureType"
+            },
+            "categoryCode": {
+              "$ref": "#/$defs/qdt/$defs/transportEquipmentCategoryCodeType"
+            },
+            "supplierPartyRoleCode": {
+              "$ref": "#/$defs/qdt/$defs/transportEquipmentSupplierPartyRoleCodeType"
+            },
+            "usedCapacityCode": {
+              "$ref": "#/$defs/qdt/$defs/transportEquipmentFullnessCodeType"
+            },
+            "operationalStatusCode": {
+              "$ref": "#/$defs/qdt/$defs/transportEquipmentOperationalStatusCodeType"
+            },
+            "transportMovementStatusCode": {
+              "$ref": "#/$defs/qdt/$defs/transportEquipmentMovementStatusCodeType"
+            },
+            "legalStatusCode": {
+              "$ref": "#/$defs/qdt/$defs/transportEquipmentLegalStatusCodeType"
+            },
+            "haulageArrangementCode": {
+              "$ref": "#/$defs/qdt/$defs/transportEquipmentHaulageArrangementsCodeType"
+            },
+            "airFlow": {
+              "$ref": "#/$defs/qdt/$defs/airFlowUnitMeasureType"
+            },
+            "manufacturingDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "quarantineInstructions": {
+              "$ref": "#/$defs/quarantineInstructionsType"
+            },
+            "deliveryInstructions": {
+              "$ref": "#/$defs/deliveryInstructionsType"
+            },
+            "loadingInstructions": {
+              "$ref": "#/$defs/instructionsType"
+            },
+            "unloadingInstructions": {
+              "$ref": "#/$defs/instructionsType"
+            },
+            "additionalInstructions": {
+              "$ref": "#/$defs/instructionsType"
+            },
+            "settingTransportSettingTemperature": {
+              "$ref": "#/$defs/transportSettingTemperatureType"
+            },
+            "reportedLogisticsStatus": {
+              "$ref": "#/$defs/logisticsStatusType"
+            },
+            "specifiedLogisticsRiskAnalysisResult": false
+          }
+        }
+      ]
+    },
+    "logisticsTransportMeansType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/logisticsTransportMeansType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/transportMeansTypeCodeType"
+            },
+            "grossWeight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "netWeight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "length": {
+              "$ref": "#/$defs/qdt/$defs/linearUnitMeasureType"
+            },
+            "cargoGrossWeight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "requiredLaneLength": {
+              "$ref": "#/$defs/qdt/$defs/linearUnitMeasureType"
+            },
+            "tareWeight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "manufacturingDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "deadweightTonnage": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "airDraughtLevel": {
+              "$ref": "#/$defs/qdt/$defs/linearUnitMeasureType"
+            },
+            "certifiedCalculatedEmission": {
+              "$ref": "#/$defs/calculatedEmissionType"
+            },
+            "specifiedIdentifiedFault": {
+              "$ref": "#/$defs/identifiedFaultType"
+            },
+            "specifiedCalculatedEmission": {
+              "$ref": "#/$defs/calculatedEmissionType"
+            }
+          }
+        }
+      ]
+    },
+    "logisticsTransportMovementType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/logisticsTransportMovementType"
+        },
+        {
+          "properties": {
+            "stageCode": {
+              "$ref": "#/$defs/qdt/$defs/transportMovementStageCodeType"
+            },
+            "modeCode": {
+              "$ref": "#/$defs/qdt/$defs/transportModeCodeType"
+            },
+            "transitDirectionCode": {
+              "$ref": "#/$defs/qdt/$defs/transportMeansDirectionCodeType"
+            },
+            "statusCode": {
+              "$ref": "#/$defs/qdt/$defs/statusCodeType"
+            },
+            "specialSpecifiedInstructions": {
+              "$ref": "#/$defs/instructionsType"
+            },
+            "unloadingInspectionSpecifiedInstructions": {
+              "$ref": "#/$defs/instructionsType"
+            },
+            "loadingInspectionSpecifiedInstructions": {
+              "$ref": "#/$defs/instructionsType"
+            },
+            "associatedLogisticsConvoy": {
+              "$ref": "#/$defs/logisticsConvoyType"
+            },
+            "passengerNationalityTradeCountry": false,
+            "crewNationalityTradeCountry": false,
+            "specifiedCalculatedEmission": {
+              "$ref": "#/$defs/calculatedEmissionType"
+            },
+            "carriedMaterialGoodsCharacteristic": {
+              "$ref": "#/$defs/materialGoodsCharacteristicType"
+            },
+            "specifiedEvent": {
+              "properties": {
+                "requestedOccurrenceDateTime": false,
+                "arrivalRelatedDateTime": false,
+                "departureRelatedDateTime": false,
+                "estimatedTransportMeansArrivalOccurrenceDateTime": false,
+                "unitQuantity": false,
+                "scheduledArrivalRelatedDateTime": false,
+                "actualArrivalRelatedDateTime": false,
+                "scheduledDepartureRelatedDateTime": false,
+                "actualDepartureRelatedDateTime": false,
+                "transportMeansStayOccurrencePeriod": false,
+                "delayOccurrencePeriod": false,
+                "laycanOccurrencePeriod": false,
+                "cargoFacilityRelatedLogisticsLocation": false,
+                "conveyanceFacilityRelatedLogisticsLocation": false,
+                "relatedRoute": false,
+                "delaySpecifiedReferencedEvent": false,
+                "staySpecifiedReferencedEvent": false
+              }
+            },
+            "specifiedLogisticsRiskAnalysisResult": false,
+            "crewPersonalEffects": {
+              "$ref": "#/$defs/personalEffectsType"
+            },
+            "onboardStoresItemInventory": {
+              "$ref": "#/$defs/storesItemInventoryType"
+            },
+            "reportedTransportationWasteMaterial": {
+              "$ref": "#/$defs/transportationWasteMaterialType"
+            },
+            "reportedMDHTransportationHealth": {
+              "$ref": "#/$defs/mdhTransportationHealthType"
+            },
+            "specifiedLogisticsStatus": {
+              "$ref": "#/$defs/logisticsStatusType"
+            }
+          }
+        }
+      ]
+    },
+    "materialGoodsCharacteristicType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/materialGoodsCharacteristicType"
+    },
+    "mdhHealthIndicationType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/mdhHealthIndicationType"
+        },
+        {
+          "properties": {
+            "reportedDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "appliedMDHSanitaryMeasure": {
+              "$ref": "#/$defs/mdhSanitaryMeasureType"
+            }
+          }
+        }
+      ]
+    },
+    "mdhIllnessType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/mdhIllnessType"
+        },
+        {
+          "properties": {
+            "symptomOnsetDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            }
+          }
+        }
+      ]
+    },
+    "mdhSanitaryMeasureType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/mdhSanitaryMeasureType"
+        },
+        {
+          "properties": {
+            "applicationDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            }
+          }
+        }
+      ]
+    },
+    "mdhTransportationHealthType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/mdhTransportationHealthType"
+    },
+    "measurementType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/measurementType"
+    },
+    "monitoringIOTDeviceType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/monitoringIOTDeviceType"
+    },
+    "monitoringSensorType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/monitoringSensorType"
+    },
+    "noteType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/noteType"
+    },
+    "oemEquipmentType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/oemEquipmentType"
+    },
+    "operationalParameterType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/operationalParameterType"
+    },
+    "personalLanguageProficiencyType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/personalLanguageProficiencyType"
+        },
+        {
+          "properties": {
+            "languageId": {
+              "$ref": "#/$defs/qdt/$defs/languageIdType"
+            },
+            "languageCode": {
+              "$ref": "#/$defs/qdt/$defs/languageCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "preventiveActionType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/preventiveActionType"
+    },
+    "quarantineInstructionsType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/quarantineInstructionsType"
+    },
+    "radioactiveMaterialType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/radioactiveMaterialType"
+        },
+        {
+          "properties": {
+            "applicableRadioactiveIsotope": {
+              "$ref": "#/$defs/radioactiveIsotopeType"
+            }
+          }
+        }
+      ]
+    },
+    "radioactiveRadionuclideType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/radioactiveRadionuclideType"
+    },
+    "referencedServiceType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/referencedServiceType"
+        },
+        {
+          "properties": {
+            "itemQuantity": false,
+            "information": false
+          }
+        }
+      ]
+    },
+    "referencedDocumentType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/referencedDocumentType"
+        },
+        {
+          "properties": {
+            "statusCode": {
+              "$ref": "#/$defs/qdt/$defs/documentStatusCodeType"
+            },
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/documentCodeType"
+            },
+            "relationshipTypeCode": false,
+            "referenceTypeCode": {
+              "$ref": "#/$defs/qdt/$defs/referenceCodeType"
+            },
+            "languageId": {
+              "$ref": "#/$defs/qdt/$defs/languageIdType"
+            },
+            "issueDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "referenceDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "specifiedDocumentStatus": {
+              "$ref": "#/$defs/documentStatusType"
+            },
+            "issuerSpecifiedDocumentHandlingInstructions": {
+              "$ref": "#/$defs/documentHandlingInstructionsType"
+            }
+          }
+        }
+      ]
+    },
+    "referencedLogisticsTransportEquipmentType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/referencedLogisticsTransportEquipmentType"
+        },
+        {
+          "properties": {
+            "categoryCode": {
+              "$ref": "#/$defs/qdt/$defs/transportEquipmentCategoryCodeType"
+            },
+            "characteristicCode": {
+              "$ref": "#/$defs/qdt/$defs/transportEquipmentSizeTypeCodeType"
+            },
+            "grossWeight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "netWeight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "grossVolume": {
+              "$ref": "#/$defs/qdt/$defs/volumeUnitMeasureType"
+            },
+            "settingTransportSettingTemperature": {
+              "$ref": "#/$defs/transportSettingTemperatureType"
+            }
+          }
+        }
+      ]
+    },
+    "referencedConsignmentItemType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/referencedConsignmentItemType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/goodsTypeCodeType"
+            },
+            "typeExtensionCode": {
+              "$ref": "#/$defs/qdt/$defs/goodsTypeExtensionCodeType"
+            },
+            "natureIdCargo": {
+              "$ref": "#/$defs/cargoType"
+            },
+            "physicalLogisticsShippingMarks": {
+              "$ref": "#/$defs/logisticsShippingMarksType"
+            }
+          }
+        }
+      ]
+    },
+    "referencedConsignmentType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/referencedConsignmentType"
+        },
+        {
+          "properties": {
+            "grossWeight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "netWeight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "grossVolume": {
+              "$ref": "#/$defs/qdt/$defs/volumeUnitMeasureType"
+            },
+            "carrierAcceptanceDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "includedReferencedConsignmentItem": {
+              "$ref": "#/$defs/referencedConsignmentItemType"
+            },
+            "specifiedLogisticsRiskAnalysisResult": {
+              "$ref": "#/$defs/logisticsRiskAnalysisResultType"
+            }
+          }
+        }
+      ]
+    },
+    "referencedTransportMeansType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/referencedTransportMeansType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/transportMeansTypeCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "referencedEventType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/referencedEventType"
+        },
+        {
+          "properties": {
+            "scheduledArrivalRelatedDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "scheduledDepartureRelatedDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            }
+          }
+        }
+      ]
+    },
+    "registeredTaxType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/registeredTaxType"
+    },
+    "spatialDimensionType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/spatialDimensionType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/dimensionTypeCodeType"
+            },
+            "diameter": {
+              "$ref": "#/$defs/qdt/$defs/linearUnitMeasureType"
+            }
+          }
+        }
+      ]
+    },
+    "actionType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/actionType"
+    },
+    "binaryFileType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/binaryFileType"
+        },
+        {
+          "properties": {
+            "title": false,
+            "authorName": false,
+            "versionId": false,
+            "fileName": false,
+            "includedBinaryObject": false,
+            "access": false,
+            "description": false
+          }
+        }
+      ]
+    },
+    "certificateType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/certificateType"
+        },
+        {
+          "properties": {
+            "issueDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "expiryDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "validityExtendedUntilDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "actualEffectiveDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "requestedEffectiveDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "endorsementDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "latestEndorsementDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "availableLanguageCode": {
+              "$ref": "#/$defs/qdt/$defs/languageCodeType"
+            },
+            "effectiveFromDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "reportedDocumentStatus": {
+              "$ref": "#/$defs/documentStatusType"
+            }
+          }
+        }
+      ]
+    },
+    "chemicalTreatmentType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/chemicalTreatmentType"
+    },
+    "circleType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/circleType"
+        },
+        {
+          "properties": {
+            "centreGeographicalPoint": {
+              "$ref": "#/$defs/geographicalPointType"
+            }
+          }
+        }
+      ]
+    },
+    "conditionType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/conditionType"
+        },
+        {
+          "properties": {
+            "subjectTypeCode": {
+              "$ref": "#/$defs/qdt/$defs/subjectCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "faultType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/faultType"
+        },
+        {
+          "properties": {
+            "operationalApplicableTolerance": {
+              "$ref": "#/$defs/toleranceType"
+            }
+          }
+        }
+      ]
+    },
+    "geographicalFeatureType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/geographicalFeatureType"
+        },
+        {
+          "properties": {
+            "includedGeographicalPoint": {
+              "$ref": "#/$defs/geographicalPointType"
+            },
+            "includedGeographicalLine": {
+              "$ref": "#/$defs/geographicalLineType"
+            },
+            "includedGeographicalSurface": {
+              "$ref": "#/$defs/geographicalSurfaceType"
+            },
+            "includedGeographicalMultiPoint": {
+              "$ref": "#/$defs/geographicalMultiPointType"
+            },
+            "includedGeographicalMultiCurve": {
+              "$ref": "#/$defs/geographicalMultiCurveType"
+            },
+            "includedGeographicalMultiSurface": {
+              "$ref": "#/$defs/geographicalMultiSurfaceType"
+            },
+            "includedPolygon": {
+              "$ref": "#/$defs/polygonType"
+            },
+            "includedCircle": {
+              "$ref": "#/$defs/circleType"
+            }
+          }
+        }
+      ]
+    },
+    "geographicalGridType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/geographicalGridType"
+        },
+        {
+          "properties": {
+            "originAssociatedDirectPositionList": {
+              "$ref": "#/$defs/directPositionListType"
+            }
+          }
+        }
+      ]
+    },
+    "geographicalLineType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/geographicalLineType"
+        },
+        {
+          "properties": {
+            "associatedDirectPositionList": {
+              "$ref": "#/$defs/directPositionListType"
+            }
+          }
+        }
+      ]
+    },
+    "geographicalMultiCurveType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/geographicalMultiCurveType"
+        },
+        {
+          "properties": {
+            "associatedDirectPositionList": {
+              "$ref": "#/$defs/directPositionListType"
+            },
+            "memberGeographicalLine": {
+              "$ref": "#/$defs/geographicalLineType"
+            }
+          }
+        }
+      ]
+    },
+    "geographicalMultiPointType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/geographicalMultiPointType"
+        },
+        {
+          "properties": {
+            "associatedDirectPositionList": {
+              "$ref": "#/$defs/directPositionListType"
+            },
+            "memberGeographicalPoint": {
+              "$ref": "#/$defs/geographicalPointType"
+            }
+          }
+        }
+      ]
+    },
+    "geographicalMultiSurfaceType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/geographicalMultiSurfaceType"
+        },
+        {
+          "properties": {
+            "includedPolygon": {
+              "$ref": "#/$defs/polygonType"
+            }
+          }
+        }
+      ]
+    },
+    "geographicalObjectCharacteristicType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/geographicalObjectCharacteristicType"
+    },
+    "geographicalPointType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/geographicalPointType"
+        },
+        {
+          "properties": {
+            "associatedDirectPositionList": {
+              "$ref": "#/$defs/directPositionListType"
+            }
+          }
+        }
+      ]
+    },
+    "geographicalSurfaceType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/geographicalSurfaceType"
+        },
+        {
+          "properties": {
+            "includedPolygon": {
+              "$ref": "#/$defs/polygonType"
+            }
+          }
+        }
+      ]
+    },
+    "inspectionResultType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/inspectionResultType"
+        },
+        {
+          "properties": {
+            "attachedInspectionNote": {
+              "$ref": "#/$defs/inspectionNoteType"
+            },
+            "minimumStandardValueApplicableInspectionResultCharacteristic": {
+              "$ref": "#/$defs/inspectionResultCharacteristicType"
+            },
+            "maximumStandardValueApplicableInspectionResultCharacteristic": {
+              "$ref": "#/$defs/inspectionResultCharacteristicType"
+            },
+            "observedValueApplicableInspectionResultCharacteristic": {
+              "$ref": "#/$defs/inspectionResultCharacteristicType"
+            },
+            "expectedValueApplicableInspectionResultCharacteristic": {
+              "$ref": "#/$defs/inspectionResultCharacteristicType"
+            },
+            "applicableInspectionResultCharacteristic": {
+              "$ref": "#/$defs/inspectionResultCharacteristicType"
+            },
+            "applicableCorrectiveAction": {
+              "$ref": "#/$defs/correctiveActionType"
+            },
+            "applicablePreventiveAction": {
+              "$ref": "#/$defs/preventiveActionType"
+            },
+            "applicableAction": {
+              "$ref": "#/$defs/actionType"
+            }
+          }
+        }
+      ]
+    },
+    "inspectionType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/inspectionType"
+        },
+        {
+          "properties": {
+            "executionInspectionPerson": {
+              "$ref": "#/$defs/inspectionPersonType"
+            },
+            "specifiedInspectionEvent": {
+              "$ref": "#/$defs/inspectionEventType"
+            },
+            "specifiedInspectionStatus": {
+              "$ref": "#/$defs/inspectionStatusType"
+            }
+          }
+        }
+      ]
+    },
+    "materialType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/materialType"
+        },
+        {
+          "properties": {
+            "applicableMaterialGoodsCharacteristic": {
+              "$ref": "#/$defs/materialGoodsCharacteristicType"
+            },
+            "applicableTradeProductCertification": {
+              "$ref": "#/$defs/tradeProductCertificationType"
+            },
+            "applicableWasteMaterialRecoveryDisposalProcess": {
+              "$ref": "#/$defs/wasteMaterialRecoveryDisposalProcessType"
+            }
+          }
+        }
+      ]
+    },
+    "methodType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/methodType"
+    },
+    "objectType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/objectType"
+    },
+    "observationType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/observationType"
+    },
+    "parameterType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/parameterType"
+        },
+        {
+          "properties": {
+            "valueTolerance": {
+              "$ref": "#/$defs/toleranceType"
+            }
+          }
+        }
+      ]
+    },
+    "periodType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/periodType"
+        },
+        {
+          "properties": {
+            "minimumDuration": {
+              "$ref": "#/$defs/qdt/$defs/durationUnitMeasureType"
+            },
+            "maximumDuration": {
+              "$ref": "#/$defs/qdt/$defs/durationUnitMeasureType"
+            }
+          }
+        }
+      ]
+    },
+    "personalEffectsType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/personalEffectsType"
+    },
+    "radioactiveIsotopeType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/radioactiveIsotopeType"
+    },
+    "rangeType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/rangeType"
+    },
+    "temperatureType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/temperatureType"
+        },
+        {
+          "properties": {
+            "value": {
+              "$ref": "#/$defs/qdt/$defs/temperatureUnitMeasureType"
+            },
+            "minimumValue": {
+              "$ref": "#/$defs/qdt/$defs/temperatureUnitMeasureType"
+            },
+            "maximumValue": {
+              "$ref": "#/$defs/qdt/$defs/temperatureUnitMeasureType"
+            }
+          }
+        }
+      ]
+    },
+    "toleranceType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/toleranceType"
+    },
+    "storesItemInventoryType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/storesItemInventoryType"
+    },
+    "subordinateLocationType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/subordinateLocationType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/locationFunctionCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "subordinateLocationType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/subordinateLocationType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/locationFunctionCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "consignmentItemType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/consignmentItemType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/goodsTypeCodeType"
+            },
+            "typeExtensionCode": {
+              "$ref": "#/$defs/qdt/$defs/goodsTypeExtensionCodeType"
+            },
+            "grossWeight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "netWeight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "chargeableWeight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "grossVolume": {
+              "$ref": "#/$defs/qdt/$defs/volumeUnitMeasureType"
+            },
+            "loadingLength": {
+              "$ref": "#/$defs/qdt/$defs/linearUnitMeasureType"
+            },
+            "natureIdCargo": {
+              "$ref": "#/$defs/cargoType"
+            },
+            "quarantineInstructions": {
+              "$ref": "#/$defs/quarantineInstructionsType"
+            },
+            "transportSettingTemperature": {
+              "$ref": "#/$defs/transportSettingTemperatureType"
+            },
+            "physicalLogisticsShippingMarks": {
+              "$ref": "#/$defs/logisticsShippingMarksType"
+            },
+            "reportedLogisticsStatus": {
+              "$ref": "#/$defs/logisticsStatusType"
+            },
+            "applicableCrossBorderCustomsValuation": {
+              "$ref": "#/$defs/crossBorderCustomsValuationType"
+            },
+            "borderClearanceInstructions": {
+              "$ref": "#/$defs/instructionsType"
+            },
+            "specifiedInspectionEvent": {
+              "$ref": "#/$defs/inspectionEventType"
+            },
+            "specifiedLogisticsRiskAnalysisResult": {
+              "$ref": "#/$defs/logisticsRiskAnalysisResultType"
+            }
+          }
+        }
+      ]
+    },
+    "consignmentType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/consignmentType"
+        },
+        {
+          "properties": {
+            "carrierAcceptanceDateTime": false,
+            "grossWeight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "netWeight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "grossVolume": {
+              "$ref": "#/$defs/qdt/$defs/volumeUnitMeasureType"
+            },
+            "loadingLength": {
+              "$ref": "#/$defs/qdt/$defs/linearUnitMeasureType"
+            },
+            "chargeableWeight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "paymentArrangementCode": {
+              "$ref": "#/$defs/qdt/$defs/transportServicePaymentArrangementCodeType"
+            },
+            "netVolume": {
+              "$ref": "#/$defs/qdt/$defs/volumeUnitMeasureType"
+            },
+            "shippedOnboardDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "serviceChargeCurrencyCode": {
+              "$ref": "#/$defs/qdt/$defs/currencyCodeType"
+            },
+            "physicalLogisticsShippingMarks": {
+              "$ref": "#/$defs/logisticsShippingMarksType"
+            },
+            "haulageInstructions": {
+              "$ref": "#/$defs/haulageInstructionsType"
+            },
+            "loadingInstructions": {
+              "$ref": "#/$defs/instructionsType"
+            },
+            "applicableCargoInsurance": {
+              "$ref": "#/$defs/cargoInsuranceType"
+            },
+            "specifiedTradeDeliveryTerms": {
+              "$ref": "#/$defs/tradeDeliveryTermsType"
+            },
+            "reportedLogisticsStatus": {
+              "$ref": "#/$defs/logisticsStatusType"
+            },
+            "natureIdCargo": {
+              "$ref": "#/$defs/cargoType"
+            },
+            "applicableCrossBorderCustomsValuation": {
+              "$ref": "#/$defs/crossBorderCustomsValuationType"
+            },
+            "consignorProvidedBorderClearanceInstructions": {
+              "$ref": "#/$defs/instructionsType"
+            },
+            "deliveryInstructions": {
+              "$ref": "#/$defs/deliveryInstructionsType"
+            },
+            "specifiedLogisticsRiskAnalysisResult": false,
+            "specifiedInspectionEvent": {
+              "$ref": "#/$defs/inspectionEventType"
+            },
+            "specifiedLogisticsStatus": {
+              "$ref": "#/$defs/logisticsStatusType"
+            }
+          }
+        }
+      ]
+    },
+    "supplyChainEventType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/supplyChainEventType"
+        },
+        {
+          "properties": {
+            "timeOccurrenceDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            }
+          }
+        }
+      ]
+    },
+    "packagingType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/packagingType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/packageTypeCodeType"
+            },
+            "specifiedPackagingMarking": {
+              "$ref": "#/$defs/packagingMarkingType"
+            },
+            "applicableMaterialGoodsCharacteristic": {
+              "$ref": "#/$defs/materialGoodsCharacteristicType"
+            },
+            "applicablePackagingInstructions": {
+              "$ref": "#/$defs/packagingInstructionsType"
+            }
+          }
+        }
+      ]
+    },
+    "scheduleType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/scheduleType"
+    },
+    "taxRegistrationType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/taxRegistrationType"
+        },
+        {
+          "properties": {
+            "associatedRegisteredTax": false
+          }
+        }
+      ]
+    },
+    "temperatureSettingInstructionsType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/temperatureSettingInstructionsType"
+    },
+    "tradeSettlementPaymentMeansType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/tradeSettlementPaymentMeansType"
+        },
+        {
+          "properties": {
+            "paymentChannelCode": {
+              "$ref": "#/$defs/qdt/$defs/paymentMeansChannelCodeType"
+            },
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/paymentMeansCodeType"
+            },
+            "guaranteeMethodCode": {
+              "$ref": "#/$defs/qdt/$defs/paymentGuaranteeMeansCodeType"
+            },
+            "identifiedPaymentCash": {
+              "$ref": "#/$defs/paymentCashType"
+            }
+          }
+        }
+      ]
+    },
+    "tradeAddressType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/tradeAddressType"
+        },
+        {
+          "properties": {
+            "postOfficeBox": false,
+            "countryId": {
+              "$ref": "#/$defs/qdt/$defs/countryIdType"
+            },
+            "buildingNumber": false,
+            "additionalStreetName": false,
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/addressTypeCodeType"
+            },
+            "geoCoordinateIdGeographicalCoordinate": false
+          },
+          "required": [
+            "countryId"
+          ]
+        }
+      ]
+    },
+    "tradeAllowanceChargeType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/tradeAllowanceChargeType"
+        },
+        {
+          "properties": {
+            "reasonCode": {
+              "$ref": "#/$defs/qdt/$defs/allowanceChargeReasonCodeType"
+            },
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/allowanceChargeIdCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "tradeContactType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/tradeContactType"
+        },
+        {
+          "properties": {
+            "id": false,
+            "departmentName": false,
+            "typeCode": false,
+            "telephoneUniversalCommunication": {
+              "properties": {
+                "uri": false,
+                "channelCode": false
+              }
+            },
+            "directTelephoneUniversalCommunication": false,
+            "mobileTelephoneUniversalCommunication": {
+              "properties": {
+                "uri": false,
+                "channelCode": false
+              }
+            },
+            "faxUniversalCommunication": false,
+            "emailURIUniversalCommunication": {
+              "properties": {
+                "channelCode": false,
+                "completeNumber": false
+              }
+            },
+            "telexUniversalCommunication": false
+          }
+        }
+      ]
+    },
+    "tradeCountrySubDivisionType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/tradeCountrySubDivisionType"
+        },
+        {
+          "properties": {
+            "hierarchicalLevelCode": false,
+            "functionTypeCode": false,
+            "typeCode": false,
+            "superordinateTradeCountrySubDivision": false,
+            "subordinateTradeCountrySubDivision": false,
+            "activityAuthorized": false
+          }
+        }
+      ]
+    },
+    "tradeCountryType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/tradeCountryType"
+        },
+        {
+          "properties": {
+            "id": {
+              "$ref": "#/$defs/qdt/$defs/countryIdType"
+            }
+          }
+        }
+      ]
+    },
+    "tradeCurrencyExchangeType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/tradeCurrencyExchangeType"
+        },
+        {
+          "properties": {
+            "sourceCurrencyCode": {
+              "$ref": "#/$defs/qdt/$defs/currencyCodeType"
+            },
+            "targetCurrencyCode": {
+              "$ref": "#/$defs/qdt/$defs/currencyCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "tradeDeliveryTermsType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/tradeDeliveryTermsType"
+        },
+        {
+          "properties": {
+            "deliveryTypeCode": {
+              "$ref": "#/$defs/qdt/$defs/deliveryTermsCodeType"
+            },
+            "functionCode": {
+              "$ref": "#/$defs/qdt/$defs/deliveryTermsFunctionCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "tradeGeopoliticalRegionType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/tradeGeopoliticalRegionType"
+    },
+    "tradeLocationType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/tradeLocationType"
+        },
+        {
+          "properties": {
+            "countryId": false
+          }
+        }
+      ]
+    },
+    "tradePartyType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/tradePartyType"
+        },
+        {
+          "properties": {
+            "id": {
+              "maxItems": 1
+            },
+            "roleCode": {
+              "$ref": "#/$defs/qdt/$defs/partyRoleCodeType"
+            },
+            "languageCode": {
+              "$ref": "#/$defs/qdt/$defs/languageCodeType"
+            },
+            "specifiedLegalOrganization": false,
+            "telephoneUniversalCommunication": false,
+            "uriUniversalCommunication": false,
+            "specifiedAuthoritativeSignatoryPerson": false,
+            "applicableLogisticsServiceCharge": false,
+            "specifiedGovernmentRegistration": {
+              "properties": {
+                "typeCode": {
+                  "properties": {
+                    "content": {
+                      "enum": [
+                        "AEO",
+                        "EORI",
+                        "TIN",
+                        "ZZZ"
+                      ]
+                    }
+                  }
+                },
+                "licenceId": false
+              }
+            },
+            "applicableOrganizationalCertification": {
+              "$ref": "#/$defs/organizationalCertificationType"
+            },
+            "specifiedCooperatingOrganization": {
+              "$ref": "#/$defs/cooperatingOrganizationType"
+            }
+          }
+        }
+      ]
+    },
+    "tradePaymentTermsType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/tradePaymentTermsType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/paymentTermsTypeCodeType"
+            },
+            "dueDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "applicableTradePaymentPenaltyTerms": {
+              "$ref": "#/$defs/tradePaymentPenaltyTermsType"
+            },
+            "applicableTradePaymentDiscountTerms": {
+              "$ref": "#/$defs/tradePaymentDiscountTermsType"
+            }
+          }
+        }
+      ]
+    },
+    "tradePriceType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/tradePriceType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/priceTypeCodeType"
+            },
+            "expiryDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "tradeComparisonReferencePrice": {
+              "$ref": "#/$defs/referencePriceType"
+            },
+            "applicableCustomerClass": {
+              "$ref": "#/$defs/customerClassType"
+            }
+          }
+        }
+      ]
+    },
+    "tradeTaxType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/tradeTaxType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/taxTypeCodeType"
+            },
+            "categoryCode": {
+              "$ref": "#/$defs/qdt/$defs/taxCategoryCodeType"
+            },
+            "currencyCode": {
+              "$ref": "#/$defs/qdt/$defs/currencyCodeType"
+            },
+            "paymentMethodCode": {
+              "$ref": "#/$defs/qdt/$defs/paymentMethodCodeType"
+            },
+            "regimeTypeCode": {
+              "$ref": "#/$defs/qdt/$defs/customsDutyRegimeTypeCodeType"
+            },
+            "dueDateTypeCode": {
+              "$ref": "#/$defs/qdt/$defs/timeReferenceCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "transportServiceLocationType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/transportServiceLocationType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/locationFunctionCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "transportSettingTemperatureType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/transportSettingTemperatureType"
+        },
+        {
+          "properties": {
+            "value": {
+              "$ref": "#/$defs/qdt/$defs/temperatureUnitMeasureType"
+            },
+            "minimumValue": {
+              "$ref": "#/$defs/qdt/$defs/temperatureUnitMeasureType"
+            },
+            "maximumValue": {
+              "$ref": "#/$defs/qdt/$defs/temperatureUnitMeasureType"
+            },
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/temperatureTypeCodeType"
+            },
+            "informationTemperatureSettingInstructions": {
+              "$ref": "#/$defs/temperatureSettingInstructionsType"
+            }
+          }
+        }
+      ]
+    },
+    "transportationWasteRecoveryDisposalProcessType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/transportationWasteRecoveryDisposalProcessType"
+    },
+    "transportationWasteMaterialComponentType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/transportationWasteMaterialComponentType"
+        },
+        {
+          "properties": {
+            "maximumDedicatedStorageCapacity": {
+              "$ref": "#/$defs/qdt/$defs/volumeUnitMeasureType"
+            },
+            "estimatedGenerated": {
+              "$ref": "#/$defs/qdt/$defs/volumeUnitMeasureType"
+            },
+            "retained": {
+              "$ref": "#/$defs/qdt/$defs/volumeUnitMeasureType"
+            },
+            "plannedDischarged": {
+              "$ref": "#/$defs/qdt/$defs/volumeUnitMeasureType"
+            }
+          }
+        }
+      ]
+    },
+    "transportationWasteMaterialType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/transportationWasteMaterialType"
+        },
+        {
+          "properties": {
+            "includedTransportationWasteMaterialComponent": {
+              "$ref": "#/$defs/transportationWasteMaterialComponentType"
+            },
+            "applicableTransportationWasteRecoveryDisposalProcess": {
+              "$ref": "#/$defs/transportationWasteRecoveryDisposalProcessType"
+            }
+          }
+        }
+      ]
+    },
+    "cargoInsuranceType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/cargoInsuranceType"
+    },
+    "cargoType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/cargoType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "$ref": "#/$defs/qdt/$defs/cargoCategoryCodeType"
+            },
+            "operationalCategoryCode": {
+              "$ref": "#/$defs/qdt/$defs/cargoOperationalCategoryCodeType"
+            },
+            "statisticalClassificationCode": {
+              "$ref": "#/$defs/qdt/$defs/cargoCommodityCategoryCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "dangerousGoodsType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/dangerousGoodsType"
+        },
+        {
+          "properties": {
+            "regulationCode": {
+              "$ref": "#/$defs/qdt/$defs/dangerousGoodsRegulationCodeType"
+            },
+            "packagingDangerLevelCode": {
+              "$ref": "#/$defs/qdt/$defs/dangerousGoodsPackagingLevelCodeType"
+            },
+            "grossWeight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "grossVolume": {
+              "$ref": "#/$defs/qdt/$defs/volumeUnitMeasureType"
+            },
+            "netWeight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "explosiveCargoNetWeight": {
+              "$ref": "#/$defs/qdt/$defs/weightUnitMeasureType"
+            },
+            "packageTypeCode": {
+              "$ref": "#/$defs/qdt/$defs/packageTypeCodeType"
+            },
+            "marinePollutantVolume": {
+              "$ref": "#/$defs/qdt/$defs/volumeUnitMeasureType"
+            },
+            "meltingPointTemperature": {
+              "$ref": "#/$defs/qdt/$defs/temperatureUnitMeasureType"
+            },
+            "flashpointTemperatureMeasurement": {
+              "$ref": "#/$defs/measurementType"
+            },
+            "controlTemperatureMeasurement": {
+              "$ref": "#/$defs/measurementType"
+            },
+            "emergencyTemperatureMeasurement": {
+              "$ref": "#/$defs/measurementType"
+            },
+            "radioactiveMaterial": {
+              "$ref": "#/$defs/radioactiveMaterialType"
+            },
+            "statedCondition": {
+              "$ref": "#/$defs/conditionType"
+            }
+          }
+        }
+      ]
+    },
+    "transportEventType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/transportEventType"
+        },
+        {
+          "properties": {
+            "typeCode": {
+              "properties": {
+                "content": {
+                  "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "10",
+                    "11",
+                    "12",
+                    "13",
+                    "14",
+                    "15",
+                    "16",
+                    "17",
+                    "18",
+                    "19",
+                    "20",
+                    "21",
+                    "22",
+                    "23",
+                    "24",
+                    "25",
+                    "26",
+                    "27",
+                    "28",
+                    "29",
+                    "30",
+                    "31",
+                    "32",
+                    "33",
+                    "34",
+                    "35",
+                    "36",
+                    "37",
+                    "38",
+                    "39",
+                    "40",
+                    "41",
+                    "44",
+                    "45",
+                    "46",
+                    "47",
+                    "48",
+                    "49",
+                    "50",
+                    "51",
+                    "53",
+                    "54",
+                    "57",
+                    "58",
+                    "59",
+                    "60",
+                    "61",
+                    "62",
+                    "63",
+                    "64",
+                    "65",
+                    "66",
+                    "67",
+                    "68",
+                    "69",
+                    "70",
+                    "71",
+                    "72",
+                    "73",
+                    "74",
+                    "75",
+                    "76",
+                    "77",
+                    "78",
+                    "79",
+                    "80",
+                    "81",
+                    "82",
+                    "83",
+                    "84",
+                    "85",
+                    "86",
+                    "87",
+                    "88",
+                    "89",
+                    "90",
+                    "91",
+                    "92",
+                    "93",
+                    "94",
+                    "95",
+                    "96",
+                    "97",
+                    "98",
+                    "99",
+                    "100",
+                    "101",
+                    "102",
+                    "103",
+                    "104",
+                    "105",
+                    "106",
+                    "107",
+                    "108",
+                    "109",
+                    "110",
+                    "111",
+                    "112",
+                    "113",
+                    "114",
+                    "115",
+                    "116",
+                    "117",
+                    "118",
+                    "119",
+                    "120",
+                    "121",
+                    "123",
+                    "124",
+                    "125",
+                    "126",
+                    "127",
+                    "128",
+                    "129",
+                    "130",
+                    "131",
+                    "132",
+                    "133",
+                    "134",
+                    "135",
+                    "136",
+                    "137",
+                    "138",
+                    "139",
+                    "140",
+                    "141",
+                    "142",
+                    "143",
+                    "144",
+                    "145",
+                    "146",
+                    "147",
+                    "148",
+                    "149",
+                    "150",
+                    "151",
+                    "152",
+                    "153",
+                    "154",
+                    "155",
+                    "156",
+                    "157",
+                    "158",
+                    "159",
+                    "161",
+                    "162",
+                    "163",
+                    "164",
+                    "165",
+                    "166",
+                    "167",
+                    "168",
+                    "169",
+                    "170",
+                    "171",
+                    "172",
+                    "174",
+                    "175",
+                    "176",
+                    "177",
+                    "178",
+                    "179",
+                    "180",
+                    "181",
+                    "182",
+                    "183",
+                    "184",
+                    "185",
+                    "186",
+                    "187",
+                    "188",
+                    "189",
+                    "190",
+                    "191",
+                    "192",
+                    "193",
+                    "194",
+                    "195",
+                    "196",
+                    "197",
+                    "198",
+                    "199",
+                    "200",
+                    "201",
+                    "202",
+                    "203",
+                    "204",
+                    "205",
+                    "206",
+                    "207",
+                    "208",
+                    "209",
+                    "210",
+                    "211",
+                    "212",
+                    "213",
+                    "214",
+                    "215",
+                    "216",
+                    "218",
+                    "219",
+                    "220",
+                    "222",
+                    "224",
+                    "225",
+                    "227",
+                    "228",
+                    "229",
+                    "231",
+                    "232",
+                    "233",
+                    "234",
+                    "235",
+                    "236",
+                    "238",
+                    "239",
+                    "240",
+                    "241",
+                    "242",
+                    "243",
+                    "247",
+                    "248",
+                    "250",
+                    "251",
+                    "253",
+                    "254",
+                    "255",
+                    "256",
+                    "258",
+                    "260",
+                    "265",
+                    "266",
+                    "267",
+                    "269",
+                    "270",
+                    "271",
+                    "272",
+                    "273",
+                    "274",
+                    "275",
+                    "276",
+                    "277",
+                    "278",
+                    "279",
+                    "280",
+                    "281",
+                    "282",
+                    "283",
+                    "284",
+                    "285",
+                    "286",
+                    "287",
+                    "288",
+                    "291",
+                    "292",
+                    "295",
+                    "297",
+                    "298",
+                    "299",
+                    "300",
+                    "301",
+                    "302",
+                    "306",
+                    "307",
+                    "308",
+                    "309",
+                    "310",
+                    "311",
+                    "312",
+                    "313",
+                    "314",
+                    "315",
+                    "316",
+                    "317",
+                    "318",
+                    "319",
+                    "320",
+                    "321",
+                    "322",
+                    "323",
+                    "324",
+                    "325",
+                    "326",
+                    "327",
+                    "328",
+                    "329",
+                    "330",
+                    "331",
+                    "332",
+                    "333",
+                    "334",
+                    "335",
+                    "336",
+                    "337",
+                    "338",
+                    "339",
+                    "340",
+                    "341",
+                    "342",
+                    "343",
+                    "344",
+                    "345",
+                    "346",
+                    "347",
+                    "348",
+                    "349",
+                    "350",
+                    "351",
+                    "352",
+                    "353",
+                    "354",
+                    "355",
+                    "356",
+                    "357",
+                    "358",
+                    "359",
+                    "360",
+                    "361",
+                    "362",
+                    "363",
+                    "364",
+                    "365",
+                    "366",
+                    "367",
+                    "368",
+                    "369",
+                    "370"
+                  ]
+                }
+              }
+            },
+            "reportedConditionTypeCode": {
+              "$ref": "#/$defs/qdt/$defs/logisticsStatusCodeType"
+            },
+            "value": {
+              "$ref": "#/$defs/qdt/$defs/unitMeasureType"
+            },
+            "receivedDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "specifiedInstructions": {
+              "$ref": "#/$defs/instructionsType"
+            },
+            "delaySpecifiedReferencedEvent": {
+              "$ref": "#/$defs/referencedEventType"
+            },
+            "staySpecifiedReferencedEvent": {
+              "$ref": "#/$defs/referencedEventType"
+            }
+          }
+        }
+      ]
+    },
+    "instructionsType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/instructionsType"
+    },
+    "personType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/personType"
+        },
+        {
+          "properties": {
+            "languageId": {
+              "$ref": "#/$defs/qdt/$defs/languageIdType"
+            },
+            "roleCode": {
+              "$ref": "#/$defs/qdt/$defs/partyRoleCodeType"
+            },
+            "embarkationDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "disembarkationDateTime": {
+              "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
+            },
+            "attainedAcademicQualification": {
+              "$ref": "#/$defs/academicQualificationType"
+            },
+            "declaredPersonalEffects": {
+              "$ref": "#/$defs/personalEffectsType"
+            },
+            "reportedMDHIllness": {
+              "$ref": "#/$defs/mdhIllnessType"
+            }
+          }
+        }
+      ]
+    },
+    "transportRouteType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/transportRouteType"
+        },
+        {
+          "properties": {
+            "statusCode": {
+              "$ref": "#/$defs/qdt/$defs/statusCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "serviceType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/serviceType"
+        },
+        {
+          "properties": {
+            "conditionTypeCode": {
+              "$ref": "#/$defs/qdt/$defs/transportServiceConditionCodeType"
+            },
+            "priorityCode": {
+              "$ref": "#/$defs/qdt/$defs/transportServicePriorityCodeType"
+            },
+            "serviceRequirementCode": {
+              "$ref": "#/$defs/qdt/$defs/transportServiceRequirementCodeType"
+            },
+            "paymentArrangementCode": {
+              "$ref": "#/$defs/qdt/$defs/transportServicePaymentArrangementCodeType"
+            },
+            "reasonCode": false,
+            "contractMovementTypeCode": {
+              "$ref": "#/$defs/qdt/$defs/transportContractMovementCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "universalCommunicationType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/universalCommunicationType"
+        },
+        {
+          "properties": {
+            "channelCode": {
+              "$ref": "#/$defs/qdt/$defs/communicationChannelCodeType"
+            }
+          }
+        }
+      ]
+    },
+    "xheContextType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/xheContextType"
+        },
+        {
+          "properties": {
+            "specifiedXHEParameter": {
+              "$ref": "#/$defs/xheParameterType"
+            }
+          }
+        }
+      ]
+    },
+    "xheDocumentType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/xheDocumentType"
+        },
+        {
+          "properties": {
+            "senderXHEParty": {
+              "$ref": "#/$defs/xhePartyType"
+            },
+            "recipientXHEParty": {
+              "$ref": "#/$defs/xhePartyType"
+            },
+            "scopeXHEContext": {
+              "$ref": "#/$defs/xheContextType"
+            }
+          }
+        }
+      ]
+    },
+    "xheEnvelopeType": {
+      "allOf": [
+        {
+          "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/xheEnvelopeType"
+        },
+        {
+          "properties": {
+            "includedXHEPayload": {
+              "$ref": "#/$defs/xhePayloadType"
+            }
+          }
+        }
+      ]
+    },
+    "xheIdentityType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/xheIdentityType"
+    },
+    "xheParameterType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/xheParameterType"
+    },
+    "xhePartyType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/xhePartyType"
+    },
+    "xhePayloadInstanceType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/xhePayloadInstanceType"
+    },
+    "xhePayloadType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/xhePayloadType"
+    },
+    "xheReferenceType": {
+      "$ref": "UNECE-MMTITIGGP_RContextCCL.json#/$defs/xheReferenceType"
+    }
+  }
+}
