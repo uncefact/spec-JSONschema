@@ -19,6 +19,8 @@ is included to support mapping-processes and the JSON-LD vocabulary creation.
     - [Qualified data types](#qdt)	
 - [JSON filenames and sub-folder structure](#jsonFilenames)
 - [What is this meta-library ?](#metaLibrary)
+  - [Meta Extension](#metaExtensions)
+  - [Links to other export variants](#exportLinks)
 
 <!-- /TOC -->
 
@@ -139,3 +141,40 @@ transport reference data model. The MMT-RDM is a transport specific contextualis
 reference data model. Moreover, this again is a contextualisation of the underlying CCL. 
 
 Thus, an implementation could get rather complex while at the same time achieving a maximum compliance level. 
+
+### Meta-Schema Extensions
+
+<a name="metaExtensions" />
+This export is an extended version of the library export. Additional meta information in the UN/CEFACT context is provided. This includes:
+* The CCL entity type (e.g. ABIE, BBIE)
+* The UN-ID, which uniquely identified each individual entity of the CCL. It is useful for example for mapping-purposes.
+* The business process according to the CCL.
+* The TDED, where applicable.
+
+In order to support this export-type a meta schema is created extending JSON schema. The following properties are defined in this meta-schema:
+
+	"properties": {
+	  "uncefact:type": { 
+	    "type": "string",
+	      "enum": ["AggregateBIE", "AssociationBIE", "BasicBIE"]
+	    },
+	    "uncefact:unId": { "type": "string"	},
+	    "uncefact:tded": { "type": "string" },
+	    "uncefact:businessProcess": { "type": "string" }
+	}
+
+### Links to other export variants
+
+<a name="exportLinks" />
+In the [library](https://github.com/uncefact/spec-JSONschema/tree/main/JSON-Schema2020-12/library) directory, 
+the UN/CEFACT reference data models are provided in the library variant without the meta-schema extension.
+
+In the [subset](https://github.com/uncefact/spec-JSONschema/tree/main/JSON-Schema2020-12/subset) directory, 
+only the UN/CEFACT reference data models, but no message structures are provided in a subset variant. This means 
+that all contextualisations of the base classes have been fully applied.  
+
+In the [snapshot](https://github.com/uncefact/spec-JSONschema/tree/main/JSON-Schema2020-12/snapshot) directory, 
+the UN/CEFACT reference data models and the message structures are provided in the snapshot variant. This means 
+that all contextualisations of the base classes have been fully applied. Each JSON schema artefact is 
+consequently a standalone variant that contains all the required data structures and code lists. These can be 
+further contextualised or extended as needed during implementation. 
