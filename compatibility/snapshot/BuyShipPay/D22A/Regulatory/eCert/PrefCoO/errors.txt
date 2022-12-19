@@ -1,0 +1,15 @@
+Export log
+~~~~~~~~~~
+The core component "Referenced_ Observation Result. Details" used in the composition "Crop Produce_ Batch. Specified. Referenced_ Observation Result" is not an ABIE. Ignoring the composition.
+The core component "Specified_ Agricultural Device. Details" used in the composition "Crop Production_ Agricultural Process. Used. Specified_ Agricultural Device" is not an ABIE. Ignoring the composition.
+The core component "Agricultural_ Man Machine System. Details" used in the composition "Crop Production_ Agricultural Process. Allocated. Agricultural_ Man Machine System" is not an ABIE. Ignoring the composition.
+The core component "Mobile_ Plot. Details" used in the composition "Crop_ Plot. Included. Mobile_ Plot" is not an ABIE. Ignoring the composition.
+The core component "Referenced_ Location. Details" used in the composition "Facility_ Production Unit. Physical. Referenced_ Location" is not an ABIE. Ignoring the composition.
+The core component "Sustainability_ Inspection. Details" used in the composition "Production_ Process. Applicable. Sustainability_ Inspection" is not an ABIE. Ignoring the composition.
+The core component "Sustainability_ Characteristic. Details" used in the composition "Production_ Process. Applicable. Sustainability_ Characteristic" is not an ABIE. Ignoring the composition.
+The core component "Sustainability_ Assertion. Details" used in the composition "Production_ Process. Specified. Sustainability_ Assertion" is not an ABIE. Ignoring the composition.
+The DT "Date Mandatory_ Date Time. Type" for the BBIE "Referenced_ Document. Issue. Date Time" ("IssueDateTime") was not found in the XML schemas generated.
+The core component "Referenced_ Logistics_ Transport Equipment. Details" used in the composition "Supply Chain_ Consignment Item. Associated. Referenced_ Logistics_ Transport Equipment" is not an ABIE. Ignoring the composition.
+The DT "Date Mandatory_ Date Time. Type" for the BBIE "Trade_ Product. Cancellation_ Announced Launch. Date Time" ("CancellationAnnouncedLaunchDateTime") was not found in the XML schemas generated.
+The DT "Date Mandatory_ Date Time. Type" for the BBIE "Trade_ Product. Latest_ Product Data Change. Date Time" ("LatestProductDataChangeDateTime") was not found in the XML schemas generated.
+Export completed.

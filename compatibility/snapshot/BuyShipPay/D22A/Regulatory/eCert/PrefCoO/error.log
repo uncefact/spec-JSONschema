@@ -1,0 +1,6 @@
+GEFEG.FX Export JSON Schema
+********************
+
+Data model: BSP Preferential CoO; D22A
+
+ERROR: Empty code list: UNECE-BSPPreferentialCoO.json#/$defs/codeList/MIMEMediaTypeType (Binary Object. Mime. Code)

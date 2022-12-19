@@ -12,7 +12,7 @@ In this repository there are two main publications of UN/CEFACT JSON schema arte
 
 * The first variant in the [JSONSchema2020-12](https://github.com/uncefact/spec-JSONschema/tree/main/JSONschema2020-12) folder is based on JSON schema draft 2020-12 and fully supports OpenAPI 3.1.x.
 
-* The second variant in the [Compatibility](https://github.com/uncefact/spec-JSONschema/tree/main/compatability) folder supports OpenAPI 3.0.x and therefore uses some older JSON schema concepts.
+* The second variant in the [Compatibility](https://github.com/uncefact/spec-JSONschema/tree/main/compatibility) folder supports OpenAPI 3.0.x and therefore uses some older JSON schema concepts.
 
 Use cases for extensions, restrictions and contextualisations of the publications can be found in the [examples](https://github.com/uncefact/spec-JSONschema/tree/main/examples) folder.  
 
