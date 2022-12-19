@@ -117,3 +117,25 @@ The meta library exports adds some meta information in the JSON schema files. Th
 an interoperabel usage in conjunction with the JSON LD vocabulary.
 
 The corresponding [meta-schema definition can be found here](https://raw.githubusercontent.com/uncefact/spec-JSONschema/main/JSONschema2020-12/meta-schema). 
+
+The library export creates one JSON schema file for each level of contextualisation as they are defined
+by the UN/CEFACT standards. It creates one large CCL JSON schema representation as a foundation.
+On top of it, it creates one JSON schema file contextualising and restricting the CCL to the defined
+RDMs and document-centric structures. Each level may already use restricted data types that are
+restricted exactly at that level. This needs to be considered when creating this type of export.
+
+
+### Pro
+The complete CCL, all RDMs as well as all (document-centric) message structure definitions are exported
+as defined by UN/CEFACT standards. A maximum of re-usable data structures and definitions are created.
+It assures by design that any implementation is consistent and ready for any process-amendment. 
+
+### Contra
+Any implementation needs to handle the huge CCL library as a base import as well as the 
+multi-layer-restrictions as they are defined by UN/CEFACT standards. For example, the eCMR message is
+defined as a contextualisation of a master message structure for all document-centric messages defined
+by UN/CEFACT. The contained data structure is process specific contextualisation of a multi modal
+transport reference data model. The MMT-RDM is a transport specific contextualisation of the Buy-Ship-Pay
+reference data model. Moreover, this again is a contextualisation of the underlying CCL. 
+
+Thus, an implementation could get rather complex while at the same time achieving a maximum compliance level. 
