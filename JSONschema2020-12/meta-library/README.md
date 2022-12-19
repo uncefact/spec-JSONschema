@@ -166,14 +166,14 @@ In order to support this export-type a meta schema is created extending JSON sch
 ### Links to other export variants
 
 <a name="exportLinks" />
-In the [library](https://github.com/uncefact/spec-JSONschema/tree/main/JSON-Schema2020-12/library) directory, 
+In the [library](https://github.com/uncefact/spec-JSONschema/tree/main/JSONSchema2020-12/library) directory, 
 the UN/CEFACT reference data models are provided in the library variant without the meta-schema extension.
 
-In the [subset](https://github.com/uncefact/spec-JSONschema/tree/main/JSON-Schema2020-12/subset) directory, 
+In the [subset](https://github.com/uncefact/spec-JSONschema/tree/main/JSONschema2020-12/subset) directory, 
 only the UN/CEFACT reference data models, but no message structures are provided in a subset variant. This means 
 that all contextualisations of the base classes have been fully applied.  
 
-In the [snapshot](https://github.com/uncefact/spec-JSONschema/tree/main/JSON-Schema2020-12/snapshot) directory, 
+In the [snapshot](https://github.com/uncefact/spec-JSONschema/tree/main/JSONSchema2020-12/snapshot) directory, 
 the UN/CEFACT reference data models and the message structures are provided in the snapshot variant. This means 
 that all contextualisations of the base classes have been fully applied. Each JSON schema artefact is 
 consequently a standalone variant that contains all the required data structures and code lists. These can be 
