@@ -113,3 +113,7 @@ This type is used to represent all kind of amounts.
 ## What is this meta-library ?
 
 <a name="metaLibrary" />
+The meta library exports adds some meta information in the JSON schema files. Those are especially provided to allow 
+an interoperabel usage in conjunction with the JSON LD vocabulary.
+
+The corresponding [meta-schema definition can be found here](https://raw.githubusercontent.com/uncefact/spec-JSONschema/main/JSONschema2020-12/meta-schema). 
