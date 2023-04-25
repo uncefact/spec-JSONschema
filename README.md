@@ -6,7 +6,7 @@ The JSON Schema NDR TS defines a standardised method to generate the UN/CEFACT d
 
 This repository serves as a test platform during the project phase. Subsequently, the final location for the publication of the UN/CEFACT standards will be specified. The generated JSON schema files will serve as standardised input for the JSON-LD project from the end of this project. In this way, conformity between these two formats will be ensured. 
 
-The [JSON schema NDR technical specification](https://uncefact.unece.org/download/attachments/124026918/API-TECH-SPEC_JSON_Schema_NDR.pdf?api=v2) from the public review can be found [here](https://uncefact.unece.org/download/attachments/124026918/API-TECH-SPEC_JSON_Schema_NDR.pdf?api=v2).
+The [JSON Schema NDR Technical Specification 1.0](https://unece.org/trade/trade-facilitation-and-e-businessuncefact/json-schema-naming-and-design-rules) from the UN/CEFACT website can be found [here](https://unece.org/trade/trade-facilitation-and-e-businessuncefact/json-schema-naming-and-design-rules).
 
 
 ## Content
