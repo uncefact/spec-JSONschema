@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/uncefact/spec-JSONschema/main/JSONschema2020-12/library/BuyShipPay/D22A/CircularProductDataProtocol",
   "title": "Circular Product Data Protocol",
-  "description": "Copyright (C) UN/CEFACT (2022). All Rights Reserved.\n\nThis document and translations of it may be copied and furnished to others, and derivative works that comment on or otherwise explain it or assist in its implementation may be prepared, copied, published and distributed, in whole or in part, without restriction of any kind, provided that the above copyright notice and this paragraph are included on all such copies and derivative works. However, this document itself may not be modified in any way, such as by removing the copyright notice or references to UN/CEFACT, except as needed for the purpose of developing UN/CEFACT specifications, in which case the procedures for copyrights defined in the UN/CEFACT Intellectual Property Rights document must be followed, or as required to translate it into languages other than English.\n\nThe limited permissions granted above are perpetual and will not be revoked by UN/CEFACT or its successors or assigns.\n\nThis document and the information contained herein is provided on an \"AS IS\" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.",
+  "description": "Copyright (C) UN/CEFACT (2023). All Rights Reserved.\n\nThis document and translations of it may be copied and furnished to others, and derivative works that comment on or otherwise explain it or assist in its implementation may be prepared, copied, published and distributed, in whole or in part, without restriction of any kind, provided that the above copyright notice and this paragraph are included on all such copies and derivative works. However, this document itself may not be modified in any way, such as by removing the copyright notice or references to UN/CEFACT, except as needed for the purpose of developing UN/CEFACT specifications, in which case the procedures for copyrights defined in the UN/CEFACT Intellectual Property Rights document must be followed, or as required to translate it into languages other than English.\n\nThe limited permissions granted above are perpetual and will not be revoked by UN/CEFACT or its successors or assigns.\n\nThis document and the information contained herein is provided on an \"AS IS\" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.",
   "allOf": [
     {
       "$ref": "UNECE-TLMaster.json#"
@@ -11,9 +11,6 @@
       "properties": {
         "exchangedDocument": {
           "properties": {
-            "purposeCode": {
-              "maxItems": 1
-            },
             "sender": {
               "properties": {
                 "id": {
@@ -23,25 +20,21 @@
                   "maxItems": 1
                 },
                 "name": false,
-                "roleCode": false,
-                "role": false,
-                "applicableAssessment": false,
-                "applicableCertificate": false
+                "roleCode": false
               }
             },
             "recipient": {
-              "properties": {
-                "id": {
-                  "maxItems": 1
-                },
-                "globalId": {
-                  "maxItems": 1
-                },
-                "name": false,
-                "roleCode": false,
-                "role": false,
-                "applicableAssessment": false,
-                "applicableCertificate": false
+              "items": {
+                "properties": {
+                  "id": {
+                    "maxItems": 1
+                  },
+                  "globalId": {
+                    "maxItems": 1
+                  },
+                  "name": false,
+                  "roleCode": false
+                }
               }
             }
           }
@@ -50,498 +43,62 @@
         "specifiedConsignment": false,
         "tradeTransaction": false,
         "tradeProduct": {
-          "properties": {
-            "id": {
-              "maxItems": 1
-            },
-            "globalId": {
-              "maxItems": 1
-            },
-            "sellerAssignedId": false,
-            "buyerAssignedId": false,
-            "manufacturerAssignedId": false,
-            "name": {
-              "maxItems": 1
-            },
-            "description": false,
-            "typeCode": false,
-            "trackingSystemId": {
-              "maxItems": 1
-            },
-            "batchId": false,
-            "consumerAgeDescription": {
-              "maxItems": 1
-            },
-            "consumerGenderDescription": {
-              "maxItems": 1
-            },
-            "marketingDescription": {
-              "maxItems": 1
-            },
-            "seasonDescription": {
-              "maxItems": 1
-            },
-            "sizeDescription": {
-              "maxItems": 1
-            },
-            "seasonCode": {
-              "maxItems": 1
-            },
-            "epcId": false,
-            "isOrHasRecycledMaterial": false,
-            "isOrHasRecyclable": false,
-            "recycledMaterialPercent": false,
-            "isOrHasReusable": false,
-            "dnaMarkerId": false,
-            "isOrHasBiologicallyBased": false,
-            "speciesCode": false,
-            "citesSpeciesCode": false,
-            "designatedProductClassification": {
-              "maxItems": 1,
-              "properties": {
-                "systemName": {
-                  "maxItems": 1
-                },
-                "className": {
-                  "maxItems": 1
-                }
-              }
-            },
-            "individualTradeProductInstance": false,
-            "includedReferencedProduct": {
-              "properties": {
-                "name": {
-                  "maxItems": 1
-                }
-              }
-            },
-            "applicableTradeProductCertification": {
-              "properties": {
-                "assertionCode": false,
-                "responsibleAgency": false,
-                "assertion": false,
-                "specifiedSustainabilityAssertion": false,
-                "relatedReferencedLocation": false
-              }
-            },
-            "manufactureTradeCountry": false,
-            "specifiedProductCertificate": false,
-            "salesTradeCountry": {
-              "maxItems": 1
-            },
-            "applicablePeriod": false,
-            "responsible": {
-              "maxItems": 1,
-              "properties": {
-                "id": {
-                  "maxItems": 1
-                },
-                "globalId": {
-                  "maxItems": 1
-                },
-                "roleCode": {
-                  "maxItems": 1
-                },
-                "applicableAssessment": {
+          "items": {
+            "properties": {
+              "id": {
+                "maxItems": 1
+              },
+              "globalId": {
+                "maxItems": 1
+              },
+              "sellerAssignedId": false,
+              "buyerAssignedId": false,
+              "manufacturerAssignedId": false,
+              "name": {
+                "maxItems": 1
+              },
+              "typeCode": false,
+              "batchId": false,
+              "marketingDescription": {
+                "maxItems": 1
+              },
+              "dnaMarkerId": false,
+              "speciesCode": false,
+              "individualTradeProductInstance": false,
+              "applicableTradeProductCertification": {
+                "items": {
                   "properties": {
-                    "assessor": false,
-                    "verifier": false,
-                    "relatedTradeTransaction": {
-                      "properties": {
-                        "includedTradeLineItem": false,
-                        "specifiedLogisticsPackage": false,
-                        "applicableHeaderTradeDelivery": false,
-                        "includedNote": false
-                      }
-                    },
-                    "applicableSustainabilityCharacteristic": {
-                      "properties": {
-                        "applicableInspectionResult": {
-                          "properties": {
-                            "specifiedInspectionReference": false,
-                            "inspection": false,
-                            "attachedInspectionNote": false,
-                            "minimumStandardValueApplicableInspectionResultCharacteristic": {
-                              "properties": {
-                                "interpretationResultApplicableObservationObjectiveParameter": false
-                              }
-                            },
-                            "maximumStandardValueApplicableInspectionResultCharacteristic": {
-                              "properties": {
-                                "interpretationResultApplicableObservationObjectiveParameter": false
-                              }
-                            },
-                            "observedValueApplicableInspectionResultCharacteristic": {
-                              "properties": {
-                                "interpretationResultApplicableObservationObjectiveParameter": false
-                              }
-                            },
-                            "expectedValueApplicableInspectionResultCharacteristic": {
-                              "properties": {
-                                "interpretationResultApplicableObservationObjectiveParameter": false
-                              }
-                            },
-                            "applicableInspectionResultCharacteristic": {
-                              "properties": {
-                                "interpretationResultApplicableObservationObjectiveParameter": false
-                              }
-                            },
-                            "relatedInspectionInstructions": false,
-                            "outsourcedInspection": false,
-                            "obtainedConformanceCertificate": false,
-                            "obtainedProductCertificate": {
-                              "properties": {
-                                "applicableProductCharacteristic": {
-                                  "properties": {
-                                    "applicableSustainabilityCharacteristic": false
-                                  }
-                                },
-                                "applicableSustainabilityCharacteristic": false
-                              }
-                            },
-                            "laboratorySampleObservationResult": {
-                              "properties": {
-                                "specifiedLaboratoryObservationReference": false,
-                                "authorizationLaboratoryObservationParty": {
-                                  "properties": {
-                                    "personDefinedLaboratoryObservationContact": false
-                                  }
-                                },
-                                "attachedLaboratoryObservationNote": false,
-                                "minimumStandardValueSpecifiedSampleObservationResultCharacteristic": {
-                                  "properties": {
-                                    "interpretationResultApplicableObservationObjectiveParameter": false
-                                  }
-                                },
-                                "maximumStandardValueSpecifiedSampleObservationResultCharacteristic": {
-                                  "properties": {
-                                    "interpretationResultApplicableObservationObjectiveParameter": false
-                                  }
-                                },
-                                "observedValueSpecifiedSampleObservationResultCharacteristic": {
-                                  "properties": {
-                                    "interpretationResultApplicableObservationObjectiveParameter": false
-                                  }
-                                },
-                                "expectedValueSpecifiedSampleObservationResultCharacteristic": {
-                                  "properties": {
-                                    "interpretationResultApplicableObservationObjectiveParameter": false
-                                  }
-                                },
-                                "specifiedLaboratoryObservationInstructions": false,
-                                "laboratoryAnalysisRequestSpecifiedLaboratoryObservationReference": false,
-                                "outsourcedLaboratoryObservationParty": {
-                                  "properties": {
-                                    "personDefinedLaboratoryObservationContact": false
-                                  }
-                                },
-                                "interpretationResultApplicableObservationObjectiveParameter": false
-                              }
-                            },
-                            "relatedAssessment": false,
-                            "obtainedCertificate": false
-                          }
-                        },
-                        "specifiedEvent": false
-                      }
-                    }
-                  }
-                },
-                "applicableCertificate": {
-                  "properties": {
-                    "certified": false,
-                    "relatedTradeTransaction": {
-                      "properties": {
-                        "associatedReferencedDocument": {
-                          "properties": {
-                            "recipient": false,
-                            "sender": false
-                          }
-                        },
-                        "includedTradeLineItem": false,
-                        "specifiedLogisticsPackage": false,
-                        "applicableHeaderTradeDelivery": false,
-                        "includedNote": false
-                      }
-                    },
-                    "applicableSustainabilityCharacteristic": {
-                      "properties": {
-                        "applicableInspectionResult": {
-                          "properties": {
-                            "specifiedInspectionReference": false,
-                            "inspection": false,
-                            "attachedInspectionNote": false,
-                            "minimumStandardValueApplicableInspectionResultCharacteristic": {
-                              "properties": {
-                                "interpretationResultApplicableObservationObjectiveParameter": false
-                              }
-                            },
-                            "maximumStandardValueApplicableInspectionResultCharacteristic": {
-                              "properties": {
-                                "interpretationResultApplicableObservationObjectiveParameter": false
-                              }
-                            },
-                            "observedValueApplicableInspectionResultCharacteristic": {
-                              "properties": {
-                                "interpretationResultApplicableObservationObjectiveParameter": false
-                              }
-                            },
-                            "expectedValueApplicableInspectionResultCharacteristic": {
-                              "properties": {
-                                "interpretationResultApplicableObservationObjectiveParameter": false
-                              }
-                            },
-                            "applicableInspectionResultCharacteristic": {
-                              "properties": {
-                                "interpretationResultApplicableObservationObjectiveParameter": false
-                              }
-                            },
-                            "relatedInspectionInstructions": false,
-                            "outsourcedInspection": false,
-                            "obtainedConformanceCertificate": false,
-                            "obtainedProductCertificate": {
-                              "properties": {
-                                "applicableSustainabilityCharacteristic": false
-                              }
-                            },
-                            "laboratorySampleObservationResult": {
-                              "properties": {
-                                "specifiedLaboratoryObservationReference": false,
-                                "authorizationLaboratoryObservationParty": {
-                                  "properties": {
-                                    "personDefinedLaboratoryObservationContact": false
-                                  }
-                                },
-                                "attachedLaboratoryObservationNote": false,
-                                "minimumStandardValueSpecifiedSampleObservationResultCharacteristic": {
-                                  "properties": {
-                                    "interpretationResultApplicableObservationObjectiveParameter": false
-                                  }
-                                },
-                                "maximumStandardValueSpecifiedSampleObservationResultCharacteristic": {
-                                  "properties": {
-                                    "interpretationResultApplicableObservationObjectiveParameter": false
-                                  }
-                                },
-                                "observedValueSpecifiedSampleObservationResultCharacteristic": {
-                                  "properties": {
-                                    "interpretationResultApplicableObservationObjectiveParameter": false
-                                  }
-                                },
-                                "expectedValueSpecifiedSampleObservationResultCharacteristic": {
-                                  "properties": {
-                                    "interpretationResultApplicableObservationObjectiveParameter": false
-                                  }
-                                },
-                                "specifiedLaboratoryObservationInstructions": false,
-                                "laboratoryAnalysisRequestSpecifiedLaboratoryObservationReference": false,
-                                "outsourcedLaboratoryObservationParty": {
-                                  "properties": {
-                                    "personDefinedLaboratoryObservationContact": false
-                                  }
-                                },
-                                "interpretationResultApplicableObservationObjectiveParameter": false
-                              }
-                            },
-                            "relatedAssessment": {
-                              "properties": {
-                                "assessor": false,
-                                "verifier": false,
-                                "relatedTradeTransaction": {
-                                  "properties": {
-                                    "associatedReferencedDocument": {
-                                      "properties": {
-                                        "recipient": false,
-                                        "sender": false
-                                      }
-                                    },
-                                    "includedTradeLineItem": false,
-                                    "specifiedLogisticsPackage": false,
-                                    "applicableHeaderTradeDelivery": false,
-                                    "includedNote": false
-                                  }
-                                },
-                                "applicableSustainabilityCharacteristic": false
-                              }
-                            },
-                            "obtainedCertificate": false
-                          }
-                        },
-                        "specifiedEvent": false
-                      }
-                    },
-                    "issuanceTradeLocation": false,
-                    "reportedDocumentStatus": false,
-                    "applicableDocumentClause": false,
-                    "issuer": false
+                    "specifiedSustainabilityAssertion": false,
+                    "relatedReferencedLocation": false
                   }
                 }
-              }
-            },
-            "specifiedProductColour": {
-              "maxItems": 1
-            },
-            "specifiedProductPrint": {
-              "maxItems": 1,
-              "properties": {
-                "applicableMaterial": {
-                  "maxItems": 1,
+              },
+              "applicableSustainabilityCharacteristic": {
+                "items": {
                   "properties": {
-                    "description": false,
-                    "componentMaterial": false,
-                    "applicableCertificate": {
-                      "properties": {
-                        "certified": {
-                          "properties": {
-                            "specifiedLegalOrganization": false,
-                            "definedTradeContact": false,
-                            "postalTradeAddress": {
-                              "properties": {
-                                "geoCoordinateIdGeographicalCoordinate": false
-                              }
-                            },
-                            "providedService": false,
-                            "associated": false,
-                            "specifiedLogisticsLocation": false,
-                            "specifiedTaxRegistration": false,
-                            "specifiedGovernmentRegistration": false,
-                            "subcontractor": false,
-                            "specifiedProductionFacility": {
-                              "properties": {
-                                "relatedFacilityProductionUnit": false,
-                                "physicalReferencedLocation": {
-                                  "properties": {
-                                    "appliedAgriculturalApplication": false,
-                                    "postalTradeAddress": {
-                                      "properties": {
-                                        "geoCoordinateIdGeographicalCoordinate": false
-                                      }
-                                    },
-                                    "associatedGeographicalFeature": false,
-                                    "specifiedInventory": {
-                                      "properties": {
-                                        "includedMaterial": false
-                                      }
-                                    },
-                                    "specifiedProductionFacility": false,
-                                    "relatedFacilityProductionUnit": false,
-                                    "specified": false,
-                                    "specifiedEvent": false,
-                                    "applicableInspection": false,
-                                    "applicableSustainabilityInspection": {
-                                      "properties": {
-                                        "applicableSustainabilityCharacteristic": {
-                                          "properties": {
-                                            "specifiedEvent": false
-                                          }
-                                        },
-                                        "execution": false,
-                                        "executionInspectionPerson": false
-                                      }
-                                    }
-                                  }
-                                },
-                                "specifiedOrganizationalCertification": false,
-                                "specifiedProcessCertification": false,
-                                "specifiedProductBatchCertification": false,
-                                "specifiedAnimalCertification": false,
-                                "specifiedAnimalCertificate": false,
-                                "specifiedProductCertificate": false,
-                                "applicableInspection": false,
-                                "specifiedEvent": false,
-                                "subordinateProductionFacility": false,
-                                "applicableCertificate": false
-                              }
-                            },
-                            "applicableOrganizationalCertification": false,
-                            "applicableProductBatchCertificate": false,
-                            "applicableTechnicalCharacteristic": false,
-                            "specifiedTradeProduct": false,
-                            "relatedProductBatch": false,
-                            "relatedMaterial": false,
-                            "applicableCertificate": false
-                          }
-                        },
-                        "issuanceTradeLocation": false,
-                        "reportedDocumentStatus": false,
-                        "applicableDocumentClause": false,
-                        "issuer": false
-                      }
-                    },
-                    "applicableAssessment": {
-                      "properties": {
-                        "assessor": false,
-                        "verifier": false
-                      }
+                    "applicableReferencedStandard": {
+                      "maxItems": 1
                     }
                   }
                 }
-              }
-            },
-            "msrpTradePrice": {
-              "properties": {
-                "chargeAmount": {
-                  "maxItems": 1
-                }
-              }
-            },
-            "componentMaterial": {
-              "properties": {
-                "id": false,
-                "classificationId": false,
-                "description": false,
-                "information": false,
-                "usedDistinctChemical": false
-              }
-            },
-            "appliedProductFinishingTreatment": {
-              "properties": {
-                "description": {
-                  "maxItems": 1
-                },
-                "typeCode": false,
-                "usedMaterial": {
+              },
+              "specifiedProductionFacility": {
+                "items": {
                   "properties": {
-                    "id": false,
-                    "classificationId": false,
-                    "typeCode": false,
-                    "description": false,
-                    "information": false,
-                    "componentMaterial": false,
-                    "usedDistinctChemical": false
+                    "id": {
+                      "maxItems": 1
+                    },
+                    "globalId": {
+                      "maxItems": 1
+                    },
+                    "typeCode": false
                   }
                 }
-              }
-            },
-            "applicableSustainabilityCharacteristic": {
-              "properties": {
-                "applicableReferencedStandard": {
-                  "maxItems": 1
-                }
-              }
-            },
-            "specifiedProductLabel": {
-              "maxItems": 1
-            },
-            "specifiedProductionFacility": {
-              "properties": {
-                "id": {
-                  "maxItems": 1
-                },
-                "globalId": {
-                  "maxItems": 1
-                },
-                "description": {
-                  "maxItems": 1
-                },
-                "typeCode": false,
-                "functionCode": false,
-                "subordinateProductionFacility": false
-              }
-            },
-            "applicableSustainabilityInspection": false,
-            "specifiedSustainabilityAssertion": false,
-            "relatedTradeTransaction": false
+              },
+              "applicableSustainabilityInspection": false,
+              "specifiedSustainabilityAssertion": false,
+              "relatedTradeTransaction": false
+            }
           }
         },
         "ttExchangedDocument": false,

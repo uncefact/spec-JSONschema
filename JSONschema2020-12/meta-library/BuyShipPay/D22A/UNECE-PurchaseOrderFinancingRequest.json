@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/uncefact/spec-JSONschema/main/JSONschema2020-12/meta-schema",
   "$id": "https://raw.githubusercontent.com/uncefact/spec-JSONschema/main/JSONschema2020-12/meta-library/BuyShipPay/D22A/PurchaseOrderFinancingRequest",
   "title": "Purchase Order Financing Request",
-  "description": "Copyright (C) UN/CEFACT (2022). All Rights Reserved.\n\nThis document and translations of it may be copied and furnished to others, and derivative works that comment on or otherwise explain it or assist in its implementation may be prepared, copied, published and distributed, in whole or in part, without restriction of any kind, provided that the above copyright notice and this paragraph are included on all such copies and derivative works. However, this document itself may not be modified in any way, such as by removing the copyright notice or references to UN/CEFACT, except as needed for the purpose of developing UN/CEFACT specifications, in which case the procedures for copyrights defined in the UN/CEFACT Intellectual Property Rights document must be followed, or as required to translate it into languages other than English.\n\nThe limited permissions granted above are perpetual and will not be revoked by UN/CEFACT or its successors or assigns.\n\nThis document and the information contained herein is provided on an \"AS IS\" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.",
+  "description": "Copyright (C) UN/CEFACT (2023). All Rights Reserved.\n\nThis document and translations of it may be copied and furnished to others, and derivative works that comment on or otherwise explain it or assist in its implementation may be prepared, copied, published and distributed, in whole or in part, without restriction of any kind, provided that the above copyright notice and this paragraph are included on all such copies and derivative works. However, this document itself may not be modified in any way, such as by removing the copyright notice or references to UN/CEFACT, except as needed for the purpose of developing UN/CEFACT specifications, in which case the procedures for copyrights defined in the UN/CEFACT Intellectual Property Rights document must be followed, or as required to translate it into languages other than English.\n\nThe limited permissions granted above are perpetual and will not be revoked by UN/CEFACT or its successors or assigns.\n\nThis document and the information contained herein is provided on an \"AS IS\" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.",
   "allOf": [
     {
       "$ref": "UNECE-PAYMaster.json#"
@@ -11,232 +11,264 @@
       "properties": {
         "tradeTransaction": {
           "minItems": 1,
-          "properties": {
-            "issueDateTime": {
-              "properties": {
-                "format": false
-              }
-            },
-            "applicableHeaderTradeAgreement": {
-              "minItems": 1,
-              "properties": {
-                "seller": {
+          "items": {
+            "properties": {
+              "issueDateTime": {
+                "properties": {
+                  "format": false
+                }
+              },
+              "applicableHeaderTradeAgreement": {
+                "minItems": 1,
+                "items": {
                   "properties": {
-                    "postalTradeAddress": {
+                    "seller": {
                       "properties": {
-                        "countryId": {
+                        "postalTradeAddress": {
                           "properties": {
-                            "schemeAgencyId": false
-                          }
-                        }
-                      }
-                    },
-                    "specifiedTaxRegistration": {
-                      "properties": {
-                        "id": {
-                          "properties": {
-                            "schemeId": false
-                          }
-                        }
-                      }
-                    },
-                    "specifiedContactPerson": {
-                      "maxItems": 1,
-                      "properties": {
-                        "specifiedBirthAddress": {
-                          "properties": {
-                            "cityName": {
-                              "properties": {
-                                "languageId": false,
-                                "languageLocaleId": false
-                              }
-                            },
                             "countryId": {
                               "properties": {
-                                "schemeId": false,
-                                "schemeAgencyId": false,
-                                "schemeVersionId": false
+                                "schemeAgencyId": false
                               }
                             }
                           }
                         },
                         "specifiedTaxRegistration": {
-                          "maxItems": 1,
-                          "properties": {
-                            "id": {
-                              "properties": {
-                                "schemeId": false
+                          "items": {
+                            "properties": {
+                              "id": {
+                                "properties": {
+                                  "schemeId": false
+                                }
                               }
                             }
                           }
-                        }
-                      },
-                      "required": [
-                        "familyName"
-                      ]
-                    },
-                    "specifiedProprietaryIdentity": {
-                      "properties": {
-                        "id": {
-                          "properties": {
-                            "schemeId": false,
-                            "schemeName": false,
-                            "schemeAgencyId": false,
-                            "schemeAgencyName": false,
-                            "schemeVersionId": false,
-                            "schemeDataUri": false,
-                            "schemeUri": false
+                        },
+                        "specifiedContactPerson": {
+                          "maxItems": 1,
+                          "items": {
+                            "properties": {
+                              "specifiedBirthAddress": {
+                                "properties": {
+                                  "cityName": {
+                                    "properties": {
+                                      "languageId": false,
+                                      "languageLocaleId": false
+                                    }
+                                  },
+                                  "countryId": {
+                                    "properties": {
+                                      "schemeId": false,
+                                      "schemeAgencyId": false,
+                                      "schemeVersionId": false
+                                    }
+                                  }
+                                }
+                              },
+                              "specifiedTaxRegistration": {
+                                "maxItems": 1,
+                                "items": {
+                                  "properties": {
+                                    "id": {
+                                      "properties": {
+                                        "schemeId": false
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "required": [
+                              "familyName"
+                            ]
                           }
-                        }
+                        },
+                        "specifiedProprietaryIdentity": {
+                          "items": {
+                            "properties": {
+                              "id": {
+                                "items": {
+                                  "properties": {
+                                    "schemeId": false,
+                                    "schemeName": false,
+                                    "schemeAgencyId": false,
+                                    "schemeAgencyName": false,
+                                    "schemeVersionId": false,
+                                    "schemeDataUri": false,
+                                    "schemeUri": false
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "ownedCreditorFinancialAccount": {
+                          "properties": {
+                            "currencyCode": {
+                              "properties": {
+                                "listAgencyName": false,
+                                "listName": false,
+                                "listVersionId": false,
+                                "name": false,
+                                "languageId": false,
+                                "listUri": false,
+                                "listSchemeUri": false
+                              }
+                            }
+                          }
+                        },
+                        "specifiedCreditorFinancialInstitution": false
                       }
                     },
-                    "ownedCreditorFinancialAccount": {
+                    "buyer": {
                       "properties": {
-                        "currencyCode": {
+                        "postalTradeAddress": {
                           "properties": {
-                            "listAgencyName": false,
-                            "listName": false,
-                            "listVersionId": false,
-                            "name": false,
-                            "languageId": false,
-                            "listUri": false,
-                            "listSchemeUri": false
+                            "countryId": {
+                              "properties": {
+                                "schemeAgencyId": false
+                              }
+                            }
                           }
-                        }
-                      }
-                    },
-                    "specifiedCreditorFinancialInstitution": false
-                  }
-                },
-                "buyer": {
-                  "properties": {
-                    "postalTradeAddress": {
-                      "properties": {
-                        "countryId": {
-                          "properties": {
-                            "schemeAgencyId": false
-                          }
-                        }
-                      }
-                    },
-                    "specifiedTaxRegistration": {
-                      "properties": {
-                        "id": {
-                          "properties": {
-                            "schemeId": false
-                          }
-                        }
-                      }
-                    },
-                    "specifiedContactPerson": {
-                      "maxItems": 1,
-                      "properties": {
+                        },
                         "specifiedTaxRegistration": {
-                          "maxItems": 1,
-                          "properties": {
-                            "id": {
-                              "properties": {
-                                "schemeId": false
+                          "items": {
+                            "properties": {
+                              "id": {
+                                "properties": {
+                                  "schemeId": false
+                                }
                               }
                             }
                           }
-                        }
-                      },
-                      "required": [
-                        "familyName"
-                      ]
-                    },
-                    "ownedCreditorFinancialAccount": {
-                      "properties": {
-                        "currencyCode": {
-                          "properties": {
-                            "listAgencyName": false,
-                            "listName": false,
-                            "listVersionId": false,
-                            "name": false,
-                            "languageId": false,
-                            "listUri": false,
-                            "listSchemeUri": false
+                        },
+                        "specifiedContactPerson": {
+                          "maxItems": 1,
+                          "items": {
+                            "properties": {
+                              "specifiedTaxRegistration": {
+                                "maxItems": 1,
+                                "items": {
+                                  "properties": {
+                                    "id": {
+                                      "properties": {
+                                        "schemeId": false
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "required": [
+                              "familyName"
+                            ]
                           }
-                        }
+                        },
+                        "ownedCreditorFinancialAccount": {
+                          "properties": {
+                            "currencyCode": {
+                              "properties": {
+                                "listAgencyName": false,
+                                "listName": false,
+                                "listVersionId": false,
+                                "name": false,
+                                "languageId": false,
+                                "listUri": false,
+                                "listSchemeUri": false
+                              }
+                            }
+                          }
+                        },
+                        "specifiedCreditorFinancialInstitution": false
                       }
-                    },
-                    "specifiedCreditorFinancialInstitution": false
-                  }
+                    }
+                  },
+                  "required": [
+                    "seller",
+                    "buyer"
+                  ]
                 }
               },
-              "required": [
-                "seller",
-                "buyer"
-              ]
-            },
-            "applicableHeaderTradeSettlement": {
-              "properties": {
-                "paymentAmount": false,
-                "specifiedTradeSettlementPaymentMeans": {
-                  "minItems": 1,
-                  "properties": {
-                    "specifiedCreditorFinancialAccount": {
+              "applicableHeaderTradeSettlement": {
+                "properties": {
+                  "paymentAmount": false,
+                  "specifiedTradeSettlementPaymentMeans": {
+                    "minItems": 1,
+                    "items": {
                       "properties": {
-                        "currencyCode": {
+                        "specifiedCreditorFinancialAccount": {
+                          "items": {
+                            "properties": {
+                              "currencyCode": {
+                                "properties": {
+                                  "listAgencyName": false,
+                                  "listName": false,
+                                  "listVersionId": false,
+                                  "name": false,
+                                  "languageId": false,
+                                  "listUri": false,
+                                  "listSchemeUri": false
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "required": [
+                        "paymentMethodCode"
+                      ]
+                    }
+                  },
+                  "specifiedTradePaymentTerms": {
+                    "items": {
+                      "properties": {
+                        "billStartDateTime": false
+                      }
+                    }
+                  },
+                  "specifiedTradeSettlementHeaderMonetarySummation": {
+                    "properties": {
+                      "taxBasisTotalAmount": {
+                        "minItems": 1,
+                        "items": {
                           "properties": {
-                            "listAgencyName": false,
-                            "listName": false,
-                            "listVersionId": false,
-                            "name": false,
-                            "languageId": false,
-                            "listUri": false,
-                            "listSchemeUri": false
+                            "currencyId": false
+                          }
+                        }
+                      },
+                      "taxTotalAmount": {
+                        "minItems": 1,
+                        "items": {
+                          "properties": {
+                            "currencyId": false
                           }
                         }
                       }
                     }
                   },
-                  "required": [
-                    "paymentMethodCode"
-                  ]
-                },
-                "specifiedTradePaymentTerms": {
-                  "properties": {
-                    "billStartDateTime": false
-                  }
-                },
-                "specifiedTradeSettlementHeaderMonetarySummation": {
-                  "properties": {
-                    "taxBasisTotalAmount": {
-                      "minItems": 1,
-                      "properties": {
-                        "currencyId": false
+                  "specifiedPaymentInstalmentPlan": {
+                    "properties": {
+                      "specifiedInstalmentPayment": {
+                        "items": {
+                          "properties": {
+                            "specifiedFinancingRequestResultDocument": false
+                          },
+                          "required": [
+                            "dueDateTime"
+                          ]
+                        }
                       }
-                    },
-                    "taxTotalAmount": {
-                      "minItems": 1,
-                      "properties": {
-                        "currencyId": false
-                      }
-                    }
-                  }
-                },
-                "specifiedPaymentInstalmentPlan": {
-                  "properties": {
-                    "specifiedInstalmentPayment": {
-                      "properties": {
-                        "specifiedFinancingRequestResultDocument": false
-                      },
-                      "required": [
-                        "dueDateTime"
-                      ]
                     }
                   }
                 }
-              }
+              },
+              "associatedFinancingRequestResultDocument": false
             },
-            "associatedFinancingRequestResultDocument": false
-          },
-          "required": [
-            "typeCode",
-            "applicableHeaderTradeSettlement"
-          ]
+            "required": [
+              "typeCode",
+              "applicableHeaderTradeSettlement"
+            ]
+          }
         },
         "financingRequestDocument": {
           "properties": {
@@ -260,20 +292,26 @@
             "specifiedCancellationStatus": false,
             "specifiedValidationStatus": false,
             "additionalInformationIncludedNote": {
-              "properties": {
-                "subject": {
-                  "properties": {
-                    "languageId": false
-                  }
-                },
-                "content": {
-                  "properties": {
-                    "languageId": false
-                  }
-                },
-                "subjectCode": {
-                  "properties": {
-                    "listAgencyId": false
+              "items": {
+                "properties": {
+                  "subject": {
+                    "properties": {
+                      "languageId": false
+                    }
+                  },
+                  "content": {
+                    "items": {
+                      "properties": {
+                        "languageId": false
+                      }
+                    }
+                  },
+                  "subjectCode": {
+                    "items": {
+                      "properties": {
+                        "listAgencyId": false
+                      }
+                    }
                   }
                 }
               }
@@ -285,7 +323,8 @@
             "specifiedRequestingParty"
           ]
         },
-        "financingSummaryDocument": false
+        "financingSummaryDocument": false,
+        "xheEnvelope": false
       }
     }
   ]

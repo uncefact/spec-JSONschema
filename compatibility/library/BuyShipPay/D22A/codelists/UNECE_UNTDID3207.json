@@ -1,1011 +1,264 @@
 {
-  "$schema": "https://github.com/uncefact/spec-JSONschema/tree/main/JSONschema2020-12/meta-schema",
-  "$id": "https://github.com/uncefact/spec-JSONschema/tree/main/JSONschema2020-12/meta-library/BuyShipPay/D22A/UNECE_UNTDID3207",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/uncefact/spec-JSONschema/main/compatibility/library/BuyShipPay/D22A/UNECE_UNTDID3207",
   "title": "UNECE_UNTDID3207",
-  "description": "Copyright (C) UN/CEFACT (2022). All Rights Reserved.\n\nThis document and translations of it may be copied and furnished to others, and derivative works that comment on or otherwise explain it or assist in its implementation may be prepared, copied, published and distributed, in whole or in part, without restriction of any kind, provided that the above copyright notice and this paragraph are included on all such copies and derivative works. However, this document itself may not be modified in any way, such as by removing the copyright notice or references to UN/CEFACT, except as needed for the purpose of developing UN/CEFACT specifications, in which case the procedures for copyrights defined in the UN/CEFACT Intellectual Property Rights document must be followed, or as required to translate it into languages other than English.\n\nThe limited permissions granted above are perpetual and will not be revoked by UN/CEFACT or its successors or assigns.\n\nThis document and the information contained herein is provided on an \"AS IS\" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.",
+  "description": "Copyright (C) UN/CEFACT (2023). All Rights Reserved.\n\nThis document and translations of it may be copied and furnished to others, and derivative works that comment on or otherwise explain it or assist in its implementation may be prepared, copied, published and distributed, in whole or in part, without restriction of any kind, provided that the above copyright notice and this paragraph are included on all such copies and derivative works. However, this document itself may not be modified in any way, such as by removing the copyright notice or references to UN/CEFACT, except as needed for the purpose of developing UN/CEFACT specifications, in which case the procedures for copyrights defined in the UN/CEFACT Intellectual Property Rights document must be followed, or as required to translate it into languages other than English.\n\nThe limited permissions granted above are perpetual and will not be revoked by UN/CEFACT or its successors or assigns.\n\nThis document and the information contained herein is provided on an \"AS IS\" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.",
   "$defs": {
     "codeList": {
       "$defs": {
         "UNTDID3207Type": {
           "title": "ISO_ISOTwoletterCountryCode_SecondEdition2006.TXT",
-          "description": "Identification of the name of the country or other geographical entity as defined in ISO 3166-1.\r\n\r\nCode list responsible agency:\r\nISO\r\n\r\nCode list responsible agency name:\r\nInternational Organization for Standardization\r\n\r\nCode list responsible agency code:\r\n5\r\n\r\nCode list:\r\n3166-1\r\n\r\nCode list name:\r\nCountry code\r\n\r\nCode list version:\r\n2020\r\n\r\nCode list issue date:\r\nCL 2020-08",
-          "oneOf": [
-            {
-              "const": "AD",
-              "title": "ANDORRA"
-            },
-            {
-              "const": "AE",
-              "title": "UNITED ARAB EMIRATES"
-            },
-            {
-              "const": "AF",
-              "title": "AFGHANISTAN"
-            },
-            {
-              "const": "AG",
-              "title": "ANTIGUA AND BARBUDA"
-            },
-            {
-              "const": "AI",
-              "title": "ANGUILLA"
-            },
-            {
-              "const": "AL",
-              "title": "ALBANIA"
-            },
-            {
-              "const": "AM",
-              "title": "ARMENIA"
-            },
-            {
-              "const": "AO",
-              "title": "ANGOLA"
-            },
-            {
-              "const": "AQ",
-              "title": "ANTARCTICA"
-            },
-            {
-              "const": "AR",
-              "title": "ARGENTINA"
-            },
-            {
-              "const": "AS",
-              "title": "AMERICAN SAMOA"
-            },
-            {
-              "const": "AT",
-              "title": "AUSTRIA"
-            },
-            {
-              "const": "AU",
-              "title": "AUSTRALIA"
-            },
-            {
-              "const": "AW",
-              "title": "ARUBA"
-            },
-            {
-              "const": "AX",
-              "title": "ÅLAND ISLANDS"
-            },
-            {
-              "const": "AZ",
-              "title": "AZERBAIJAN"
-            },
-            {
-              "const": "BA",
-              "title": "BOSNIA AND HERZEGOVINA"
-            },
-            {
-              "const": "BB",
-              "title": "BARBADOS"
-            },
-            {
-              "const": "BD",
-              "title": "BANGLADESH"
-            },
-            {
-              "const": "BE",
-              "title": "BELGIUM"
-            },
-            {
-              "const": "BF",
-              "title": "BURKINA FASO"
-            },
-            {
-              "const": "BG",
-              "title": "BULGARIA"
-            },
-            {
-              "const": "BH",
-              "title": "BAHRAIN"
-            },
-            {
-              "const": "BI",
-              "title": "BURUNDI"
-            },
-            {
-              "const": "BJ",
-              "title": "BENIN"
-            },
-            {
-              "const": "BL",
-              "title": "SAINT BARTHÉLEMY"
-            },
-            {
-              "const": "BM",
-              "title": "BERMUDA"
-            },
-            {
-              "const": "BN",
-              "title": "BRUNEI DARUSSALAM"
-            },
-            {
-              "const": "BO",
-              "title": "BOLIVIA (PLURINATIONAL STATE OF)"
-            },
-            {
-              "const": "BQ",
-              "title": "BONAIRE, SINT EUSTATIUS AND SABA"
-            },
-            {
-              "const": "BR",
-              "title": "BRAZIL"
-            },
-            {
-              "const": "BS",
-              "title": "BAHAMAS"
-            },
-            {
-              "const": "BT",
-              "title": "BHUTAN"
-            },
-            {
-              "const": "BV",
-              "title": "BOUVET ISLAND"
-            },
-            {
-              "const": "BW",
-              "title": "BOTSWANA"
-            },
-            {
-              "const": "BY",
-              "title": "BELARUS"
-            },
-            {
-              "const": "BZ",
-              "title": "BELIZE"
-            },
-            {
-              "const": "CA",
-              "title": "CANADA"
-            },
-            {
-              "const": "CC",
-              "title": "COCOS (KEELING) ISLANDS"
-            },
-            {
-              "const": "CD",
-              "title": "CONGO, DEMOCRATIC REPUBLIC OF"
-            },
-            {
-              "const": "CF",
-              "title": "CENTRAL AFRICAN REPUBLIC"
-            },
-            {
-              "const": "CG",
-              "title": "CONGO"
-            },
-            {
-              "const": "CH",
-              "title": "SWITZERLAND"
-            },
-            {
-              "const": "CI",
-              "title": "COTE D'IVOIRE"
-            },
-            {
-              "const": "CK",
-              "title": "COOK ISLANDS"
-            },
-            {
-              "const": "CL",
-              "title": "CHILE"
-            },
-            {
-              "const": "CM",
-              "title": "CAMEROON"
-            },
-            {
-              "const": "CN",
-              "title": "CHINA"
-            },
-            {
-              "const": "CO",
-              "title": "COLOMBIA"
-            },
-            {
-              "const": "CR",
-              "title": "COSTA RICA"
-            },
-            {
-              "const": "CU",
-              "title": "CUBA"
-            },
-            {
-              "const": "CV",
-              "title": "CABO VERDE"
-            },
-            {
-              "const": "CW",
-              "title": "CURAÇAO"
-            },
-            {
-              "const": "CX",
-              "title": "CHRISTMAS ISLAND"
-            },
-            {
-              "const": "CY",
-              "title": "CYPRUS"
-            },
-            {
-              "const": "CZ",
-              "title": "CZECHIA"
-            },
-            {
-              "const": "DE",
-              "title": "GERMANY"
-            },
-            {
-              "const": "DJ",
-              "title": "DJIBOUTI"
-            },
-            {
-              "const": "DK",
-              "title": "DENMARK"
-            },
-            {
-              "const": "DM",
-              "title": "DOMINICA"
-            },
-            {
-              "const": "DO",
-              "title": "DOMINICAN REPUBLIC"
-            },
-            {
-              "const": "DZ",
-              "title": "ALGERIA"
-            },
-            {
-              "const": "EC",
-              "title": "ECUADOR"
-            },
-            {
-              "const": "EE",
-              "title": "ESTONIA"
-            },
-            {
-              "const": "EG",
-              "title": "EGYPT"
-            },
-            {
-              "const": "EH",
-              "title": "WESTERN SAHARA"
-            },
-            {
-              "const": "ER",
-              "title": "ERITREA"
-            },
-            {
-              "const": "ES",
-              "title": "SPAIN"
-            },
-            {
-              "const": "ET",
-              "title": "ETHIOPIA"
-            },
-            {
-              "const": "FI",
-              "title": "FINLAND"
-            },
-            {
-              "const": "FJ",
-              "title": "FIJI"
-            },
-            {
-              "const": "FK",
-              "title": "FALKLAND ISLANDS (MALVINAS)"
-            },
-            {
-              "const": "FM",
-              "title": "MICRONESIA (FEDERATED STATES OF)"
-            },
-            {
-              "const": "FO",
-              "title": "FAROE ISLANDS"
-            },
-            {
-              "const": "FR",
-              "title": "FRANCE"
-            },
-            {
-              "const": "GA",
-              "title": "GABON"
-            },
-            {
-              "const": "GB",
-              "title": "UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND"
-            },
-            {
-              "const": "GD",
-              "title": "GRENADA"
-            },
-            {
-              "const": "GE",
-              "title": "GEORGIA"
-            },
-            {
-              "const": "GF",
-              "title": "FRENCH GUIANA"
-            },
-            {
-              "const": "GG",
-              "title": "GUERNSEY"
-            },
-            {
-              "const": "GH",
-              "title": "GHANA"
-            },
-            {
-              "const": "GI",
-              "title": "GIBRALTAR"
-            },
-            {
-              "const": "GL",
-              "title": "GREENLAND"
-            },
-            {
-              "const": "GM",
-              "title": "GAMBIA"
-            },
-            {
-              "const": "GN",
-              "title": "GUINEA"
-            },
-            {
-              "const": "GP",
-              "title": "GUADELOUPE"
-            },
-            {
-              "const": "GQ",
-              "title": "EQUATORIAL GUINEA"
-            },
-            {
-              "const": "GR",
-              "title": "GREECE"
-            },
-            {
-              "const": "GS",
-              "title": "SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS"
-            },
-            {
-              "const": "GT",
-              "title": "GUATEMALA"
-            },
-            {
-              "const": "GU",
-              "title": "GUAM"
-            },
-            {
-              "const": "GW",
-              "title": "GUINEA-BISSAU"
-            },
-            {
-              "const": "GY",
-              "title": "GUYANA"
-            },
-            {
-              "const": "HK",
-              "title": "HONG KONG"
-            },
-            {
-              "const": "HM",
-              "title": "HEARD ISLAND AND MCDONALD ISLANDS"
-            },
-            {
-              "const": "HN",
-              "title": "HONDURAS"
-            },
-            {
-              "const": "HR",
-              "title": "CROATIA"
-            },
-            {
-              "const": "HT",
-              "title": "HAITI"
-            },
-            {
-              "const": "HU",
-              "title": "HUNGARY"
-            },
-            {
-              "const": "ID",
-              "title": "INDONESIA"
-            },
-            {
-              "const": "IE",
-              "title": "IRELAND"
-            },
-            {
-              "const": "IL",
-              "title": "ISRAEL"
-            },
-            {
-              "const": "IM",
-              "title": "ISLE OF MAN"
-            },
-            {
-              "const": "IN",
-              "title": "INDIA"
-            },
-            {
-              "const": "IO",
-              "title": "BRITISH INDIAN OCEAN TERRITORY"
-            },
-            {
-              "const": "IQ",
-              "title": "IRAQ"
-            },
-            {
-              "const": "IR",
-              "title": "IRAN (ISLAMIC REPUBLIC OF)"
-            },
-            {
-              "const": "IS",
-              "title": "ICELAND"
-            },
-            {
-              "const": "IT",
-              "title": "ITALY"
-            },
-            {
-              "const": "JE",
-              "title": "JERSEY"
-            },
-            {
-              "const": "JM",
-              "title": "JAMAICA"
-            },
-            {
-              "const": "JO",
-              "title": "JORDAN"
-            },
-            {
-              "const": "JP",
-              "title": "JAPAN"
-            },
-            {
-              "const": "KE",
-              "title": "KENYA"
-            },
-            {
-              "const": "KG",
-              "title": "KYRGYZSTAN"
-            },
-            {
-              "const": "KH",
-              "title": "CAMBODIA"
-            },
-            {
-              "const": "KI",
-              "title": "KIRIBATI"
-            },
-            {
-              "const": "KM",
-              "title": "COMOROS"
-            },
-            {
-              "const": "KN",
-              "title": "SAINT KITTS AND NEVIS"
-            },
-            {
-              "const": "KP",
-              "title": "KOREA (DEMOCRATIC PEOPLE'S REPUBLIC OF)"
-            },
-            {
-              "const": "KR",
-              "title": "KOREA, REPUBLIC OF"
-            },
-            {
-              "const": "KW",
-              "title": "KUWAIT"
-            },
-            {
-              "const": "KY",
-              "title": "CAYMAN ISLANDS"
-            },
-            {
-              "const": "KZ",
-              "title": "KAZAKHSTAN"
-            },
-            {
-              "const": "LA",
-              "title": "LAO PEOPLE'S DEMOCRATIC REPUBLIC"
-            },
-            {
-              "const": "LB",
-              "title": "LEBANON"
-            },
-            {
-              "const": "LC",
-              "title": "SAINT LUCIA"
-            },
-            {
-              "const": "LI",
-              "title": "LIECHTENSTEIN"
-            },
-            {
-              "const": "LK",
-              "title": "SRI LANKA"
-            },
-            {
-              "const": "LR",
-              "title": "LIBERIA"
-            },
-            {
-              "const": "LS",
-              "title": "LESOTHO"
-            },
-            {
-              "const": "LT",
-              "title": "LITHUANIA"
-            },
-            {
-              "const": "LU",
-              "title": "LUXEMBOURG"
-            },
-            {
-              "const": "LV",
-              "title": "LATVIA"
-            },
-            {
-              "const": "LY",
-              "title": "LIBYA"
-            },
-            {
-              "const": "MA",
-              "title": "MOROCCO"
-            },
-            {
-              "const": "MC",
-              "title": "MONACO"
-            },
-            {
-              "const": "MD",
-              "title": "MOLDOVA, REPUBLIC OF"
-            },
-            {
-              "const": "ME",
-              "title": "MONTENEGRO"
-            },
-            {
-              "const": "MF",
-              "title": "SAINT MARTIN (FRENCH PART)"
-            },
-            {
-              "const": "MG",
-              "title": "MADAGASCAR"
-            },
-            {
-              "const": "MH",
-              "title": "MARSHALL ISLANDS"
-            },
-            {
-              "const": "MK",
-              "title": "NORTH MACEDONIA"
-            },
-            {
-              "const": "ML",
-              "title": "MALI"
-            },
-            {
-              "const": "MM",
-              "title": "MYANMAR"
-            },
-            {
-              "const": "MN",
-              "title": "MONGOLIA"
-            },
-            {
-              "const": "MO",
-              "title": "MACAO"
-            },
-            {
-              "const": "MP",
-              "title": "NORTHERN MARIANA ISLANDS"
-            },
-            {
-              "const": "MQ",
-              "title": "MARTINIQUE"
-            },
-            {
-              "const": "MR",
-              "title": "MAURITANIA"
-            },
-            {
-              "const": "MS",
-              "title": "MONTSERRAT"
-            },
-            {
-              "const": "MT",
-              "title": "MALTA"
-            },
-            {
-              "const": "MU",
-              "title": "MAURITIUS"
-            },
-            {
-              "const": "MV",
-              "title": "MALDIVES"
-            },
-            {
-              "const": "MW",
-              "title": "MALAWI"
-            },
-            {
-              "const": "MX",
-              "title": "MEXICO"
-            },
-            {
-              "const": "MY",
-              "title": "MALAYSIA"
-            },
-            {
-              "const": "MZ",
-              "title": "MOZAMBIQUE"
-            },
-            {
-              "const": "NA",
-              "title": "NAMIBIA"
-            },
-            {
-              "const": "NC",
-              "title": "NEW CALEDONIA"
-            },
-            {
-              "const": "NE",
-              "title": "NIGER"
-            },
-            {
-              "const": "NF",
-              "title": "NORFOLK ISLAND"
-            },
-            {
-              "const": "NG",
-              "title": "NIGERIA"
-            },
-            {
-              "const": "NI",
-              "title": "NICARAGUA"
-            },
-            {
-              "const": "NL",
-              "title": "NETHERLANDS"
-            },
-            {
-              "const": "NO",
-              "title": "NORWAY"
-            },
-            {
-              "const": "NP",
-              "title": "NEPAL"
-            },
-            {
-              "const": "NR",
-              "title": "NAURU"
-            },
-            {
-              "const": "NU",
-              "title": "NIUE"
-            },
-            {
-              "const": "NZ",
-              "title": "NEW ZEALAND"
-            },
-            {
-              "const": "OM",
-              "title": "OMAN"
-            },
-            {
-              "const": "PA",
-              "title": "PANAMA"
-            },
-            {
-              "const": "PE",
-              "title": "PERU"
-            },
-            {
-              "const": "PF",
-              "title": "FRENCH POLYNESIA"
-            },
-            {
-              "const": "PG",
-              "title": "PAPUA NEW GUINEA"
-            },
-            {
-              "const": "PH",
-              "title": "PHILIPPINES"
-            },
-            {
-              "const": "PK",
-              "title": "PAKISTAN"
-            },
-            {
-              "const": "PL",
-              "title": "POLAND"
-            },
-            {
-              "const": "PM",
-              "title": "SAINT PIERRE AND MIQUELON"
-            },
-            {
-              "const": "PN",
-              "title": "PITCAIRN"
-            },
-            {
-              "const": "PR",
-              "title": "PUERTO RICO"
-            },
-            {
-              "const": "PS",
-              "title": "PALESTINE, STATE OF"
-            },
-            {
-              "const": "PT",
-              "title": "PORTUGAL"
-            },
-            {
-              "const": "PW",
-              "title": "PALAU"
-            },
-            {
-              "const": "PY",
-              "title": "PARAGUAY"
-            },
-            {
-              "const": "QA",
-              "title": "QATAR"
-            },
-            {
-              "const": "RE",
-              "title": "REUNION"
-            },
-            {
-              "const": "RO",
-              "title": "ROMANIA"
-            },
-            {
-              "const": "RS",
-              "title": "SERBIA"
-            },
-            {
-              "const": "RU",
-              "title": "RUSSIAN FEDERATION"
-            },
-            {
-              "const": "RW",
-              "title": "RWANDA"
-            },
-            {
-              "const": "SA",
-              "title": "SAUDI ARABIA"
-            },
-            {
-              "const": "SB",
-              "title": "SOLOMON ISLANDS"
-            },
-            {
-              "const": "SC",
-              "title": "SEYCHELLES"
-            },
-            {
-              "const": "SD",
-              "title": "SUDAN"
-            },
-            {
-              "const": "SE",
-              "title": "SWEDEN"
-            },
-            {
-              "const": "SG",
-              "title": "SINGAPORE"
-            },
-            {
-              "const": "SH",
-              "title": "SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA"
-            },
-            {
-              "const": "SI",
-              "title": "SLOVENIA"
-            },
-            {
-              "const": "SJ",
-              "title": "SVALBARD AND JAN MAYEN"
-            },
-            {
-              "const": "SK",
-              "title": "SLOVAKIA"
-            },
-            {
-              "const": "SL",
-              "title": "SIERRA LEONE"
-            },
-            {
-              "const": "SM",
-              "title": "SAN MARINO"
-            },
-            {
-              "const": "SN",
-              "title": "SENEGAL"
-            },
-            {
-              "const": "SO",
-              "title": "SOMALIA"
-            },
-            {
-              "const": "SR",
-              "title": "SURINAME"
-            },
-            {
-              "const": "SS",
-              "title": "SOUTH SUDAN"
-            },
-            {
-              "const": "ST",
-              "title": "SAO TOME AND PRINCIPE"
-            },
-            {
-              "const": "SV",
-              "title": "EL SALVADOR"
-            },
-            {
-              "const": "SX",
-              "title": "SINT MAARTEN (DUTCH PART)"
-            },
-            {
-              "const": "SY",
-              "title": "SYRIAN ARAB REPUBLIC"
-            },
-            {
-              "const": "SZ",
-              "title": "ESWATINI"
-            },
-            {
-              "const": "TC",
-              "title": "TURKS AND CAICOS ISLANDS"
-            },
-            {
-              "const": "TD",
-              "title": "CHAD"
-            },
-            {
-              "const": "TF",
-              "title": "FRENCH SOUTHERN TERRITORIES"
-            },
-            {
-              "const": "TG",
-              "title": "TOGO"
-            },
-            {
-              "const": "TH",
-              "title": "THAILAND"
-            },
-            {
-              "const": "TJ",
-              "title": "TAJIKISTAN"
-            },
-            {
-              "const": "TK",
-              "title": "TOKELAU"
-            },
-            {
-              "const": "TL",
-              "title": "TIMOR-LESTE"
-            },
-            {
-              "const": "TM",
-              "title": "TURKMENISTAN"
-            },
-            {
-              "const": "TN",
-              "title": "TUNISIA"
-            },
-            {
-              "const": "TO",
-              "title": "TONGA"
-            },
-            {
-              "const": "TR",
-              "title": "TURKEY"
-            },
-            {
-              "const": "TT",
-              "title": "TRINIDAD AND TOBAGO"
-            },
-            {
-              "const": "TV",
-              "title": "TUVALU"
-            },
-            {
-              "const": "TW",
-              "title": "TAIWAN, PROVINCE OF CHINA"
-            },
-            {
-              "const": "TZ",
-              "title": "TANZANIA, UNITED REPUBLIC OF"
-            },
-            {
-              "const": "UA",
-              "title": "UKRAINE"
-            },
-            {
-              "const": "UG",
-              "title": "UGANDA"
-            },
-            {
-              "const": "UM",
-              "title": "UNITED STATES MINOR OUTLYING ISLANDS"
-            },
-            {
-              "const": "US",
-              "title": "UNITED STATES OF AMERICA"
-            },
-            {
-              "const": "UY",
-              "title": "URUGUAY"
-            },
-            {
-              "const": "UZ",
-              "title": "UZBEKISTAN"
-            },
-            {
-              "const": "VA",
-              "title": "HOLY SEE"
-            },
-            {
-              "const": "VC",
-              "title": "SAINT VINCENT AND THE GRENADINES"
-            },
-            {
-              "const": "VE",
-              "title": "VENEZUELA (BOLIVARIAN REPUBLIC OF)"
-            },
-            {
-              "const": "VG",
-              "title": "VIRGIN ISLANDS, BRITISH"
-            },
-            {
-              "const": "VI",
-              "title": "VIRGIN ISLANDS, U.S."
-            },
-            {
-              "const": "VN",
-              "title": "VIET NAM"
-            },
-            {
-              "const": "VU",
-              "title": "VANUATU"
-            },
-            {
-              "const": "WF",
-              "title": "WALLIS AND FUTUNA"
-            },
-            {
-              "const": "WS",
-              "title": "SAMOA"
-            },
-            {
-              "const": "YE",
-              "title": "YEMEN"
-            },
-            {
-              "const": "YT",
-              "title": "MAYOTTE"
-            },
-            {
-              "const": "ZA",
-              "title": "SOUTH AFRICA"
-            },
-            {
-              "const": "ZM",
-              "title": "ZAMBIA"
-            },
-            {
-              "const": "ZW",
-              "title": "ZIMBABWE"
-            }
+          "description": "Identification of the name of the country or other geographical entity as defined in ISO 3166-1.\r\n\r\nCode list responsible agency:\r\nISO\r\n\r\nCode list responsible agency name:\r\nInternational Organization for Standardization\r\n\r\nCode list responsible agency code:\r\n5\r\n\r\nCode list:\r\n3166-1\r\n\r\nCode list name:\r\nCountry code\r\n\r\nCode list version:\r\n2020\r\n\r\nCode list issue date:\r\nCL 2020-08\r\n\r\nApplicable codes:\r\n* 'AD' - ANDORRA\r\n* 'AE' - UNITED ARAB EMIRATES\r\n* 'AF' - AFGHANISTAN\r\n* 'AG' - ANTIGUA AND BARBUDA\r\n* 'AI' - ANGUILLA\r\n* 'AL' - ALBANIA\r\n* 'AM' - ARMENIA\r\n* 'AO' - ANGOLA\r\n* 'AQ' - ANTARCTICA\r\n* 'AR' - ARGENTINA\r\n* 'AS' - AMERICAN SAMOA\r\n* 'AT' - AUSTRIA\r\n* 'AU' - AUSTRALIA\r\n* 'AW' - ARUBA\r\n* 'AX' - ÅLAND ISLANDS\r\n* 'AZ' - AZERBAIJAN\r\n* 'BA' - BOSNIA AND HERZEGOVINA\r\n* 'BB' - BARBADOS\r\n* 'BD' - BANGLADESH\r\n* 'BE' - BELGIUM\r\n* 'BF' - BURKINA FASO\r\n* 'BG' - BULGARIA\r\n* 'BH' - BAHRAIN\r\n* 'BI' - BURUNDI\r\n* 'BJ' - BENIN\r\n* 'BL' - SAINT BARTHÉLEMY\r\n* 'BM' - BERMUDA\r\n* 'BN' - BRUNEI DARUSSALAM\r\n* 'BO' - BOLIVIA (PLURINATIONAL STATE OF)\r\n* 'BQ' - BONAIRE, SINT EUSTATIUS AND SABA\r\n* 'BR' - BRAZIL\r\n* 'BS' - BAHAMAS\r\n* 'BT' - BHUTAN\r\n* 'BV' - BOUVET ISLAND\r\n* 'BW' - BOTSWANA\r\n* 'BY' - BELARUS\r\n* 'BZ' - BELIZE\r\n* 'CA' - CANADA\r\n* 'CC' - COCOS (KEELING) ISLANDS\r\n* 'CD' - CONGO, DEMOCRATIC REPUBLIC OF\r\n* 'CF' - CENTRAL AFRICAN REPUBLIC\r\n* 'CG' - CONGO\r\n* 'CH' - SWITZERLAND\r\n* 'CI' - COTE D'IVOIRE\r\n* 'CK' - COOK ISLANDS\r\n* 'CL' - CHILE\r\n* 'CM' - CAMEROON\r\n* 'CN' - CHINA\r\n* 'CO' - COLOMBIA\r\n* 'CR' - COSTA RICA\r\n* 'CU' - CUBA\r\n* 'CV' - CABO VERDE\r\n* 'CW' - CURAÇAO\r\n* 'CX' - CHRISTMAS ISLAND\r\n* 'CY' - CYPRUS\r\n* 'CZ' - CZECHIA\r\n* 'DE' - GERMANY\r\n* 'DJ' - DJIBOUTI\r\n* 'DK' - DENMARK\r\n* 'DM' - DOMINICA\r\n* 'DO' - DOMINICAN REPUBLIC\r\n* 'DZ' - ALGERIA\r\n* 'EC' - ECUADOR\r\n* 'EE' - ESTONIA\r\n* 'EG' - EGYPT\r\n* 'EH' - WESTERN SAHARA\r\n* 'ER' - ERITREA\r\n* 'ES' - SPAIN\r\n* 'ET' - ETHIOPIA\r\n* 'FI' - FINLAND\r\n* 'FJ' - FIJI\r\n* 'FK' - FALKLAND ISLANDS (MALVINAS)\r\n* 'FM' - MICRONESIA (FEDERATED STATES OF)\r\n* 'FO' - FAROE ISLANDS\r\n* 'FR' - FRANCE\r\n* 'GA' - GABON\r\n* 'GB' - UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND\r\n* 'GD' - GRENADA\r\n* 'GE' - GEORGIA\r\n* 'GF' - FRENCH GUIANA\r\n* 'GG' - GUERNSEY\r\n* 'GH' - GHANA\r\n* 'GI' - GIBRALTAR\r\n* 'GL' - GREENLAND\r\n* 'GM' - GAMBIA\r\n* 'GN' - GUINEA\r\n* 'GP' - GUADELOUPE\r\n* 'GQ' - EQUATORIAL GUINEA\r\n* 'GR' - GREECE\r\n* 'GS' - SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS\r\n* 'GT' - GUATEMALA\r\n* 'GU' - GUAM\r\n* 'GW' - GUINEA-BISSAU\r\n* 'GY' - GUYANA\r\n* 'HK' - HONG KONG\r\n* 'HM' - HEARD ISLAND AND MCDONALD ISLANDS\r\n* 'HN' - HONDURAS\r\n* 'HR' - CROATIA\r\n* 'HT' - HAITI\r\n* 'HU' - HUNGARY\r\n* 'ID' - INDONESIA\r\n* 'IE' - IRELAND\r\n* 'IL' - ISRAEL\r\n* 'IM' - ISLE OF MAN\r\n* 'IN' - INDIA\r\n* 'IO' - BRITISH INDIAN OCEAN TERRITORY\r\n* 'IQ' - IRAQ\r\n* 'IR' - IRAN (ISLAMIC REPUBLIC OF)\r\n* 'IS' - ICELAND\r\n* 'IT' - ITALY\r\n* 'JE' - JERSEY\r\n* 'JM' - JAMAICA\r\n* 'JO' - JORDAN\r\n* 'JP' - JAPAN\r\n* 'KE' - KENYA\r\n* 'KG' - KYRGYZSTAN\r\n* 'KH' - CAMBODIA\r\n* 'KI' - KIRIBATI\r\n* 'KM' - COMOROS\r\n* 'KN' - SAINT KITTS AND NEVIS\r\n* 'KP' - KOREA (DEMOCRATIC PEOPLE'S REPUBLIC OF)\r\n* 'KR' - KOREA, REPUBLIC OF\r\n* 'KW' - KUWAIT\r\n* 'KY' - CAYMAN ISLANDS\r\n* 'KZ' - KAZAKHSTAN\r\n* 'LA' - LAO PEOPLE'S DEMOCRATIC REPUBLIC\r\n* 'LB' - LEBANON\r\n* 'LC' - SAINT LUCIA\r\n* 'LI' - LIECHTENSTEIN\r\n* 'LK' - SRI LANKA\r\n* 'LR' - LIBERIA\r\n* 'LS' - LESOTHO\r\n* 'LT' - LITHUANIA\r\n* 'LU' - LUXEMBOURG\r\n* 'LV' - LATVIA\r\n* 'LY' - LIBYA\r\n* 'MA' - MOROCCO\r\n* 'MC' - MONACO\r\n* 'MD' - MOLDOVA, REPUBLIC OF\r\n* 'ME' - MONTENEGRO\r\n* 'MF' - SAINT MARTIN (FRENCH PART)\r\n* 'MG' - MADAGASCAR\r\n* 'MH' - MARSHALL ISLANDS\r\n* 'MK' - NORTH MACEDONIA\r\n* 'ML' - MALI\r\n* 'MM' - MYANMAR\r\n* 'MN' - MONGOLIA\r\n* 'MO' - MACAO\r\n* 'MP' - NORTHERN MARIANA ISLANDS\r\n* 'MQ' - MARTINIQUE\r\n* 'MR' - MAURITANIA\r\n* 'MS' - MONTSERRAT\r\n* 'MT' - MALTA\r\n* 'MU' - MAURITIUS\r\n* 'MV' - MALDIVES\r\n* 'MW' - MALAWI\r\n* 'MX' - MEXICO\r\n* 'MY' - MALAYSIA\r\n* 'MZ' - MOZAMBIQUE\r\n* 'NA' - NAMIBIA\r\n* 'NC' - NEW CALEDONIA\r\n* 'NE' - NIGER\r\n* 'NF' - NORFOLK ISLAND\r\n* 'NG' - NIGERIA\r\n* 'NI' - NICARAGUA\r\n* 'NL' - NETHERLANDS\r\n* 'NO' - NORWAY\r\n* 'NP' - NEPAL\r\n* 'NR' - NAURU\r\n* 'NU' - NIUE\r\n* 'NZ' - NEW ZEALAND\r\n* 'OM' - OMAN\r\n* 'PA' - PANAMA\r\n* 'PE' - PERU\r\n* 'PF' - FRENCH POLYNESIA\r\n* 'PG' - PAPUA NEW GUINEA\r\n* 'PH' - PHILIPPINES\r\n* 'PK' - PAKISTAN\r\n* 'PL' - POLAND\r\n* 'PM' - SAINT PIERRE AND MIQUELON\r\n* 'PN' - PITCAIRN\r\n* 'PR' - PUERTO RICO\r\n* 'PS' - PALESTINE, STATE OF\r\n* 'PT' - PORTUGAL\r\n* 'PW' - PALAU\r\n* 'PY' - PARAGUAY\r\n* 'QA' - QATAR\r\n* 'RE' - REUNION\r\n* 'RO' - ROMANIA\r\n* 'RS' - SERBIA\r\n* 'RU' - RUSSIAN FEDERATION\r\n* 'RW' - RWANDA\r\n* 'SA' - SAUDI ARABIA\r\n* 'SB' - SOLOMON ISLANDS\r\n* 'SC' - SEYCHELLES\r\n* 'SD' - SUDAN\r\n* 'SE' - SWEDEN\r\n* 'SG' - SINGAPORE\r\n* 'SH' - SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA\r\n* 'SI' - SLOVENIA\r\n* 'SJ' - SVALBARD AND JAN MAYEN\r\n* 'SK' - SLOVAKIA\r\n* 'SL' - SIERRA LEONE\r\n* 'SM' - SAN MARINO\r\n* 'SN' - SENEGAL\r\n* 'SO' - SOMALIA\r\n* 'SR' - SURINAME\r\n* 'SS' - SOUTH SUDAN\r\n* 'ST' - SAO TOME AND PRINCIPE\r\n* 'SV' - EL SALVADOR\r\n* 'SX' - SINT MAARTEN (DUTCH PART)\r\n* 'SY' - SYRIAN ARAB REPUBLIC\r\n* 'SZ' - ESWATINI\r\n* 'TC' - TURKS AND CAICOS ISLANDS\r\n* 'TD' - CHAD\r\n* 'TF' - FRENCH SOUTHERN TERRITORIES\r\n* 'TG' - TOGO\r\n* 'TH' - THAILAND\r\n* 'TJ' - TAJIKISTAN\r\n* 'TK' - TOKELAU\r\n* 'TL' - TIMOR-LESTE\r\n* 'TM' - TURKMENISTAN\r\n* 'TN' - TUNISIA\r\n* 'TO' - TONGA\r\n* 'TR' - TURKEY\r\n* 'TT' - TRINIDAD AND TOBAGO\r\n* 'TV' - TUVALU\r\n* 'TW' - TAIWAN, PROVINCE OF CHINA\r\n* 'TZ' - TANZANIA, UNITED REPUBLIC OF\r\n* 'UA' - UKRAINE\r\n* 'UG' - UGANDA\r\n* 'UM' - UNITED STATES MINOR OUTLYING ISLANDS\r\n* 'US' - UNITED STATES OF AMERICA\r\n* 'UY' - URUGUAY\r\n* 'UZ' - UZBEKISTAN\r\n* 'VA' - HOLY SEE\r\n* 'VC' - SAINT VINCENT AND THE GRENADINES\r\n* 'VE' - VENEZUELA (BOLIVARIAN REPUBLIC OF)\r\n* 'VG' - VIRGIN ISLANDS, BRITISH\r\n* 'VI' - VIRGIN ISLANDS, U.S.\r\n* 'VN' - VIET NAM\r\n* 'VU' - VANUATU\r\n* 'WF' - WALLIS AND FUTUNA\r\n* 'WS' - SAMOA\r\n* 'YE' - YEMEN\r\n* 'YT' - MAYOTTE\r\n* 'ZA' - SOUTH AFRICA\r\n* 'ZM' - ZAMBIA\r\n* 'ZW' - ZIMBABWE",
+          "enum": [
+            "AD",
+            "AE",
+            "AF",
+            "AG",
+            "AI",
+            "AL",
+            "AM",
+            "AO",
+            "AQ",
+            "AR",
+            "AS",
+            "AT",
+            "AU",
+            "AW",
+            "AX",
+            "AZ",
+            "BA",
+            "BB",
+            "BD",
+            "BE",
+            "BF",
+            "BG",
+            "BH",
+            "BI",
+            "BJ",
+            "BL",
+            "BM",
+            "BN",
+            "BO",
+            "BQ",
+            "BR",
+            "BS",
+            "BT",
+            "BV",
+            "BW",
+            "BY",
+            "BZ",
+            "CA",
+            "CC",
+            "CD",
+            "CF",
+            "CG",
+            "CH",
+            "CI",
+            "CK",
+            "CL",
+            "CM",
+            "CN",
+            "CO",
+            "CR",
+            "CU",
+            "CV",
+            "CW",
+            "CX",
+            "CY",
+            "CZ",
+            "DE",
+            "DJ",
+            "DK",
+            "DM",
+            "DO",
+            "DZ",
+            "EC",
+            "EE",
+            "EG",
+            "EH",
+            "ER",
+            "ES",
+            "ET",
+            "FI",
+            "FJ",
+            "FK",
+            "FM",
+            "FO",
+            "FR",
+            "GA",
+            "GB",
+            "GD",
+            "GE",
+            "GF",
+            "GG",
+            "GH",
+            "GI",
+            "GL",
+            "GM",
+            "GN",
+            "GP",
+            "GQ",
+            "GR",
+            "GS",
+            "GT",
+            "GU",
+            "GW",
+            "GY",
+            "HK",
+            "HM",
+            "HN",
+            "HR",
+            "HT",
+            "HU",
+            "ID",
+            "IE",
+            "IL",
+            "IM",
+            "IN",
+            "IO",
+            "IQ",
+            "IR",
+            "IS",
+            "IT",
+            "JE",
+            "JM",
+            "JO",
+            "JP",
+            "KE",
+            "KG",
+            "KH",
+            "KI",
+            "KM",
+            "KN",
+            "KP",
+            "KR",
+            "KW",
+            "KY",
+            "KZ",
+            "LA",
+            "LB",
+            "LC",
+            "LI",
+            "LK",
+            "LR",
+            "LS",
+            "LT",
+            "LU",
+            "LV",
+            "LY",
+            "MA",
+            "MC",
+            "MD",
+            "ME",
+            "MF",
+            "MG",
+            "MH",
+            "MK",
+            "ML",
+            "MM",
+            "MN",
+            "MO",
+            "MP",
+            "MQ",
+            "MR",
+            "MS",
+            "MT",
+            "MU",
+            "MV",
+            "MW",
+            "MX",
+            "MY",
+            "MZ",
+            "NA",
+            "NC",
+            "NE",
+            "NF",
+            "NG",
+            "NI",
+            "NL",
+            "NO",
+            "NP",
+            "NR",
+            "NU",
+            "NZ",
+            "OM",
+            "PA",
+            "PE",
+            "PF",
+            "PG",
+            "PH",
+            "PK",
+            "PL",
+            "PM",
+            "PN",
+            "PR",
+            "PS",
+            "PT",
+            "PW",
+            "PY",
+            "QA",
+            "RE",
+            "RO",
+            "RS",
+            "RU",
+            "RW",
+            "SA",
+            "SB",
+            "SC",
+            "SD",
+            "SE",
+            "SG",
+            "SH",
+            "SI",
+            "SJ",
+            "SK",
+            "SL",
+            "SM",
+            "SN",
+            "SO",
+            "SR",
+            "SS",
+            "ST",
+            "SV",
+            "SX",
+            "SY",
+            "SZ",
+            "TC",
+            "TD",
+            "TF",
+            "TG",
+            "TH",
+            "TJ",
+            "TK",
+            "TL",
+            "TM",
+            "TN",
+            "TO",
+            "TR",
+            "TT",
+            "TV",
+            "TW",
+            "TZ",
+            "UA",
+            "UG",
+            "UM",
+            "US",
+            "UY",
+            "UZ",
+            "VA",
+            "VC",
+            "VE",
+            "VG",
+            "VI",
+            "VN",
+            "VU",
+            "WF",
+            "WS",
+            "YE",
+            "YT",
+            "ZA",
+            "ZM",
+            "ZW"
           ],
           "type": "string"
         }
