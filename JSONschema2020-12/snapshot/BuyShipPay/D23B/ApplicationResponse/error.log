@@ -1,0 +1,7 @@
+GEFEG.FX Export JSON Schema
+********************
+
+Data model: CDAR; D23B
+
+ERROR: Empty code list restriction (ignored): file: "UNECE-CrossDomainAcknowledgementandResponse.json" (Q)DT: "Quantity. Type" cc or sc "Quantity Unit. Code List. Identifier"
+ERROR: Empty code list: UNECE-CrossDomainAcknowledgementandResponse.json#/$defs/codeList/$defs/MIMEMediaTypeType (Binary Object. Mime. Code)

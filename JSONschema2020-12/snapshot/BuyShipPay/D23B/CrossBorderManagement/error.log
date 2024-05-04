@@ -1,0 +1,7 @@
+GEFEG.FX Export JSON Schema
+********************
+
+Data model: BSP CBM Shipment View; D23B
+
+INFO: BBIE Referenced_ Document. Subordinate_ Line. Identifier skipped due to FLag.Type=DEP and FLag.AppliedCCL=D20A
+INFO: BBIE Trade_ Tax. Tax Point. Date skipped due to FLag.Type=DEP and FLag.AppliedCCL=D15A

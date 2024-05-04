@@ -1,0 +1,7 @@
+GEFEG.FX Export JSON Schema
+********************
+
+Data model: BSP eQuality Certificate; D23B
+
+ERROR: Empty code list: UNECE-eQualityCertificate.json#/$defs/codeList/$defs/MIMEMediaTypeType (Binary Object. Mime. Code)
+INFO: BBIE Referenced_ Document. Subordinate_ Line. Identifier skipped due to FLag.Type=DEP and FLag.AppliedCCL=D20A

@@ -1,0 +1,7 @@
+GEFEG.FX Export JSON Schema
+********************
+
+Data model: eCMR MMT; D23B
+
+INFO: BBIE Referenced_ Document. Subordinate_ Line. Identifier skipped due to FLag.Type=DEP and FLag.AppliedCCL=D20A
+INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A
