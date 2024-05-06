@@ -1,7 +1,0 @@
-GEFEG.FX Export JSON Schema
-********************
-
-Data model: TL Product Transparency Message; D23B
-
-ERROR: Empty code list: UNECE-TLProductTransparency.json#/$defs/codeList/$defs/MIMEMediaTypeType (Binary Object. Mime. Code)
-INFO: BBIE Specified_ Binary File. File Name. Text skipped due to FLag.Type=DEP and FLag.AppliedCCL=D14A

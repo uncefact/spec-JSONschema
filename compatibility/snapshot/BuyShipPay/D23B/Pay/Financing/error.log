@@ -1,8 +1,0 @@
-GEFEG.FX Export JSON Schema
-********************
-
-Data model: POF Request; D23B
-
-ERROR: Empty code list restriction (ignored): file: "UNECE-PurchaseOrderFinancingRequest.json" (Q)DT: "Quantity. Type" cc or sc "Quantity Unit. Code List. Identifier"
-ERROR: Empty code list: UNECE-PurchaseOrderFinancingRequest.json#/$defs/codeList/$defs/CashAccountTypeType (Cash Account Type_ Code. Content)
-ERROR: Empty code list: UNECE-PurchaseOrderFinancingRequest.json#/$defs/codeList/$defs/NamePrefixCodeType (Title_ Code. Content)

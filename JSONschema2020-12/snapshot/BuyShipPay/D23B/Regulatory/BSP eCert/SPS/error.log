@@ -1,8 +1,0 @@
-GEFEG.FX Export JSON Schema
-********************
-
-Data model: BSP SPS Certificate; D23B
-
-ERROR: Empty code list: UNECE-SPSCertificate.json#/$defs/codeList/$defs/MIMEMediaTypeType (Binary Object. Mime. Code)
-INFO: ASBIE Product Handling_ Process. Completion. Delimited_ Period skipped due to FLag.Type=DEP and FLag.AppliedCCL=D08B
-INFO: BBIE Referenced_ Document. Subordinate_ Line. Identifier skipped due to FLag.Type=DEP and FLag.AppliedCCL=D20A
