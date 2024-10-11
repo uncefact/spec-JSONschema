@@ -5292,7 +5292,7 @@
           "description": "The date, time, date time or other date time value for the revision of this exchanged document.",
           "$ref": "UNECE-BasicComponents.json#/$defs/udt/$defs/dateTimeType"
         },
-        "sender": {
+        "senderTradeParty": {
           "title": "Exchanged_ Document. Sender. Trade_ Party",
           "description": "The party that sends this exchanged document.",
           "oneOf": [
@@ -5304,7 +5304,7 @@
             }
           ]
         },
-        "recipient": {
+        "recipientTradeParty": {
           "title": "Exchanged_ Document. Recipient. Trade_ Party",
           "description": "A trade party that receives this exchanged document.",
           "type": "array",
@@ -5507,7 +5507,7 @@
             }
           }
         },
-        "specified": {
+        "specifiedTradeParty": {
           "title": "Experience Program_ Action. Specified. Trade_ Party",
           "description": "A party specified for this experience program action.",
           "type": "array",
@@ -5659,7 +5659,7 @@
           "description": "The specified usage condition required for this experience event.",
           "$ref": "#/$defs/usageConditionType"
         },
-        "specified": {
+        "specifiedTradeParty": {
           "title": "Experience_ Event. Specified. Trade_ Party",
           "description": "A party specified for this experience event.",
           "type": "array",
@@ -6187,7 +6187,7 @@
             "$ref": "#/$defs/tradePriceType"
           }
         },
-        "specified": {
+        "specifiedTradeParty": {
           "title": "Experience_ Product. Specified. Trade_ Party",
           "description": "A party specified for this experience product.",
           "type": "array",
@@ -6678,7 +6678,7 @@
             "listSchemeUri": false
           }
         },
-        "age": {
+        "ageMeasure": {
           "title": "Guest_ Person. Age. Measure",
           "description": "The measure of the age of this guest person.",
           "$ref": "#/$defs/qdt/$defs/durationUnitMeasureType"
@@ -7458,7 +7458,7 @@
           "description": "The penalty percentage related to this payment trade settlement.",
           "$ref": "UNECE-BasicComponents.json#/$defs/udt/$defs/percentType"
         },
-        "payee": {
+        "payeeTradeParty": {
           "title": "Payment_ Trade Settlement. Payee. Trade_ Party",
           "description": "The payee party for this payment trade settlement.",
           "oneOf": [
@@ -7479,7 +7479,7 @@
             }
           ]
         },
-        "payer": {
+        "payerTradeParty": {
           "title": "Payment_ Trade Settlement. Payer. Trade_ Party",
           "description": "The payer party for this payment trade settlement.",
           "oneOf": [
@@ -7856,7 +7856,7 @@
           "description": "The date, time, date time, or other date time value from which this specified certificate is effective.",
           "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
         },
-        "certified": {
+        "certifiedTradeParty": {
           "title": "Specified_ Certificate. Certified. Trade_ Party",
           "description": "The certified party for this specified certificate.",
           "oneOf": [
@@ -7868,7 +7868,7 @@
             }
           ]
         },
-        "issuer": {
+        "issuerTradeParty": {
           "title": "Specified_ Certificate. Issuer. Trade_ Party",
           "description": "The issuer party for this specified certificate.",
           "oneOf": [
@@ -7880,7 +7880,7 @@
             }
           ]
         },
-        "providing": {
+        "providingTradeParty": {
           "title": "Specified_ Certificate. Providing. Trade_ Party",
           "description": "The party, other than the issuer, providing this specified certificate.",
           "oneOf": [
@@ -8242,7 +8242,7 @@
           "description": "The indication of whether or not guest special care is applicable for this specified experience item.",
           "$ref": "UNECE-BasicComponents.json#/$defs/udt/$defs/indicatorType"
         },
-        "specified": {
+        "specifiedTradeParty": {
           "title": "Specified_ Experience Item. Specified. Trade_ Party",
           "description": "A party specified for this specified experience item.",
           "type": "array",
@@ -8910,12 +8910,12 @@
             }
           }
         },
-        "minimumDuration": {
+        "minimumDurationMeasure": {
           "title": "Specified_ Period. Minimum_ Duration. Measure",
           "description": "The measure of the minimum length of time for this specified period, such as hours, days, weeks, months, years.",
           "$ref": "#/$defs/qdt/$defs/durationUnitMeasureType"
         },
-        "maximumDuration": {
+        "maximumDurationMeasure": {
           "title": "Specified_ Period. Maximum_ Duration. Measure",
           "description": "The measure of the maximum length of time for this specified period, such as hours, days, weeks, months, years.",
           "$ref": "#/$defs/qdt/$defs/durationUnitMeasureType"
@@ -8978,7 +8978,7 @@
             }
           ]
         },
-        "specifying": {
+        "specifyingTradeParty": {
           "title": "Specified_ Requirement. Specifying. Trade_ Party",
           "description": "The party specifying this specified requirement.",
           "oneOf": [
@@ -9034,7 +9034,7 @@
             }
           }
         },
-        "distance": {
+        "distanceMeasure": {
           "title": "Specified_ Route. Distance. Measure",
           "description": "The measure of the distance of this specified route.",
           "$ref": "#/$defs/qdt/$defs/linearUnitMeasureType"
@@ -9166,7 +9166,7 @@
             }
           }
         },
-        "requiring": {
+        "requiringTradeParty": {
           "title": "Specified_ Usage Condition. Requiring. Trade_ Party",
           "description": "A party requiring this specified usage condition.",
           "type": "array",
@@ -9791,7 +9791,7 @@
           "description": "The date, time, date time, or other date time value of automatic extension for this trade contract.",
           "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
         },
-        "automaticExtensionDuration": {
+        "automaticExtensionDurationMeasure": {
           "title": "Trade_ Contract. Automatic Extension_ Duration. Measure",
           "description": "The measure of the duration of the automatic extension for this trade contract.",
           "$ref": "#/$defs/qdt/$defs/durationUnitMeasureType"
