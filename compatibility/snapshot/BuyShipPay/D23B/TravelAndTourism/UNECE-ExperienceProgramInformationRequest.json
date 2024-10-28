@@ -7912,7 +7912,7 @@
           "description": "The code specifying the role of this guest person.",
           "$ref": "#/$defs/udt/$defs/codeType"
         },
-        "age": {
+        "ageMeasure": {
           "title": "Guest_ Person. Age. Measure",
           "description": "The measure of the age of this guest person.",
           "$ref": "#/$defs/qdt/$defs/durationUnitMeasureType"
@@ -9764,12 +9764,12 @@
             }
           }
         },
-        "minimumDuration": {
+        "minimumDurationMeasure": {
           "title": "Specified_ Period. Minimum_ Duration. Measure",
           "description": "The measure of the minimum length of time for this specified period, such as hours, days, weeks, months, years.",
           "$ref": "#/$defs/qdt/$defs/durationUnitMeasureType"
         },
-        "maximumDuration": {
+        "maximumDurationMeasure": {
           "title": "Specified_ Period. Maximum_ Duration. Measure",
           "description": "The measure of the maximum length of time for this specified period, such as hours, days, weeks, months, years.",
           "$ref": "#/$defs/qdt/$defs/durationUnitMeasureType"
@@ -9881,7 +9881,7 @@
             }
           }
         },
-        "distance": {
+        "distanceMeasure": {
           "title": "Specified_ Route. Distance. Measure",
           "description": "The measure of the distance of this specified route.",
           "$ref": "#/$defs/qdt/$defs/linearUnitMeasureType"
@@ -10602,7 +10602,7 @@
           "description": "The date, time, date time, or other date time value of automatic extension for this trade contract.",
           "$ref": "#/$defs/qdt/$defs/formattedDateTimeType"
         },
-        "automaticExtensionDuration": {
+        "automaticExtensionDurationMeasure": {
           "title": "Trade_ Contract. Automatic Extension_ Duration. Measure",
           "description": "The measure of the duration of the automatic extension for this trade contract.",
           "$ref": "#/$defs/qdt/$defs/durationUnitMeasureType"
